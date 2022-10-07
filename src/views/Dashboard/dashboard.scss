@@ -1,0 +1,122 @@
+.dashboard-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    width: 89%;
+    max-width: 833px;
+    margin: auto;
+
+    .dashboard-infos-wrap {
+        z-index: 1;
+
+        .dashboard-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            position: relative;
+            z-index: 2;
+
+            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+                background: rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(100px);
+            }
+
+            /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+            @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+                background: #181b1c;
+            }
+
+            border-radius: 10px;
+            padding: 13px 0;
+
+            .card-title {
+                font-family: Montserrat Medium;
+                font-weight: 500;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            .card-value {
+                font-family: Montserrat Bold;
+                font-weight: bold;
+                font-size: 24px;
+                font-weight: bold;
+                color: #ffffff;
+
+                .wmemo {
+                    font-family: Montserrat Bold;
+                    font-weight: bold;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+            }
+        }
+        .dashboard-card-header {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .dashboard-card-header-title {
+                font-family: Montserrat Bold;
+                font-weight: bold;
+                font-size: 30px;
+                color: #ffffff;
+                margin: 0 auto 0 auto;
+
+                .small {
+                    font-family: Montserrat Bold;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+        }
+        .dashboard-card-wallet-notification {
+            text-align: center;
+
+            .dashboard-card-wallet-connect-btn {
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0px 0px 10px rgba(44, 39, 109, 0.1);
+                border-radius: 10px;
+                padding: 14px 58px;
+                cursor: pointer;
+                margin: auto;
+                max-width: 280px;
+                margin-top: 20px;
+
+                p {
+                    font-family: Montserrat SemiBold;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #ffffff;
+                }
+            }
+
+            .dashboard-card-wallet-desc-text {
+                font-family: Montserrat Light;
+                font-weight: 300;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.6);
+                margin-top: 10px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard-farm,
+    .dashboard-card-wallet-notification {
+        margin-bottom: 150px;
+    }
+    .dashboard-card-wallet-desc-text {
+        margin-bottom: 150px !important;
+    }
+}

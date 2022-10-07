@@ -1,0 +1,41 @@
+.blog-view {
+    display: flex;
+    overflow: hidden;
+
+    width: 95%;
+    margin: auto;
+
+    .blog-posts-wrap {
+        width: 100%;
+
+        position: relative;
+        z-index: 2;
+
+        .blog-posts-title {
+            font-family: Montserrat Bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .blog-posts-container {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-column-gap: 20px;
+            column-gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            margin-bottom: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-posts-container {
+        margin-bottom: 150px;
+    }
+}

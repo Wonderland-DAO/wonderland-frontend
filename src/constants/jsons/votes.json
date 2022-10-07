@@ -1,0 +1,4162 @@
+[
+    {
+        "voter": "0xfD055A28c8fdD431Db3727462d7d89a093Ad8a13",
+        "choice": 1,
+        "vp": 1387.053651448
+    },
+    {
+        "voter": "0x84C21bFe8352E8719C8d709e86fA82986D4F3ECe",
+        "choice": 1,
+        "vp": 1018.540723377
+    },
+    {
+        "voter": "0xf932cc4b8d9F7f32CcD5818147E6Fc228de50AB3",
+        "choice": 1,
+        "vp": 1545.599684571
+    },
+    {
+        "voter": "0x9249f2C06c7d69b3B4418FB416900c271F93764A",
+        "choice": 1,
+        "vp": 1143.933337752
+    },
+    {
+        "voter": "0x6A9C6475185b7193a078A8ec4f77C575347cc42C",
+        "choice": 1,
+        "vp": 277.692217442
+    },
+    {
+        "voter": "0x251331F1baeB7c01C573Bd2BF3AB4234C148aBaa",
+        "choice": 1,
+        "vp": 1789.157617568
+    },
+    {
+        "voter": "0x567E858589bE47aA2A8fD9962e440A731C0DA9AF",
+        "choice": 1,
+        "vp": 2435.303379851
+    },
+    {
+        "voter": "0xC4FE5519765ec7BDa9F17eA646527DeF46Beaa79",
+        "choice": 1,
+        "vp": 1161.402056015
+    },
+    {
+        "voter": "0xfc6d3b99EF45c163A504392eFbF96454C2293635",
+        "choice": 1,
+        "vp": 36.486602577
+    },
+    {
+        "voter": "0xa447653582AD32f86AC835d5E1Cf590D4Fb3f0Ad",
+        "choice": 1,
+        "vp": 17.990561996
+    },
+    {
+        "voter": "0xd79c12395bF43F036AfD2964a62A83D1Ee7c178B",
+        "choice": 1,
+        "vp": 3.3e-8
+    },
+    {
+        "voter": "0xD4321C9aF05AB10B4BF7480E65908F50cc00773a",
+        "choice": 1,
+        "vp": 44.606310884
+    },
+    {
+        "voter": "0x9B3D8d66d4281036f9855208a5aa097edA70C2b9",
+        "choice": 1,
+        "vp": 102.196931774
+    },
+    {
+        "voter": "0xB02DDeEF9E67B7449fEa9255511691450e0A605C",
+        "choice": 1,
+        "vp": 1092.220244073
+    },
+    {
+        "voter": "0x2eF124CA1e6aC77c1532dDAFF063e75D925e8DC6",
+        "choice": 1,
+        "vp": 1233.269227637
+    },
+    {
+        "voter": "0x74d82b54fD3f2Aa024B1841B66037865ce420534",
+        "choice": 1,
+        "vp": 23.400717426
+    },
+    {
+        "voter": "0x8A7bCA1bAa4ddf5f3C4d83aB7254048a718cdd3C",
+        "choice": 1,
+        "vp": 8.668145919999999
+    },
+    {
+        "voter": "0x9c7c9f75B5444a8Ee3cD7802E572D1f7f3FaFE1F",
+        "choice": 1,
+        "vp": 2.551988072
+    },
+    {
+        "voter": "0x521ED85141D3A93133DE5297f31DEfD909691579",
+        "choice": 1,
+        "vp": 7.572783867999999
+    },
+    {
+        "voter": "0x43a3BA695A4cc98C71C748875613CE44F9CFA4a1",
+        "choice": 1,
+        "vp": 293.655488732
+    },
+    {
+        "voter": "0x1A5488210780370C085B96B0b67E60fBb8D66622",
+        "choice": 1,
+        "vp": 360.07011438399996
+    },
+    {
+        "voter": "0xd7aCCB574FEd2460e26117423404F763933C62D0",
+        "choice": 1,
+        "vp": 708.685287848
+    },
+    {
+        "voter": "0x769d02771c3Db45ca9fF489D55899C3304cD9D33",
+        "choice": 1,
+        "vp": 239.187493075
+    },
+    {
+        "voter": "0x13802a5AE024a20ac385bddbceAa48B16FC2670A",
+        "choice": 1,
+        "vp": 362.78186797200004
+    },
+    {
+        "voter": "0x8E67B3798Ca63668C0073629615B4F12fd0AB47b",
+        "choice": 1,
+        "vp": 229.605724335
+    },
+    {
+        "voter": "0x18BCA12d022A919B874300C5E4CE22e040832b0D",
+        "choice": 1,
+        "vp": 180.16343109
+    },
+    {
+        "voter": "0x44E636BAA3D55e067230C92Cd3F023715B1d36Bb",
+        "choice": 1,
+        "vp": 6.635699004
+    },
+    {
+        "voter": "0xBe8e72bd3351348490BbdcF4A50Eb6534EaCA6b6",
+        "choice": 1,
+        "vp": 49.220304469
+    },
+    {
+        "voter": "0x55cE9043068E6c2640dd4ACeaF94460A4c39FeaE",
+        "choice": 1,
+        "vp": 7.038032409
+    },
+    {
+        "voter": "0xB88841Ed99F975ED4a766245F4B47b2740cbaD18",
+        "choice": 1,
+        "vp": 10924.87745812
+    },
+    {
+        "voter": "0xE4Ee1FD2CC5a2d1dF4D1972D2ca2fF814dB51774",
+        "choice": 1,
+        "vp": 2289.452928634
+    },
+    {
+        "voter": "0xd282578045AcC7b3f96175a22348704588407A4a",
+        "choice": 1,
+        "vp": 7.639686591999999
+    },
+    {
+        "voter": "0xC3754E0acaDcA2E3437E2fa86b0c773c5de02Ee6",
+        "choice": 1,
+        "vp": 19.19361312
+    },
+    {
+        "voter": "0x9DE4869C367Eb2686cC5C0cABB7e99C0d9Ee4b0A",
+        "choice": 1,
+        "vp": 3.142897767
+    },
+    {
+        "voter": "0x7633f359bDd040841938A81863F78c52ab27368F",
+        "choice": 1,
+        "vp": 450.887369608
+    },
+    {
+        "voter": "0xb20A7bf56FD79bA4CfD347D245498ebb7012Ece2",
+        "choice": 1,
+        "vp": 26.484439705999996
+    },
+    {
+        "voter": "0x5dEd7cefAd82351C9eF7411d4e957a4fBDB550C1",
+        "choice": 1,
+        "vp": 49.539991966
+    },
+    {
+        "voter": "0x72557E9234BBA60878C57C9b1b66039D8c651e98",
+        "choice": 1,
+        "vp": 2.9e-8
+    },
+    {
+        "voter": "0xBaB8110118844B2C844527240C287a0370682e16",
+        "choice": 1,
+        "vp": 149.257685194
+    },
+    {
+        "voter": "0x81B1E94a4eeFBC2126b9e277C2C1c098bbe4e0a9",
+        "choice": 1,
+        "vp": 163.755395303
+    },
+    {
+        "voter": "0x755d97305E9D9264AcA87E9550e560f452Fb15a0",
+        "choice": 1,
+        "vp": 506.344239937
+    },
+    {
+        "voter": "0x50a1106806282B78827c17c342095cff1368cAB5",
+        "choice": 1,
+        "vp": 570.8531335710001
+    },
+    {
+        "voter": "0xb2185363A45C9756aA1E93299Fd7121E687b587E",
+        "choice": 1,
+        "vp": 106.351374378
+    },
+    {
+        "voter": "0x9Fe238245F8A15a8EaeF139e81335B6546804BD1",
+        "choice": 1,
+        "vp": 9.539875019
+    },
+    {
+        "voter": "0x2AB777fc30c91144bc2297aEC61e35E1cBD81A06",
+        "choice": 1,
+        "vp": 440.356808074
+    },
+    {
+        "voter": "0xa89B626B2a13dDFc6bb4360E8D2931f338212489",
+        "choice": 1,
+        "vp": 706.1421738849999
+    },
+    {
+        "voter": "0x4CBBA90Cf8969204D101751Ce08998c474D176ec",
+        "choice": 1,
+        "vp": 76.647878905
+    },
+    {
+        "voter": "0xCf9349545d65de9D623038f3927d58e2Ec4FdF8c",
+        "choice": 1,
+        "vp": 72.827914517
+    },
+    {
+        "voter": "0xf3037D2287674634B65391cAE1792c81b5A87F68",
+        "choice": 1,
+        "vp": 401.060932555
+    },
+    {
+        "voter": "0x1371066296AD2F17346D4EDAec39D689474641D7",
+        "choice": 1,
+        "vp": 14.195392131
+    },
+    {
+        "voter": "0xe56480161c855eD8D3880C1cB6fE6f14469bA49A",
+        "choice": 1,
+        "vp": 96.314601584
+    },
+    {
+        "voter": "0x871A0990B67B2C470ee35B10Cda0c0B5B85e6548",
+        "choice": 1,
+        "vp": 130.109773456
+    },
+    {
+        "voter": "0x2879707EC9B6c9c84D9C2512b64cD6ab36882cBc",
+        "choice": 1,
+        "vp": 1063.915151452
+    },
+    {
+        "voter": "0x7592fAf1dA22a670b1c57753607d1A7Bd090899A",
+        "choice": 1,
+        "vp": 18.547776042
+    },
+    {
+        "voter": "0xA8EdD6B8B5B3af655e00ae7B8b86453621341F00",
+        "choice": 1,
+        "vp": 351.221799409
+    },
+    {
+        "voter": "0x58a58df78a3fE975C55F9C02559770411cE72cDC",
+        "choice": 1,
+        "vp": 43.562949409999995
+    },
+    {
+        "voter": "0x9b90A8dCd70AB2a206fEee0BC78fc3a4984216bB",
+        "choice": 1,
+        "vp": 56.499120137
+    },
+    {
+        "voter": "0x68be4e97C0ECD7b2B69a712b57BC917aF8B5dC6b",
+        "choice": 1,
+        "vp": 77.525806106
+    },
+    {
+        "voter": "0x3F271103dCbad95359e2d75B4eC18ED618F21029",
+        "choice": 1,
+        "vp": 19.915508141
+    },
+    {
+        "voter": "0xDC6dABaFBF4E1b785B2570D5F3c0320509dB51c9",
+        "choice": 1,
+        "vp": 30.850938357
+    },
+    {
+        "voter": "0xD2f8Bdb5abDe80Cf504c830028e6d7bf61b3ba55",
+        "choice": 1,
+        "vp": 305.10078249000003
+    },
+    {
+        "voter": "0x2b429BD4FDde2b398F9bdc6343e4C817145003f4",
+        "choice": 1,
+        "vp": 46.787045074
+    },
+    {
+        "voter": "0xC6f66e72bae02A9EF4e306985BeA5B1B1d6A2a38",
+        "choice": 1,
+        "vp": 21.054481381
+    },
+    {
+        "voter": "0xc4489195986457F1e63BC2BA8277005040636E6C",
+        "choice": 1,
+        "vp": 300.581352894
+    },
+    {
+        "voter": "0x32DD479C2883c40CAeB812018e3Fcc407b55Cd68",
+        "choice": 1,
+        "vp": 20.264556581
+    },
+    {
+        "voter": "0xc2CD6d40704b5665cebe56c11a920030835829B5",
+        "choice": 1,
+        "vp": 0.7654268879999999
+    },
+    {
+        "voter": "0x203Ea835561F4d0F2A881ccccd7702137472811a",
+        "choice": 1,
+        "vp": 1.6e-8
+    },
+    {
+        "voter": "0xb994cd5a56C0Bacc375Ef235E00832D780dd842d",
+        "choice": 1,
+        "vp": 3e-9
+    },
+    {
+        "voter": "0xd3b375E4cF5517829748Af1ACCbE1B4ad1Fad169",
+        "choice": 1,
+        "vp": 1555.454079724
+    },
+    {
+        "voter": "0xD328193C3DFF340A4feA463f945fEE2cd6411D7B",
+        "choice": 1,
+        "vp": 235.11391497199998
+    },
+    {
+        "voter": "0x39E90918c66291D3327A79Bac907d8036866089b",
+        "choice": 1,
+        "vp": 164.897336048
+    },
+    {
+        "voter": "0x97D4690E6152b4c464009446E030a40CD4167a37",
+        "choice": 1,
+        "vp": 2.002142956
+    },
+    {
+        "voter": "0x2Dae342A377c7d67ba8eE05d85783353CECC1E8d",
+        "choice": 1,
+        "vp": 3879.537267623
+    },
+    {
+        "voter": "0xb8568A35E6768E3cbefDe35d2273Be7c9D92410E",
+        "choice": 1,
+        "vp": 30.135417022
+    },
+    {
+        "voter": "0x7735E4A2DB84D0A6245B6EF16DaAd3F32F313acC",
+        "choice": 1,
+        "vp": 17.404582901
+    },
+    {
+        "voter": "0x48C2aaf5C91917364Ac987cfE95E24B0bfb3C112",
+        "choice": 1,
+        "vp": 233.935225388
+    },
+    {
+        "voter": "0x34e13c48D49872D8ca80D70d979a8dafa3b4B86a",
+        "choice": 1,
+        "vp": 510.795873922
+    },
+    {
+        "voter": "0xE8F5F5CfD99f4992c520d41F0b7746ab06628F4e",
+        "choice": 1,
+        "vp": 189.634949717
+    },
+    {
+        "voter": "0x32145D50b11b2f934CA3B969571c0BD92DE17DA1",
+        "choice": 1,
+        "vp": 41.068070896
+    },
+    {
+        "voter": "0x4AF5b3Da0012Fd39C459025F6729BaA261e80938",
+        "choice": 1,
+        "vp": 169.647739567
+    },
+    {
+        "voter": "0x537d470981f08b16E96a9EE2F6C9debde1800De5",
+        "choice": 1,
+        "vp": 64.574579199
+    },
+    {
+        "voter": "0x41C06002bd1aE3177e7b60B54194Ab0E6b3e57Fb",
+        "choice": 1,
+        "vp": 206.254148867
+    },
+    {
+        "voter": "0x9A5a647C50649b44c209b8b3fEdD6FcF95f520FF",
+        "choice": 1,
+        "vp": 7.811740534
+    },
+    {
+        "voter": "0x62AFe821Bd03af50BFe7782b539B40209FBaA8CA",
+        "choice": 1,
+        "vp": 181.439141336
+    },
+    {
+        "voter": "0xFCDA801d87769614c828bA611544A85b5d606432",
+        "choice": 1,
+        "vp": 35.151085361
+    },
+    {
+        "voter": "0xA64f1B5CC3cDCc056748441bAF9D684bC2D77267",
+        "choice": 1,
+        "vp": 65.595746036
+    },
+    {
+        "voter": "0xb940ee2B3F5c37d6A46a46b2E4e241F28d11DDAc",
+        "choice": 1,
+        "vp": 275.566808895
+    },
+    {
+        "voter": "0x066F35E7446bF92b72aa3D9C762c4Bd8259c9EA8",
+        "choice": 1,
+        "vp": 7.028959689000001
+    },
+    {
+        "voter": "0xC4286b327CC14F66bfA6524d16c56980d49dCB30",
+        "choice": 1,
+        "vp": 28.948199344
+    },
+    {
+        "voter": "0x80f775D7D4073E158aeB2334a30601e4b506446d",
+        "choice": 1,
+        "vp": 34.480503951
+    },
+    {
+        "voter": "0x5cA6B8fEf2c5F03bF492B54d3E0F8D76A6DDAcd7",
+        "choice": 1,
+        "vp": 14.178711629999999
+    },
+    {
+        "voter": "0xb9e787245dF687F5582AE28738686972b33dED28",
+        "choice": 1,
+        "vp": 78.39651240399999
+    },
+    {
+        "voter": "0x56287A98aC60e63574E8739Ee84A0BD868058108",
+        "choice": 1,
+        "vp": 40.980696816
+    },
+    {
+        "voter": "0xD79FE5745C17387085224396FD59663B6a8aCCa5",
+        "choice": 1,
+        "vp": 292.419031707
+    },
+    {
+        "voter": "0x574Ac6b44bfb95916e4e9671e9fE66822BA498A1",
+        "choice": 1,
+        "vp": 86.059114761
+    },
+    {
+        "voter": "0xE4031B69fB0F914cEC66C33a5c2c13dDc0Db1D09",
+        "choice": 1,
+        "vp": 38.637057698999996
+    },
+    {
+        "voter": "0x8135eD6833581bF1007Fde2837c984AF8323BDB5",
+        "choice": 1,
+        "vp": 69.544545839
+    },
+    {
+        "voter": "0xB87658EBe07E3AC7e857AAE7601D08c005657089",
+        "choice": 1,
+        "vp": 125.87552352099999
+    },
+    {
+        "voter": "0xbbDe09027D9C3346B9ED227eb775Afd14133840b",
+        "choice": 1,
+        "vp": 8.694592236
+    },
+    {
+        "voter": "0x4b91e9136E2fe0A0850CEEE08511c074f2c1895C",
+        "choice": 1,
+        "vp": 38.704777291
+    },
+    {
+        "voter": "0x030a661034Bd7Fe1077d28097e75e8c9Be3D0309",
+        "choice": 1,
+        "vp": 514.58002339
+    },
+    {
+        "voter": "0x327464c57162aFa9a017d4Df652FF2f194B1598A",
+        "choice": 1,
+        "vp": 111.926935404
+    },
+    {
+        "voter": "0xd1ef5E9fCfEBEcB4e7080989154d2a8a9Ad7f4eC",
+        "choice": 1,
+        "vp": 535.61423081
+    },
+    {
+        "voter": "0xd7cF8656bb33BE6E361e0E21b81a6297b4500561",
+        "choice": 1,
+        "vp": 310.25413131700003
+    },
+    {
+        "voter": "0x13Bc0784cc505D90e64741bee9692310fA45aaaf",
+        "choice": 1,
+        "vp": 19.279606416
+    },
+    {
+        "voter": "0xD2b4667fdBc9556f320BC4BBB05Ad18b7863427a",
+        "choice": 1,
+        "vp": 6.2e-8
+    },
+    {
+        "voter": "0x8A54945bb1CF7C3A0EB5b151AaDd00206f533D97",
+        "choice": 1,
+        "vp": 52.340768325
+    },
+    {
+        "voter": "0x44d6060e07c65B5EeAf180bFD3c8287620B8c919",
+        "choice": 1,
+        "vp": 38.223232815
+    },
+    {
+        "voter": "0x83B69020E1db46C044a913017F09D953aDB9e59a",
+        "choice": 1,
+        "vp": 4712.668401711
+    },
+    {
+        "voter": "0xd38A824c75b5aF696dDef83F25E1a93D084Ed9ab",
+        "choice": 1,
+        "vp": 575.4244616029999
+    },
+    {
+        "voter": "0x6Ae247d501379CE6c0DC885C4890d9161684Eb5B",
+        "choice": 1,
+        "vp": 769.6021122770001
+    },
+    {
+        "voter": "0x6dc448376Eb3C459a87D2b54Caf2c60C6E23cEC8",
+        "choice": 1,
+        "vp": 143.889622058
+    },
+    {
+        "voter": "0x2F68B30838515d185e191Dc88a99d1a150bC831b",
+        "choice": 1,
+        "vp": 177.568668157
+    },
+    {
+        "voter": "0xcc8B705Fa82778C10fb9d975a54AD80Cf572326f",
+        "choice": 1,
+        "vp": 60.018653468000004
+    },
+    {
+        "voter": "0x75C8c3C496F2c7b12FDc45103E5a6B08F798674f",
+        "choice": 1,
+        "vp": 125.34862774700001
+    },
+    {
+        "voter": "0x501745E95CA08dfEaFc269c8021e58F458c3ee50",
+        "choice": 1,
+        "vp": 9.498424606
+    },
+    {
+        "voter": "0x479ab97B48bBb6447216D72CEd7228a0B5D0dC05",
+        "choice": 1,
+        "vp": 251.93502544499998
+    },
+    {
+        "voter": "0x0C9Ed0C290e8FbaE76688231A934943410fd41e9",
+        "choice": 1,
+        "vp": 806.676662465
+    },
+    {
+        "voter": "0x61Bc1ecc05307cC3082d84AfbE2050F15471d0eE",
+        "choice": 1,
+        "vp": 51.271721895
+    },
+    {
+        "voter": "0x183128Cea1cFaBeE4dE5Cc800Ba325Fb7EE00EF0",
+        "choice": 1,
+        "vp": 35.750720429
+    },
+    {
+        "voter": "0xc2226Bd3c34db8De4eAa55bdD732C47d2d58F347",
+        "choice": 1,
+        "vp": 99.524239685
+    },
+    {
+        "voter": "0x9dA87ec170DCa815e4A2E956a0C705569c6D1F64",
+        "choice": 1,
+        "vp": 730.501598756
+    },
+    {
+        "voter": "0x42d02f4cd48BDAC116b7E3A4895f586777948FaE",
+        "choice": 1,
+        "vp": 16009.067850071
+    },
+    {
+        "voter": "0xB42Bfbdd80504209De5747dec47743529142A179",
+        "choice": 1,
+        "vp": 103.180249436
+    },
+    {
+        "voter": "0xC1460145b837f885a07A61E0F6cCd0a0Fa5496eA",
+        "choice": 1,
+        "vp": 4.6692968420000005
+    },
+    {
+        "voter": "0xdB17CBB4cB5D9e3A8dB7b79a058C9ba54F0900fc",
+        "choice": 1,
+        "vp": 26.302746778
+    },
+    {
+        "voter": "0xD914ed42044bf278b140B6538318D8c2fdC332Ff",
+        "choice": 1,
+        "vp": 7.728609607
+    },
+    {
+        "voter": "0xE361dCF90cF4079c065BfEe6480A00a738164785",
+        "choice": 1,
+        "vp": 41.823435743999994
+    },
+    {
+        "voter": "0x97ff2F01C51cb338A8eEba05e1e3952561F54329",
+        "choice": 1,
+        "vp": 1.218110687
+    },
+    {
+        "voter": "0xa24EcfF58FCACAe98214600ac46a10d5D074dd53",
+        "choice": 1,
+        "vp": 134.005432458
+    },
+    {
+        "voter": "0x56C4fFADf7D7Abc8b379dD85A3951A9e4bCEEeF6",
+        "choice": 1,
+        "vp": 565.56019551
+    },
+    {
+        "voter": "0x2370c9b771F9aE60e224c528F11e1082CdB4683a",
+        "choice": 1,
+        "vp": 1885.6079153080002
+    },
+    {
+        "voter": "0xbe46DFA596aAe778865D5CE9bf58D31E81C5991D",
+        "choice": 1,
+        "vp": 71.201695603
+    },
+    {
+        "voter": "0x82577EF97ECeC2626376a0c6D145da1682693d4a",
+        "choice": 1,
+        "vp": 198.036288134
+    },
+    {
+        "voter": "0xF62590EB4c8AD884DdD32CcAB87f0807416541CE",
+        "choice": 1,
+        "vp": 16.837227733
+    },
+    {
+        "voter": "0x1789DBcf95387908aCB6aF43F071e66F1135f304",
+        "choice": 1,
+        "vp": 147.464069472
+    },
+    {
+        "voter": "0x303F26853B2320DABBfD37Bf86d191747C40CfD1",
+        "choice": 1,
+        "vp": 96.444642273
+    },
+    {
+        "voter": "0x70Bc20F832C39920C90a3876DE9D85B273DF0A5b",
+        "choice": 1,
+        "vp": 8.437858496
+    },
+    {
+        "voter": "0x03aDb51C947774490fb1Dfa1B5Ba20625144298e",
+        "choice": 1,
+        "vp": 3.45997477
+    },
+    {
+        "voter": "0x7ad0e18D36AD2E9BFDEFD22e8dBDAad2E8Ff30a8",
+        "choice": 1,
+        "vp": 64.649021506
+    },
+    {
+        "voter": "0xf83CBf4b6630E3708dfCfaddaEd9248eED1d5475",
+        "choice": 1,
+        "vp": 234.10535535000002
+    },
+    {
+        "voter": "0x1033F421E002b357D9E6928671A5D34F61F5dFD0",
+        "choice": 1,
+        "vp": 2769.8105115939998
+    },
+    {
+        "voter": "0x73Bf01AFD622CA4a687f8b364C314E9B407C2da3",
+        "choice": 1,
+        "vp": 21.872317736
+    },
+    {
+        "voter": "0x8a8f0613a7d49fd83b082b701A5195bC47De7ee0",
+        "choice": 1,
+        "vp": 106.332125108
+    },
+    {
+        "voter": "0x3AfcF2611A404E923BFb3C555DF40Fb1Db7daef5",
+        "choice": 1,
+        "vp": 70.04118999
+    },
+    {
+        "voter": "0x57f06Ed2e4ca90F10cE34e1A60655Ed515c7087A",
+        "choice": 1,
+        "vp": 2.411304896
+    },
+    {
+        "voter": "0x991C0030EBbdaf7F4dD0Cc579ac9C37F2FD505c9",
+        "choice": 1,
+        "vp": 71.86423209200001
+    },
+    {
+        "voter": "0x8f54C8c2df62c94772ac14CcFc85603742976312",
+        "choice": 1,
+        "vp": 75457.245283011
+    },
+    {
+        "voter": "0x9De9f9fB36CF8f0f47D13140676C5b2C0582c66B",
+        "choice": 1,
+        "vp": 327.85608917400003
+    },
+    {
+        "voter": "0x10116Dfdb729B1b62dC91F9F8dc4142377499707",
+        "choice": 1,
+        "vp": 12.801980513
+    },
+    {
+        "voter": "0x1a41CE914C26536f2bca3c7eDDaD2E1d5cB2fBAC",
+        "choice": 1,
+        "vp": 22.626189191
+    },
+    {
+        "voter": "0x632Fd6D5E53A8661e751a964c9d7c9aa63Ecaa5A",
+        "choice": 1,
+        "vp": 93.45886030899999
+    },
+    {
+        "voter": "0xaf3fc2474009D8a21F0a617c2952302cCfdF3760",
+        "choice": 1,
+        "vp": 11.126469371
+    },
+    {
+        "voter": "0xd85b7D131261E85f602546e84bCB1c8e24d0C265",
+        "choice": 1,
+        "vp": 174.388668662
+    },
+    {
+        "voter": "0xdAa77B4e26E6A715D1Fc5dec2baABDA7ab3b8378",
+        "choice": 1,
+        "vp": 38.486581070999996
+    },
+    {
+        "voter": "0x224E5F528DE4379250a2e81164A62c3B8bc9facD",
+        "choice": 1,
+        "vp": 19.259631609
+    },
+    {
+        "voter": "0x4B1Ef5E81Cd717DEB4B4ED9Dd71BfCbc5c03Db7F",
+        "choice": 1,
+        "vp": 15.073427249
+    },
+    {
+        "voter": "0xaBf743bFbFa359fBaEe95444D25f6Ac514188bF0",
+        "choice": 1,
+        "vp": 16.590435075
+    },
+    {
+        "voter": "0xE999AB3935709D5bF0BDe166f2B2F26FAfF6a7F0",
+        "choice": 1,
+        "vp": 23.003166316999998
+    },
+    {
+        "voter": "0x527EF6d87A5AC230e5505D663a8a1ddb861AD3f9",
+        "choice": 1,
+        "vp": 37.838984834
+    },
+    {
+        "voter": "0x52d25Aa0742f85195a3AFc18C0676F014a37DAa9",
+        "choice": 1,
+        "vp": 380.591642409
+    },
+    {
+        "voter": "0xB5fca4F7974e1FE0A2Ddf59fcc0e0600D9e9BCb2",
+        "choice": 1,
+        "vp": 172.63665003199998
+    },
+    {
+        "voter": "0x8e9C1B48099C4Da732EB09a8d694605Bc2AE9731",
+        "choice": 1,
+        "vp": 156.171341533
+    },
+    {
+        "voter": "0x8EeD3E6b24cf772609DC5b484D853228B4Ce39bB",
+        "choice": 1,
+        "vp": 5.1e-8
+    },
+    {
+        "voter": "0x7F8da7dfa7672bBc32f4E95216F54B13f29A461a",
+        "choice": 1,
+        "vp": 5.5e-8
+    },
+    {
+        "voter": "0x11d8FAb55FcBBFD9807DBD4a3C52264b6CA15d96",
+        "choice": 1,
+        "vp": 217.010603415
+    },
+    {
+        "voter": "0x292F21188FB0f72A5E508733ae202847D7D620AA",
+        "choice": 1,
+        "vp": 24.463345494
+    },
+    {
+        "voter": "0xcDA5774b27B4C44714De03bE9D70397F9539D05B",
+        "choice": 1,
+        "vp": 10.616626804000001
+    },
+    {
+        "voter": "0x2C262E4e6678Cad508e7EA0A2cE9Ab9f274b0C91",
+        "choice": 1,
+        "vp": 44.243991046
+    },
+    {
+        "voter": "0x710d7D662978B842210c12766048172b5FB0ab91",
+        "choice": 1,
+        "vp": 5.794184671
+    },
+    {
+        "voter": "0x5d9957656635f75FAD49B9fcCdada5087B41eF4B",
+        "choice": 1,
+        "vp": 16.091561008
+    },
+    {
+        "voter": "0x017120d0988a5173A6363d07f5409dF2FeaBB237",
+        "choice": 1,
+        "vp": 8875.317634487
+    },
+    {
+        "voter": "0xf3e1f38F4Ca5DF69005DF7591F5e02bd7cB5Ab50",
+        "choice": 1,
+        "vp": 90.619073211
+    },
+    {
+        "voter": "0x6CE3aC74ef6AbFC13d811bdC6A2B7A6454cE0d07",
+        "choice": 1,
+        "vp": 1180.276288202
+    },
+    {
+        "voter": "0xb40D41f08afCdB00607039bb0aE52093b8331360",
+        "choice": 1,
+        "vp": 390.83517350100004
+    },
+    {
+        "voter": "0x00d66B10FeAaB8A083276670aE01d32191a749e8",
+        "choice": 1,
+        "vp": 7.158906507
+    },
+    {
+        "voter": "0x702F62d802677075a863f2377D68Fc66d426E7E9",
+        "choice": 1,
+        "vp": 4.3e-8
+    },
+    {
+        "voter": "0x6957922b474114f9267Db30dCFd0a8FEb76dd9c7",
+        "choice": 1,
+        "vp": 29.120031887
+    },
+    {
+        "voter": "0x2aC8A2cFe9346b526BAD1CbB877f278567bf1802",
+        "choice": 1,
+        "vp": 367.09843344200004
+    },
+    {
+        "voter": "0x7EAe894cDA5427e782886E084078a64fB1f4e953",
+        "choice": 1,
+        "vp": 3.849414721
+    },
+    {
+        "voter": "0xee07aA9fc6C41e0597eEF572Cb5D1246f1804eE8",
+        "choice": 1,
+        "vp": 4.954197611000001
+    },
+    {
+        "voter": "0xA132fE9bC55177a333e3D291970285D19Ad125B2",
+        "choice": 1,
+        "vp": 14.994689723
+    },
+    {
+        "voter": "0x699632eE1a149aBa6Aa7cBa19fDcF4FfBd6074E4",
+        "choice": 1,
+        "vp": 18.424756925
+    },
+    {
+        "voter": "0x31d3243CfB54B34Fc9C73e1CB1137124bD6B13E1",
+        "choice": 1,
+        "vp": 116967.61267405
+    },
+    {
+        "voter": "0x16cD276718c9ff6CaF861757C0100839f24b1B0F",
+        "choice": 1,
+        "vp": 274.10616055400004
+    },
+    {
+        "voter": "0xaB0e2AaDa1C0a0b126A9a002f77ebb3D99B45eCB",
+        "choice": 1,
+        "vp": 15.061932553
+    },
+    {
+        "voter": "0xC378BC1b718E8b49ED9E6665Ce978291bf67b6b3",
+        "choice": 1,
+        "vp": 39.936663004
+    },
+    {
+        "voter": "0x1b0E5d9A1103a94747AD5f1742aD570813B27d82",
+        "choice": 1,
+        "vp": 56.413344785
+    },
+    {
+        "voter": "0xFd684835a694572cFc4BF242A5AB9dD8b0ecCD84",
+        "choice": 1,
+        "vp": 4.811964267
+    },
+    {
+        "voter": "0xF0bD7d256CE73b930F4B6cD4D7529c60f0d3a186",
+        "choice": 1,
+        "vp": 1085.111174535
+    },
+    {
+        "voter": "0x2f9d7b5aC943Af78FCFce74FaD17b5dBbf3cFAcE",
+        "choice": 1,
+        "vp": 127.938033509
+    },
+    {
+        "voter": "0x358DB4A8D84278F0Ece92407285fa7Fc2ffC6af1",
+        "choice": 1,
+        "vp": 174.456770284
+    },
+    {
+        "voter": "0x062846531F0E6f4BB450004CF64b7e4E256F2b77",
+        "choice": 1,
+        "vp": 3.136097813
+    },
+    {
+        "voter": "0xA3A06760A8f4bf226E096a1F6D6FC6C507EA5d6e",
+        "choice": 1,
+        "vp": 1057.610175317
+    },
+    {
+        "voter": "0xdC4f0e1c52Da6Bfc39b0401a5E2099c9F78EA1B5",
+        "choice": 1,
+        "vp": 882.801233038
+    },
+    {
+        "voter": "0x7D3c7C27A37D9516a7c04A42A05FDE2E199234F0",
+        "choice": 1,
+        "vp": 247.614841185
+    },
+    {
+        "voter": "0x3300f45D3F0e27c84FF06b3dd962A23600c311E2",
+        "choice": 1,
+        "vp": 62.064031050000004
+    },
+    {
+        "voter": "0x6Ab2fDb75aE385F4178F693E670E61D271084443",
+        "choice": 1,
+        "vp": 3.7e-8
+    },
+    {
+        "voter": "0xd41fF14b10363D6Ed67d2549968aDDb6e939BC43",
+        "choice": 1,
+        "vp": 122.059143023
+    },
+    {
+        "voter": "0xe8525d1eFA11aEd37342E3454D5b8095Ba4F303E",
+        "choice": 1,
+        "vp": 134.139950677
+    },
+    {
+        "voter": "0xBf55C4B6B5ef26Db57ce78Ee3aDcC87164222B31",
+        "choice": 1,
+        "vp": 2.756297703
+    },
+    {
+        "voter": "0xCe3012dD6159C99CbfEbB28D35dA22689D1Bba96",
+        "choice": 1,
+        "vp": 35.980066611
+    },
+    {
+        "voter": "0x844B2Fbd56a15CE362d8bA179e188BeEDC13c9Ba",
+        "choice": 1,
+        "vp": 340.03402125900004
+    },
+    {
+        "voter": "0xD9365FC15dE4cC82C201f3756c80e941F5e1D024",
+        "choice": 1,
+        "vp": 32.35120108
+    },
+    {
+        "voter": "0x5F4275EAe48Aec39a1d50874E91943a6c3663FDF",
+        "choice": 1,
+        "vp": 506.155430614
+    },
+    {
+        "voter": "0x94d6630862ed1D35CCB7859DfF2F2b21b3828994",
+        "choice": 1,
+        "vp": 571.380203038
+    },
+    {
+        "voter": "0x64214136921E766853c1BA36f5228F86B14B390f",
+        "choice": 1,
+        "vp": 288.773255122
+    },
+    {
+        "voter": "0x983F1eC831F8Ef2FA18343DD19bf8fC4ad85968A",
+        "choice": 1,
+        "vp": 764.903563498
+    },
+    {
+        "voter": "0x7981F14B0dFb905fEA71732B353E178b360fA5c5",
+        "choice": 1,
+        "vp": 74.379493849
+    },
+    {
+        "voter": "0x68f5DA4A7027705590220143AE1073877076ffF5",
+        "choice": 1,
+        "vp": 184.027536808
+    },
+    {
+        "voter": "0x74989B57875671bc61f0fEEb71D0C1b5BF2e7296",
+        "choice": 1,
+        "vp": 99.659156962
+    },
+    {
+        "voter": "0x4673a4A2b1d37446A9f83749642db92681f933E0",
+        "choice": 1,
+        "vp": 9.940968078
+    },
+    {
+        "voter": "0xDE0111062adEfbD8875639797A3cD80cFD3959ad",
+        "choice": 1,
+        "vp": 146.348289882
+    },
+    {
+        "voter": "0x6F3c31177f82630a24343acCa2dbA2a8e96dCB5D",
+        "choice": 1,
+        "vp": 64.990046238
+    },
+    {
+        "voter": "0x4a365Ffd30E9a5A369684f4e958D975d51892a4E",
+        "choice": 1,
+        "vp": 202.791629187
+    },
+    {
+        "voter": "0x734cd91a054777704F4e9CB45EDc5DE53E1F831B",
+        "choice": 1,
+        "vp": 10.871876333
+    },
+    {
+        "voter": "0x3dB2B68f3eB3b6CB2DFBC95E7aA71F8C0d52025A",
+        "choice": 1,
+        "vp": 173.043055512
+    },
+    {
+        "voter": "0x5A5eE1823000Cde5373E5e0896858E6B5a190cB6",
+        "choice": 1,
+        "vp": 11.534560828
+    },
+    {
+        "voter": "0x2caDcA57D7BB4FA6351c2c24D41f86De6a742d7F",
+        "choice": 1,
+        "vp": 173.928740968
+    },
+    {
+        "voter": "0x42611aeE7e40AfE99390e6aAc12779fB18DDCe60",
+        "choice": 1,
+        "vp": 56.406720162
+    },
+    {
+        "voter": "0x6e9D4a60CC981be5780440d659Cd431a6E6d790a",
+        "choice": 1,
+        "vp": 6.550430013000001
+    },
+    {
+        "voter": "0x684C40a9E5fC750184cC491738d70397af59BA41",
+        "choice": 1,
+        "vp": 4.7516556759999995
+    },
+    {
+        "voter": "0xad3E90D9d4D0ADC06B7DC07C865AFda57EB5f000",
+        "choice": 1,
+        "vp": 41.983678697
+    },
+    {
+        "voter": "0xc8FF5Eff61F00bd230F829F64f479d6938f7DE65",
+        "choice": 1,
+        "vp": 25.475278806
+    },
+    {
+        "voter": "0x3AcC85F18eCB556451c83E551AD526Ff6A48ba4D",
+        "choice": 1,
+        "vp": 6050.526735443
+    },
+    {
+        "voter": "0x6056CeBe5ACF36eC20BDfD6Cb0574b6AE7b5cab0",
+        "choice": 1,
+        "vp": 16.149523764
+    },
+    {
+        "voter": "0x122d4c88CdAbdc3F51020Ff3E672b2c76aF258BE",
+        "choice": 1,
+        "vp": 27.857732776
+    },
+    {
+        "voter": "0x8e740D8004A7F1A94F5DF86070B053F390C57774",
+        "choice": 1,
+        "vp": 19.534842147
+    },
+    {
+        "voter": "0xD0BbfbC4A86B03acA837132D1063d16651E3021B",
+        "choice": 1,
+        "vp": 3.438120828
+    },
+    {
+        "voter": "0x46a929E95C585E23d411B452cA14568da143901B",
+        "choice": 1,
+        "vp": 1700.25163979
+    },
+    {
+        "voter": "0xE00B841251B8D8f0F78AB5Ccd541F3773b8389db",
+        "choice": 1,
+        "vp": 11.644878351
+    },
+    {
+        "voter": "0xA1165F895e35012E5b8Bc6BF8c8078DABc735064",
+        "choice": 1,
+        "vp": 8.046099426
+    },
+    {
+        "voter": "0xa1c3406b44Be4d5fA70a889bb122D8b97dB06Bc3",
+        "choice": 1,
+        "vp": 7.124610433999999
+    },
+    {
+        "voter": "0x8b8A110B12DeAfBA69a11813346D7c983849B21f",
+        "choice": 1,
+        "vp": 117.71572335
+    },
+    {
+        "voter": "0xD76508a7faEbA902ea8CbbE04ef4F785bcB9ed2c",
+        "choice": 1,
+        "vp": 251.131887011
+    },
+    {
+        "voter": "0x5629546cF92beee31C2a88BCEf2532b38A329A74",
+        "choice": 1,
+        "vp": 734.942123453
+    },
+    {
+        "voter": "0xf4B76986b7f8F9f83D8162E34108b4e35B176A12",
+        "choice": 1,
+        "vp": 57.889835089
+    },
+    {
+        "voter": "0x8fd2E667e6B730Db710e7a3A929091988AA3bbbE",
+        "choice": 1,
+        "vp": 781.9353805840001
+    },
+    {
+        "voter": "0x91e501E0586ABBFA708b2922EBF89c3321c43776",
+        "choice": 1,
+        "vp": 233.935225359
+    },
+    {
+        "voter": "0x4fe5Fb600C143DA0C65EE12a2F01fD2c19922a3f",
+        "choice": 1,
+        "vp": 182.340089519
+    },
+    {
+        "voter": "0xe09668F8C5FFb05d894808f487A3336D23894B18",
+        "choice": 1,
+        "vp": 133.464500611
+    },
+    {
+        "voter": "0x631088Af5A770Bee50FFA7dd5DC18994616DC1fF",
+        "choice": 1,
+        "vp": 26.140972654000002
+    },
+    {
+        "voter": "0xEfa7Dd48C2C141cc5044090b87f099986bC02f55",
+        "choice": 1,
+        "vp": 2e-8
+    },
+    {
+        "voter": "0x4452b58D2FDB19dc757085ef6200a5fF549FBdA9",
+        "choice": 1,
+        "vp": 12.683309011
+    },
+    {
+        "voter": "0x2eB17fA1eBDFa38e17b98f8336c0BbeE57AA96e0",
+        "choice": 1,
+        "vp": 22.726930003
+    },
+    {
+        "voter": "0xa95771Fd7c69D51d1A3d30Bf8bd25299e9783DFb",
+        "choice": 1,
+        "vp": 39.90869048
+    },
+    {
+        "voter": "0x50883d3922ad9959bB6772bf0bB6971fD244b8f4",
+        "choice": 1,
+        "vp": 11.801162446000001
+    },
+    {
+        "voter": "0xe13718825C1a06B469cfB82df58Cc34069f8c1Cd",
+        "choice": 1,
+        "vp": 28.886677957
+    },
+    {
+        "voter": "0x6B1DcE5929095cCcd8fCa7EaAfd1Bd63bb1FEcc4",
+        "choice": 1,
+        "vp": 36.978107896
+    },
+    {
+        "voter": "0x443E5f662b60b02cb09853F609A2964C1d234601",
+        "choice": 1,
+        "vp": 31.728791104
+    },
+    {
+        "voter": "0x3F96374d23e5Fc6554C3Ae30787e609474Bf972B",
+        "choice": 1,
+        "vp": 138.800934793
+    },
+    {
+        "voter": "0x8cC5Af0Ce709250E0382802774D1A51E0d68d898",
+        "choice": 1,
+        "vp": 5.6641395459999995
+    },
+    {
+        "voter": "0x48FD601227c2c814aA1D1F1A9C933866d10A5110",
+        "choice": 1,
+        "vp": 217.04397234400003
+    },
+    {
+        "voter": "0x37b0Ca1b7930846b3091376D4B9B174e652eA9E6",
+        "choice": 1,
+        "vp": 45.684322474
+    },
+    {
+        "voter": "0x39f70B5C3E20F685a407FFAa46BF105508df90Bf",
+        "choice": 1,
+        "vp": 15.295280746
+    },
+    {
+        "voter": "0xeE50CA8EE222a6064F2dA06f460b0489FEB12462",
+        "choice": 1,
+        "vp": 14.167360363
+    },
+    {
+        "voter": "0x4CD202065e25aE7dEb768D1E85739459e6e1AF68",
+        "choice": 1,
+        "vp": 2924.1903168569997
+    },
+    {
+        "voter": "0xa2b0FdB0FdbEE4b9d28291a702ED4eFF5E1a24E3",
+        "choice": 1,
+        "vp": 123.46553678699999
+    },
+    {
+        "voter": "0xBdabC72d98723927C69229B832f1D4e1DdaFeb48",
+        "choice": 1,
+        "vp": 180.212368993
+    },
+    {
+        "voter": "0x355b5Fd00ba411be7F7Bc0f0c1D3b94eAD220F27",
+        "choice": 1,
+        "vp": 21.830086812999998
+    },
+    {
+        "voter": "0xD257Ae96e8c512A9946A46970717c96d0b7eEf1F",
+        "choice": 1,
+        "vp": 42.647851809
+    },
+    {
+        "voter": "0x9D6DA97adcBe09a1D3fE034cB3B784b2cD48b911",
+        "choice": 1,
+        "vp": 18.976618396000003
+    },
+    {
+        "voter": "0x5dFCfcDd8382F9b1A73aD178F410DCa3fa941e11",
+        "choice": 1,
+        "vp": 204.945684362
+    },
+    {
+        "voter": "0x666157801Ad62173AdA38c63A290836BD40f5b49",
+        "choice": 1,
+        "vp": 78.792258281
+    },
+    {
+        "voter": "0x9066A8d82931212dBBEcBA49a604ED7053b50AEB",
+        "choice": 1,
+        "vp": 45.930731355
+    },
+    {
+        "voter": "0xb36134A88c613758bb0E85F719F297d98778a76a",
+        "choice": 1,
+        "vp": 31.518092055
+    },
+    {
+        "voter": "0xeCFDA832a5B30396222CF807c9B75949ea089d03",
+        "choice": 1,
+        "vp": 4.265237085
+    },
+    {
+        "voter": "0xf02A3532eb211d563adE7648a609029B2a74947a",
+        "choice": 1,
+        "vp": 626.41650821
+    },
+    {
+        "voter": "0xD5f240d2Cf0ac01A293828F53532d86bEe148F4a",
+        "choice": 1,
+        "vp": 106.481345862
+    },
+    {
+        "voter": "0x254940A616D65e32c7d0c8f338dEe0A89c4a9164",
+        "choice": 1,
+        "vp": 7e-8
+    },
+    {
+        "voter": "0xcdc7258425B5eac03c0A9B38d62D29429E049618",
+        "choice": 1,
+        "vp": 36.876272889999996
+    },
+    {
+        "voter": "0xC58B6919781F413730a08b0C2f709bB8d10D74B0",
+        "choice": 1,
+        "vp": 876.419926358
+    },
+    {
+        "voter": "0x8c836807216AC349a7314Acc63D58068f53e5815",
+        "choice": 1,
+        "vp": 6.292805195
+    },
+    {
+        "voter": "0xCc337D1E04A14d9Bd98d682a11477871e2b88A1F",
+        "choice": 1,
+        "vp": 39.591559979
+    },
+    {
+        "voter": "0x44A020d4F1e35568a05a857F745B43bBb8532c35",
+        "choice": 1,
+        "vp": 16.763810595
+    },
+    {
+        "voter": "0x2c0367432a7D878F6c476466AE1c9F3E69cb5ddB",
+        "choice": 1,
+        "vp": 10.484548233
+    },
+    {
+        "voter": "0x4A93C3C014DA94070dF96352d3E6795E0b682022",
+        "choice": 1,
+        "vp": 25.896594308
+    },
+    {
+        "voter": "0xfAAe353E81867f2820077869257BE156b515E846",
+        "choice": 1,
+        "vp": 182.59481609399998
+    },
+    {
+        "voter": "0x957b3508a3Bb20F54ac0F510509C95225247a480",
+        "choice": 1,
+        "vp": 564.996054468
+    },
+    {
+        "voter": "0x90CF2C754E8624c067CE1aCeB9Be487818626130",
+        "choice": 1,
+        "vp": 295.581746654
+    },
+    {
+        "voter": "0xf22c1D7910E810a1Afd9A581cd7D7B437F63DE07",
+        "choice": 1,
+        "vp": 79.29955548000001
+    },
+    {
+        "voter": "0xA75c7b8Ca1FB70A0D494254A37be8aEF86919aE4",
+        "choice": 1,
+        "vp": 459.48756530500003
+    },
+    {
+        "voter": "0x81Ea561BF49026690eE4Cc32CD2290B443CcD221",
+        "choice": 1,
+        "vp": 3.814464845
+    },
+    {
+        "voter": "0xB2B838a97b6a19C280a7D32ba93046CaEcdCE2e5",
+        "choice": 1,
+        "vp": 442.279941519
+    },
+    {
+        "voter": "0xbF1b6C130D544d532d43d8D12098544D54BdC521",
+        "choice": 1,
+        "vp": 5.973016067
+    },
+    {
+        "voter": "0xc4536F31283dE587c83Dc859aDddF439E49A4D81",
+        "choice": 1,
+        "vp": 4.157548124
+    },
+    {
+        "voter": "0x89d2b3C851331E6417eD8B56b6879bec93DE9e0e",
+        "choice": 1,
+        "vp": 10.244953636999998
+    },
+    {
+        "voter": "0x3afEf7D6F53cC6D916dc4D344282b38210012F08",
+        "choice": 1,
+        "vp": 2.436637807
+    },
+    {
+        "voter": "0x6677E59cD32E723631ced18dc354dF306dc775D9",
+        "choice": 1,
+        "vp": 0.000002169
+    },
+    {
+        "voter": "0x0f62103d3d24B1cd262414463B90C8C75b7aA3C0",
+        "choice": 1,
+        "vp": 1915.163729996
+    },
+    {
+        "voter": "0xDF1FAa66F7F53E79184daC97bb5243CfB0A1F2AA",
+        "choice": 1,
+        "vp": 123.93153063700001
+    },
+    {
+        "voter": "0x97f10F0A7Bac3d7fDc8A25d61b9Dbb37bda2bBDb",
+        "choice": 1,
+        "vp": 222.461038062
+    },
+    {
+        "voter": "0x96b1dD68e81d55DE4FE6Aba5942a3A17b251e170",
+        "choice": 1,
+        "vp": 84.97039928699999
+    },
+    {
+        "voter": "0x964215A3FaA0aCf1AF0921a86906244790178fDF",
+        "choice": 1,
+        "vp": 114.179068327
+    },
+    {
+        "voter": "0x4C0aa6B353C9d2d295ccbFa1DFb278F6707a5C2E",
+        "choice": 1,
+        "vp": 40.663852457
+    },
+    {
+        "voter": "0xB5836ab781A69a4b177d4FE2C3aDc46Cd864e69F",
+        "choice": 1,
+        "vp": 5.478845901
+    },
+    {
+        "voter": "0x873ec2be02AfF5A8a2cf8082277414E4bE4573fB",
+        "choice": 1,
+        "vp": 3.653733288
+    },
+    {
+        "voter": "0xF232F353A6CE3f053A4Ab7Fea778BcE460ef45a0",
+        "choice": 1,
+        "vp": 108.409955523
+    },
+    {
+        "voter": "0x0E61A8fb14f6AC999646212D30b2192cd02080Dd",
+        "choice": 1,
+        "vp": 3509.592649776
+    },
+    {
+        "voter": "0x42773861D9Aae5D3C072d3E305012714EC19a656",
+        "choice": 1,
+        "vp": 15.991541007999999
+    },
+    {
+        "voter": "0x856f9c25Bd603bcd59b256D6d9aEbb16DdA0C7f8",
+        "choice": 1,
+        "vp": 24.949279507
+    },
+    {
+        "voter": "0x948C6fc0044daE56F3f1e9C997723f6015b3057D",
+        "choice": 1,
+        "vp": 24.734866710000002
+    },
+    {
+        "voter": "0xAe74399237E02458aa42283e7c3ef2929AD4896C",
+        "choice": 1,
+        "vp": 4.9e-8
+    },
+    {
+        "voter": "0x3E39C3ee6e169690d890da48Fe6e58e861115696",
+        "choice": 1,
+        "vp": 1.541368082
+    },
+    {
+        "voter": "0xAB322d84b86F44FeEfd717296c93831b8480BAaB",
+        "choice": 1,
+        "vp": 997.261841922
+    },
+    {
+        "voter": "0x74386038cB18533c25E0Ba9f729341E161d03e2d",
+        "choice": 1,
+        "vp": 125.088359795
+    },
+    {
+        "voter": "0x8B5f3B2b7D31c158C28346971b78dAE7e918Db2C",
+        "choice": 1,
+        "vp": 44.193425981
+    },
+    {
+        "voter": "0x5f6492fcD2Ed455B73c272dB3737440CABa0AA9f",
+        "choice": 1,
+        "vp": 346.466037463
+    },
+    {
+        "voter": "0x3980B1a545947bC4Bf6C07215C5e4e71F9173eE8",
+        "choice": 1,
+        "vp": 53.726742675
+    },
+    {
+        "voter": "0x946519ee259070390106653c703Fe12A098066F9",
+        "choice": 1,
+        "vp": 8.168126878
+    },
+    {
+        "voter": "0xc5136f3c8aCf6dAa44ec6e0B183d33A4CdfBAc68",
+        "choice": 1,
+        "vp": 49.340331926000005
+    },
+    {
+        "voter": "0xa9f152266b618Ae2629F356F7185b660C3Eb889A",
+        "choice": 1,
+        "vp": 1.654302
+    },
+    {
+        "voter": "0xbD65E3E2D82430Ff414685cd5b4DdaDFdC8b0686",
+        "choice": 1,
+        "vp": 10.378268938
+    },
+    {
+        "voter": "0x994B5C8B30766EaCe220B76f8C1DE27849f05aB3",
+        "choice": 1,
+        "vp": 16.235224591999998
+    },
+    {
+        "voter": "0xD978AfA8452998F75228DDAdd4b2496763e059A9",
+        "choice": 1,
+        "vp": 377.222797796
+    },
+    {
+        "voter": "0x030bB8Cf8971b4c15ccEDBFd6179EA4D51420499",
+        "choice": 1,
+        "vp": 101.672699913
+    },
+    {
+        "voter": "0xF09408A6916baf94f7E26aB41082D4D660A8fD54",
+        "choice": 1,
+        "vp": 101.883190143
+    },
+    {
+        "voter": "0xd9BACCC97eCF722215845cB1Bc6C0750Dd977028",
+        "choice": 1,
+        "vp": 20339.941229595
+    },
+    {
+        "voter": "0xDa0B98998687e8177f942A25D41494a501ce375A",
+        "choice": 1,
+        "vp": 609.973433234
+    },
+    {
+        "voter": "0x247B558d1dec785d58669eA0dc146B72Bd29FfD0",
+        "choice": 1,
+        "vp": 65.236293552
+    },
+    {
+        "voter": "0x4e65175f05B4140a0747c29cce997CD4BB7190d4",
+        "choice": 1,
+        "vp": 8534.065569294
+    },
+    {
+        "voter": "0x2376244875b562b7d419bdAc609580D63eB15753",
+        "choice": 1,
+        "vp": 870.523892509
+    },
+    {
+        "voter": "0x4be373d2F4855F3a92CFC6CFCe5CB711727106F3",
+        "choice": 1,
+        "vp": 189.88665767199998
+    },
+    {
+        "voter": "0x0EcC147C681e135a9fb3B9C6544eb123900d5afB",
+        "choice": 1,
+        "vp": 93.62168920399999
+    },
+    {
+        "voter": "0xa765D6C83D6297cce6A423Cb624e5c124007a7Eb",
+        "choice": 1,
+        "vp": 546.815619319
+    },
+    {
+        "voter": "0x52a5EAe41306216cA37E01FcB9448e24C7300324",
+        "choice": 1,
+        "vp": 529.576109153
+    },
+    {
+        "voter": "0x9B06C6d09fA565c9C41a4d002A33286021843287",
+        "choice": 1,
+        "vp": 88.060544405
+    },
+    {
+        "voter": "0xaCe375ECeDC6E1D00b32597B7a019FA5C8Fe67b7",
+        "choice": 1,
+        "vp": 140.512694959
+    },
+    {
+        "voter": "0xc8Efdd03c136F1Ac970b1dC81e1cc43D3E439C62",
+        "choice": 1,
+        "vp": 3.526611957
+    },
+    {
+        "voter": "0xD665E6D172Ea2B58E605b20a3ea9a22e0c2b2A6f",
+        "choice": 1,
+        "vp": 94.52324238
+    },
+    {
+        "voter": "0xA4f7Dcb17A2281461951067438BE354676E63E20",
+        "choice": 1,
+        "vp": 783.053329586
+    },
+    {
+        "voter": "0x19dEAD03929743C097016fB3D2c24924d842e6ed",
+        "choice": 1,
+        "vp": 214.190107681
+    },
+    {
+        "voter": "0xDdE568314f79caA5E573d715465A38605969e3Db",
+        "choice": 1,
+        "vp": 73.563851463
+    },
+    {
+        "voter": "0xfC5911bba72C2bFe0C8c2752C11a51F5ab92aaEc",
+        "choice": 1,
+        "vp": 4.912639745
+    },
+    {
+        "voter": "0x779e6a5FB733a0b7F27d35c1DCC337175d5FdB8e",
+        "choice": 1,
+        "vp": 24.272501148
+    },
+    {
+        "voter": "0xC7Bf8567C5FD0e763a0FC1c94106D1C878E91301",
+        "choice": 1,
+        "vp": 59.139431428
+    },
+    {
+        "voter": "0xB6F6bE9B684F5Cc39b562E94465A6689b561C0f0",
+        "choice": 1,
+        "vp": 520.546299847
+    },
+    {
+        "voter": "0x13feA212DC82D175bC4043274eA86e20f9bb6c2c",
+        "choice": 1,
+        "vp": 22.439600345
+    },
+    {
+        "voter": "0xb59b64F7b5A7AAEC61917642c25274B3c70D71F6",
+        "choice": 1,
+        "vp": 23.728390595
+    },
+    {
+        "voter": "0xcA95A1b414D7a1B1C59AfAb0Fa1f558e752226E7",
+        "choice": 1,
+        "vp": 2519.971600164
+    },
+    {
+        "voter": "0x7a3ea2400d71857c2B9A4aB9083c3cBE920fbB39",
+        "choice": 1,
+        "vp": 9.834416612
+    },
+    {
+        "voter": "0xfBb2F08812E7EB7d92e541A7fa0de770128Ccdc9",
+        "choice": 1,
+        "vp": 224.047180112
+    },
+    {
+        "voter": "0x4C0f9958Acad2b88562F32da08cdcaA148831cFe",
+        "choice": 1,
+        "vp": 2520.604580632
+    },
+    {
+        "voter": "0xfaEA76b5CDc3ca65F7B1ce4f933fe7647310749B",
+        "choice": 1,
+        "vp": 119.754848839
+    },
+    {
+        "voter": "0x36b91b318De313D94CFa28683Cbd7A705Ab703Ab",
+        "choice": 1,
+        "vp": 69.438757398
+    },
+    {
+        "voter": "0x0D7A608359dcb6C51873eD00ad9FF1E56fcA1Ae5",
+        "choice": 1,
+        "vp": 98.935992076
+    },
+    {
+        "voter": "0x50cB4945da8cc2C0284FF7Cb21613bC7884Dd358",
+        "choice": 1,
+        "vp": 93.018153411
+    },
+    {
+        "voter": "0x1ab534E82d89Af69B8b6e27696D1535768f65a51",
+        "choice": 1,
+        "vp": 119.317353893
+    },
+    {
+        "voter": "0xB58b6C32Ca09521A97C8AE5ebEB34a94Eed7c737",
+        "choice": 1,
+        "vp": 3622.266747231
+    },
+    {
+        "voter": "0x27ec5142cF252B3C28B1DFA6f8fE31013C0697e1",
+        "choice": 1,
+        "vp": 98.31794565099999
+    },
+    {
+        "voter": "0x39eb4F157863d7F186Ce74A94DCA309544398dcd",
+        "choice": 1,
+        "vp": 171.16497010799998
+    },
+    {
+        "voter": "0x00E74dF09273E860f7ee9930945Aa84AB91B2e62",
+        "choice": 1,
+        "vp": 282.581835551
+    },
+    {
+        "voter": "0xCCE0AD9770A201e42076AABd0b839BC5A92Fe6d5",
+        "choice": 1,
+        "vp": 67.933995782
+    },
+    {
+        "voter": "0x5570CB2c9c246025E22A0e21c60c3E5FEec76810",
+        "choice": 1,
+        "vp": 2333.5033544850003
+    },
+    {
+        "voter": "0x2D55bb7Aaa79d5f2AcF7a5da5A670f491Aef2ef6",
+        "choice": 1,
+        "vp": 38.499919645
+    },
+    {
+        "voter": "0xfa94a4D7EE78b47A5B7Ebc94f7EF45657ED9afdf",
+        "choice": 1,
+        "vp": 40.968430568
+    },
+    {
+        "voter": "0xDB32CF55306A78E32C825729BDf8E917bd328725",
+        "choice": 1,
+        "vp": 12671.494076542
+    },
+    {
+        "voter": "0xd6353a439CeA61fD91D734d43A16B84c0A7DA0B3",
+        "choice": 1,
+        "vp": 28.118856161
+    },
+    {
+        "voter": "0xED5100bcaf87F4D86A860DbAF54d0B8011ee7e29",
+        "choice": 1,
+        "vp": 8e-9
+    },
+    {
+        "voter": "0xaE57f89E5Ed057d697e03Dd1921ecBf60943d2b7",
+        "choice": 1,
+        "vp": 15.042081176
+    },
+    {
+        "voter": "0x76f3937d1c824a21C151207130dcD73Aa17A6d93",
+        "choice": 1,
+        "vp": 15.917781972999999
+    },
+    {
+        "voter": "0x5990BA7405eBA8768527f3E9aE6AB45d28048000",
+        "choice": 1,
+        "vp": 1.64054407
+    },
+    {
+        "voter": "0x971D31FAc367fb1E9adC05386ba76A2cEBAfda64",
+        "choice": 1,
+        "vp": 21.78870882
+    },
+    {
+        "voter": "0xefbadd96f91A38e46341bF76cC6c7529E167Fb95",
+        "choice": 1,
+        "vp": 69.11643256999999
+    },
+    {
+        "voter": "0x6d14e9dDaFf7d10606D7A0deFf195bd5713Ed384",
+        "choice": 1,
+        "vp": 39.049360138
+    },
+    {
+        "voter": "0x576203053d274ac3389a130EB9b056686a4D0C87",
+        "choice": 1,
+        "vp": 5.389509953
+    },
+    {
+        "voter": "0xB4cC2340761d5485397973ba07c51368Be6AdCc6",
+        "choice": 1,
+        "vp": 59.063453592
+    },
+    {
+        "voter": "0xfEB1494d14D94414B22713440072a6B73B728127",
+        "choice": 1,
+        "vp": 31.849195623
+    },
+    {
+        "voter": "0x8Fb31ab67D6C4a46bcc472605A7BEcCa58528A0D",
+        "choice": 1,
+        "vp": 51.616755984
+    },
+    {
+        "voter": "0x3aE00970EBbc956131D0df539713B983c6289271",
+        "choice": 1,
+        "vp": 17.471092357
+    },
+    {
+        "voter": "0x33CB26aaE927e0127Db41D4D57bfFadcc3BdB039",
+        "choice": 1,
+        "vp": 20.560809028999998
+    },
+    {
+        "voter": "0x5417A03667AbB6A059b3F174c1F67b1E83753046",
+        "choice": 1,
+        "vp": 370.36264960700004
+    },
+    {
+        "voter": "0x5Ae7131E17878CBeABb51B50D7c879865aD7Fa8C",
+        "choice": 1,
+        "vp": 117.43421028
+    },
+    {
+        "voter": "0xf76E37997ea93ed09092B285c7381CBAF8aCCb78",
+        "choice": 1,
+        "vp": 175.572724721
+    },
+    {
+        "voter": "0xAB35672080f71Cf3E49ad17E5a9AAB5088789178",
+        "choice": 1,
+        "vp": 120.324158298
+    },
+    {
+        "voter": "0x1AA5979Afac13E73B760492352a95F116Dcda8c5",
+        "choice": 1,
+        "vp": 52.536193143999995
+    },
+    {
+        "voter": "0xa597f2161e1Ad3E33bBff156aaEB3a2a06da3e91",
+        "choice": 1,
+        "vp": 5382.4003050970005
+    },
+    {
+        "voter": "0xee65A4167Fb54cE521E2e765dB8AB216F8BCF2E3",
+        "choice": 1,
+        "vp": 1.341549877
+    },
+    {
+        "voter": "0x01025C127DD3e2f39C897772cd58CeC79c92D479",
+        "choice": 1,
+        "vp": 248.128758229
+    },
+    {
+        "voter": "0x42513625D794E9E5E9b62F00e68Da9D522acF262",
+        "choice": 1,
+        "vp": 688.676652035
+    },
+    {
+        "voter": "0xbA88D5D43193262c41960ED017BBC1395d5154cf",
+        "choice": 1,
+        "vp": 141.043732067
+    },
+    {
+        "voter": "0xEBd9f0A80131D37882aCCD5a0d77B6176454B241",
+        "choice": 1,
+        "vp": 546.000277782
+    },
+    {
+        "voter": "0xe8038a0759bcDd09507524bB469df4345b8A2bBb",
+        "choice": 1,
+        "vp": 43.986582484
+    },
+    {
+        "voter": "0xBF372CF5f7411c4A03a10C429B34D25E6c7EF671",
+        "choice": 1,
+        "vp": 152.057896476
+    },
+    {
+        "voter": "0xF7A4289245b783B75199F027eAC382fc867A29fb",
+        "choice": 1,
+        "vp": 57.057167285
+    },
+    {
+        "voter": "0x1fFC3ee2ab18709a0644dAdAdD4D17BBAd8860b5",
+        "choice": 1,
+        "vp": 153.64495804199998
+    },
+    {
+        "voter": "0x6313087c15f27Db2140922a5bee9100c24E278CD",
+        "choice": 1,
+        "vp": 1545.57643491
+    },
+    {
+        "voter": "0x6dD3Ff279881E4EecAd2beAEf3B6Bc79d8BF5c42",
+        "choice": 1,
+        "vp": 31.227836337
+    },
+    {
+        "voter": "0xda0bC3Fb94975E0F802949E83Cf9542A3585cf3C",
+        "choice": 1,
+        "vp": 46.708744572
+    },
+    {
+        "voter": "0x643377b3665813ED6049A7bB46FD7CBe5F95E70B",
+        "choice": 1,
+        "vp": 9.778641385
+    },
+    {
+        "voter": "0x6D5F159a9B8629Ad2b9727D9cCcb4dE429EB5101",
+        "choice": 1,
+        "vp": 32.708439985
+    },
+    {
+        "voter": "0x3d3fEC47fEA237819660acA06c3C9066eeF5E2DA",
+        "choice": 1,
+        "vp": 445.672022395
+    },
+    {
+        "voter": "0x9E93812dBE6be5217D989C93F171A825fD182Ce3",
+        "choice": 1,
+        "vp": 19.970693905
+    },
+    {
+        "voter": "0x8Ed90B430512024A14fD2065410e669101dcD047",
+        "choice": 1,
+        "vp": 127.145117577
+    },
+    {
+        "voter": "0x4aFccC4A6B69587D46d6f508256b4E6Fb6A6C85E",
+        "choice": 1,
+        "vp": 30.214729073999997
+    },
+    {
+        "voter": "0x740d2C22f305b0666fC6C74dC82B3b51d32c2648",
+        "choice": 1,
+        "vp": 171.562208364
+    },
+    {
+        "voter": "0x89961868bd833cB44947dB6eA3AA0B004894E55A",
+        "choice": 1,
+        "vp": 65.809726375
+    },
+    {
+        "voter": "0xe64D594bAac7eF3eAF5E9510047d86AFbbEdaB1B",
+        "choice": 1,
+        "vp": 135.74481944500002
+    },
+    {
+        "voter": "0x4C8699e9da119516b8b2A7a5438EB9db21540c76",
+        "choice": 1,
+        "vp": 182.695456261
+    },
+    {
+        "voter": "0x7F881f0c62476A30001D69FE8bAc7De5C3684558",
+        "choice": 1,
+        "vp": 128.466717538
+    },
+    {
+        "voter": "0x08DD453014C0d0ADeEcAe12F41B61d2350F6462b",
+        "choice": 1,
+        "vp": 7.942564616
+    },
+    {
+        "voter": "0xe4032633726549C64988CeB9A9F5333A4666a960",
+        "choice": 1,
+        "vp": 2424.8418611149996
+    },
+    {
+        "voter": "0x04515b0Ca8222c4B99d9f99BAd022132Fb5Ee07C",
+        "choice": 1,
+        "vp": 10.634287163
+    },
+    {
+        "voter": "0x574A13F5918700e1414f4cC06b54BC93E43C336D",
+        "choice": 1,
+        "vp": 1089.268803796
+    },
+    {
+        "voter": "0x23e46Aa0AB9B02f2E95dCE9AAd07fb8CDD0F6424",
+        "choice": 1,
+        "vp": 387.598381985
+    },
+    {
+        "voter": "0x9B117Fb3705156aA074D734EeaacAeC64Fdd34Bb",
+        "choice": 1,
+        "vp": 793.149263576
+    },
+    {
+        "voter": "0x061d670bc7fEeDa42c79f124d3faAd758558a5A6",
+        "choice": 1,
+        "vp": 2005.523498701
+    },
+    {
+        "voter": "0x80dE5Ec450d54Aeb6f4ed926b75510Edb51E741B",
+        "choice": 1,
+        "vp": 1169.652490571
+    },
+    {
+        "voter": "0x19206f03068Ec1fa140380A3a9eC8CeE2A15AeeA",
+        "choice": 1,
+        "vp": 13233.756328464
+    },
+    {
+        "voter": "0x7FB29e5E4811eA49466e1b15BdECf1D1252AC552",
+        "choice": 1,
+        "vp": 19.307524686
+    },
+    {
+        "voter": "0xA8aa9c02a2289B82f9C832AE255441340F16A845",
+        "choice": 1,
+        "vp": 590.260718578
+    },
+    {
+        "voter": "0x35Ea2ecF77479c0d883F7826bC2E583d445231e4",
+        "choice": 1,
+        "vp": 662.364693009
+    },
+    {
+        "voter": "0x55836A43DA3e0e5A26DC3cee64d773C757349a5a",
+        "choice": 1,
+        "vp": 2.548952243
+    },
+    {
+        "voter": "0x57b7546c03F2144dDeF3946735644d22E6dDf372",
+        "choice": 1,
+        "vp": 192077.021814242
+    },
+    {
+        "voter": "0xBFabBCB55cf6D4dCA7e54E6F9f3E5d18239bD332",
+        "choice": 1,
+        "vp": 5.106701292
+    },
+    {
+        "voter": "0xAe0805c21b8fe9a912d1e63770B9435E6e16C584",
+        "choice": 1,
+        "vp": 33.929084125
+    },
+    {
+        "voter": "0x58398B708B26c57dc4ED313161A20DCaeFa28CdD",
+        "choice": 1,
+        "vp": 21.026811941
+    },
+    {
+        "voter": "0x5969506D95538Ea61D810Fcdec7a3e4f82126EF7",
+        "choice": 1,
+        "vp": 58.167521958
+    },
+    {
+        "voter": "0x58A7814a0Dcf236e9835FbebB19F08AE90190786",
+        "choice": 1,
+        "vp": 252.55101782
+    },
+    {
+        "voter": "0x507DfB5d09657DD92b72157b3Df1Bd663399FC98",
+        "choice": 1,
+        "vp": 352.459727694
+    },
+    {
+        "voter": "0xd21aAf08d590c00c7364fb2aBD33A237F163023B",
+        "choice": 1,
+        "vp": 280.722270455
+    },
+    {
+        "voter": "0xFfB3C1736b11bAD7984d6Aa15a386f0734bAD53e",
+        "choice": 1,
+        "vp": 5.699020574
+    },
+    {
+        "voter": "0xaaCbF795ec13c98e9fBb5344Cc619016d4AC5b46",
+        "choice": 1,
+        "vp": 37.052194598
+    },
+    {
+        "voter": "0xF91AD7D2A0F4b0Cd840704dEc5b93765cAb3978a",
+        "choice": 1,
+        "vp": 949.441849185
+    },
+    {
+        "voter": "0x47924a298DdE577C2EA6883507101558C9D2ea31",
+        "choice": 1,
+        "vp": 276.211301406
+    },
+    {
+        "voter": "0x3a4c824D1dF0FD7AF5cb3A981c6B413de0736AeF",
+        "choice": 1,
+        "vp": 176.69194175599998
+    },
+    {
+        "voter": "0x825Dd0EB104e51939070132D19DEd0EC1707e774",
+        "choice": 1,
+        "vp": 277.81790913
+    },
+    {
+        "voter": "0x0296623c51eaBa9C03726b1dc75a139fB62C391b",
+        "choice": 1,
+        "vp": 7.563830724
+    },
+    {
+        "voter": "0xA02037AaaEF5930d56D9f01B8240a7f4ea169da4",
+        "choice": 1,
+        "vp": 104.63103332
+    },
+    {
+        "voter": "0x73b0F6eC6699395c10139aeBC6E6B2284b90a7C0",
+        "choice": 1,
+        "vp": 70.083358718
+    },
+    {
+        "voter": "0x09dcD3b22b78988168A0CC6bDC481C29B506b812",
+        "choice": 1,
+        "vp": 18.804165377
+    },
+    {
+        "voter": "0xF35e261393F9705e10B378C6785582B2a5A71094",
+        "choice": 1,
+        "vp": 389887.911318335
+    },
+    {
+        "voter": "0x4Fa01708347604D849972E4b8114ae24492c76f1",
+        "choice": 1,
+        "vp": 12.784495583
+    },
+    {
+        "voter": "0x6407f9db532b53ff46418F0318Cf4e707Fb9046C",
+        "choice": 1,
+        "vp": 147.010847649
+    },
+    {
+        "voter": "0x70994f8986130F79C062b91253166C99768eBfd6",
+        "choice": 1,
+        "vp": 641.201120715
+    },
+    {
+        "voter": "0xC5c2e22B5FaAC038c1603E676A823B6a4006f9C8",
+        "choice": 1,
+        "vp": 8.682341127
+    },
+    {
+        "voter": "0x4cF03356734f2225ba8475cbE04530E8223E5E8A",
+        "choice": 1,
+        "vp": 39.822146123
+    },
+    {
+        "voter": "0xe3f189642a1679a3F45d903b3DBDE2E3cea8c8a4",
+        "choice": 1,
+        "vp": 310.958765042
+    },
+    {
+        "voter": "0x0A7c667d41fb74659476f5DAC8658fd1d5230e37",
+        "choice": 1,
+        "vp": 85.606210838
+    },
+    {
+        "voter": "0x67Cd72A54c6c5d03fBB0A479A678CC972448B9f8",
+        "choice": 1,
+        "vp": 9.218339236
+    },
+    {
+        "voter": "0x8B53C4e4b654337D0639bc43C91f5B649a676D46",
+        "choice": 1,
+        "vp": 478.409681924
+    },
+    {
+        "voter": "0xB5bf67e494AC056DdDDcD8Fd5418534180d62142",
+        "choice": 1,
+        "vp": 1173.813541534
+    },
+    {
+        "voter": "0x2A18C440579ffCF81B8f37976800fa000275CC1c",
+        "choice": 1,
+        "vp": 66.61788305200001
+    },
+    {
+        "voter": "0xFdC1c098dDA1d54648b509fE043677C72694c690",
+        "choice": 1,
+        "vp": 11.533660715
+    },
+    {
+        "voter": "0xCE8AD583a876bF3D22C41d62619f8200d582BB8C",
+        "choice": 1,
+        "vp": 129.621865304
+    },
+    {
+        "voter": "0xBD4aC627C5E6bFE6b325d3153F3fF5ce37a3492B",
+        "choice": 1,
+        "vp": 567.934190339
+    },
+    {
+        "voter": "0xe54BeEa84c4C8814008894701C23348b86284cFb",
+        "choice": 1,
+        "vp": 0.779629946
+    },
+    {
+        "voter": "0x501ff78eFf4e612aCbF5311b37ef03Dd6Bf86238",
+        "choice": 1,
+        "vp": 509.19053663600005
+    },
+    {
+        "voter": "0x270252c5FAd90804CE9288F2C643d26EfA568cFC",
+        "choice": 1,
+        "vp": 4566.674004355001
+    },
+    {
+        "voter": "0x8F225A4464e5cA8a8f9c1107F8EabAa3eC03B6A3",
+        "choice": 1,
+        "vp": 653.927699348
+    },
+    {
+        "voter": "0xE6Fd31B34A4F60D90d44DacACa0BC68DcE2F2E6B",
+        "choice": 1,
+        "vp": 350.90283807900005
+    },
+    {
+        "voter": "0x5925e628906a4B68081101ecE6d0167c11373c02",
+        "choice": 1,
+        "vp": 13.068954102000001
+    },
+    {
+        "voter": "0x562107793315681C3Fbed6edF6c7f9d9432CEA33",
+        "choice": 1,
+        "vp": 170.278937253
+    },
+    {
+        "voter": "0x061716a85ABA5e37626e4A2c33596d59823d30b8",
+        "choice": 1,
+        "vp": 11.508898063
+    },
+    {
+        "voter": "0xf8e6E5531B6D21EAD684e260781b333182CF4F91",
+        "choice": 1,
+        "vp": 227.065959368
+    },
+    {
+        "voter": "0xFcb2A901AD821519313eaF6cCF7273bE23590e00",
+        "choice": 1,
+        "vp": 809.6337384110001
+    },
+    {
+        "voter": "0xf96Df77AEa05c10a8073EE08725b16089d86d77e",
+        "choice": 1,
+        "vp": 530.105627117
+    },
+    {
+        "voter": "0xf1BDA52163b28ec7e28B9C65F46A8bf3290DdddA",
+        "choice": 1,
+        "vp": 10.154019901
+    },
+    {
+        "voter": "0xfa060505272A50d831a84fD911B13762C975949d",
+        "choice": 1,
+        "vp": 59.064360257000004
+    },
+    {
+        "voter": "0x7d625F6B9bc4379400860374A22637dbbB5FB5a7",
+        "choice": 1,
+        "vp": 457.953002647
+    },
+    {
+        "voter": "0x6f1C063027C671aE6a958b65E7746F672B01215B",
+        "choice": 1,
+        "vp": 1.4e-8
+    },
+    {
+        "voter": "0x8101dF25D31e7f5B89603bFb0d137D2D81eaE8B7",
+        "choice": 1,
+        "vp": 978.5582874180001
+    },
+    {
+        "voter": "0x5f58eD734a59E9730DB8766019d5cc86E8590a6a",
+        "choice": 1,
+        "vp": 539.657588058
+    },
+    {
+        "voter": "0x3a6472206df1d5F88123b07BDF75AD8110Cd9473",
+        "choice": 1,
+        "vp": 33.9366294
+    },
+    {
+        "voter": "0x64270B0374d2cc16f1d6715DE3053baA84e40301",
+        "choice": 1,
+        "vp": 1.382377622
+    },
+    {
+        "voter": "0x1aD7Fc038F661bA016E90B387Fe84DFACbF1AD5E",
+        "choice": 1,
+        "vp": 16.830215607
+    },
+    {
+        "voter": "0xFA77cB20A4a7333669CFbff2C04f323058Fc0cDF",
+        "choice": 1,
+        "vp": 178.300713574
+    },
+    {
+        "voter": "0x43e1c1E7ff8Bb0eA596045999E78B980AeB046F3",
+        "choice": 1,
+        "vp": 213.55633623
+    },
+    {
+        "voter": "0xDa04A0A96CDd5bEC8E1c26685CdC5ef6a1F4423D",
+        "choice": 1,
+        "vp": 65.493165077
+    },
+    {
+        "voter": "0xFb4c1b4d6Faf2cAE36D501A50Dd32c03D1D15Bb3",
+        "choice": 1,
+        "vp": 65.581418143
+    },
+    {
+        "voter": "0xA917706522C62C0908E560b74528ec95051824D7",
+        "choice": 1,
+        "vp": 7.2e-8
+    },
+    {
+        "voter": "0xa0Ee8b06737AfE4b80742205ED3e6A3aA94B8448",
+        "choice": 1,
+        "vp": 23.333493936
+    },
+    {
+        "voter": "0xC18dfCB1C5b8E4A626B406685B8a56Db3aEa5C64",
+        "choice": 1,
+        "vp": 119.217551286
+    },
+    {
+        "voter": "0xDe38F262a6cbE1B59Ac138d492815f2Fe5429173",
+        "choice": 1,
+        "vp": 11.020172593
+    },
+    {
+        "voter": "0x6518e847B1BB05f3AC9671F55EEa26bfDe2344FA",
+        "choice": 1,
+        "vp": 206.07138295
+    },
+    {
+        "voter": "0x6E31fa9e9cb2D55BD4F2242a0164a8a7892Fb703",
+        "choice": 1,
+        "vp": 607.728574814
+    },
+    {
+        "voter": "0x38258c10612d1310e02E83bAa6A89bb068DCe2DA",
+        "choice": 1,
+        "vp": 703.6851848560001
+    },
+    {
+        "voter": "0x5c7C93abc6506aCC3Ffd9Ea7d92BB1dd026C7836",
+        "choice": 1,
+        "vp": 61.191315896999996
+    },
+    {
+        "voter": "0xF3C21189d761f843c3504A580070e0FdF7Db198c",
+        "choice": 1,
+        "vp": 38.709587043
+    },
+    {
+        "voter": "0x5fB2a5C31e1A0eE61a656537cBf04425eb6217ad",
+        "choice": 1,
+        "vp": 31.36429537
+    },
+    {
+        "voter": "0x368b2206EcEA891Ca1eff7CB916b476CAfc8B224",
+        "choice": 1,
+        "vp": 64.46962078600001
+    },
+    {
+        "voter": "0x099C1383C78Cb6D7c62D10493BcF6474EbcDFF8e",
+        "choice": 1,
+        "vp": 32.103519796
+    },
+    {
+        "voter": "0xa26a3D442b7f56FCd2BF500B275364310Db3bDb0",
+        "choice": 1,
+        "vp": 39.416382573
+    },
+    {
+        "voter": "0x15Bf2285f2B79a160FcDcE85bF5D4557365de3c3",
+        "choice": 1,
+        "vp": 25.303537542
+    },
+    {
+        "voter": "0x067466C1d767972A4E9c5E4f580031DFfa565C9d",
+        "choice": 1,
+        "vp": 784.703821232
+    },
+    {
+        "voter": "0x332F5243AAcA4C630897A2A3cB29eaCDCa70A8Fb",
+        "choice": 1,
+        "vp": 13.098467251
+    },
+    {
+        "voter": "0x7594Ea1Eeb17896D2Dc6396687dA0AF25aF0d424",
+        "choice": 1,
+        "vp": 118.870552492
+    },
+    {
+        "voter": "0xd0Ead61e5D36B72527e24022DeCf12643f20502d",
+        "choice": 1,
+        "vp": 82.397747516
+    },
+    {
+        "voter": "0x21b842CE5eb5d1E45d2d68d405756793e8908b5B",
+        "choice": 1,
+        "vp": 873.77164786
+    },
+    {
+        "voter": "0x5777A8ec25FA9Df67185668bA0f07789D7c31002",
+        "choice": 1,
+        "vp": 38.714421776
+    },
+    {
+        "voter": "0x7c5Cb448034A6894FbB46515247ccE977517abB6",
+        "choice": 1,
+        "vp": 4.777950238
+    },
+    {
+        "voter": "0xAe90B48e8b296988db9FC2582Dfb00E09c283D39",
+        "choice": 1,
+        "vp": 22.97015693
+    },
+    {
+        "voter": "0x751B25502497cE82d068E0FaC1C5DB6bB0a50DDe",
+        "choice": 1,
+        "vp": 1689.565012389
+    },
+    {
+        "voter": "0xF74a47E5D7A791bf1b0ea8a4c4ad79268DcAaFeF",
+        "choice": 1,
+        "vp": 247.326248384
+    },
+    {
+        "voter": "0xfcc08958D9aD3c0BfcB2d080DBD420750F7aBec8",
+        "choice": 1,
+        "vp": 42.397795757
+    },
+    {
+        "voter": "0x2e437c3091A484c9520e5EB26ceb03e3257edA01",
+        "choice": 1,
+        "vp": 53.341535753
+    },
+    {
+        "voter": "0x1A5CB0C69C2e607CCb6Dd7FE7BCf394636A4215F",
+        "choice": 1,
+        "vp": 287.83315208
+    },
+    {
+        "voter": "0xeF1701bDd95D1942EE5CF29Af1b3050B0DA8CF3e",
+        "choice": 1,
+        "vp": 35.431158356
+    },
+    {
+        "voter": "0x70B39a64C906fc14b8c23A2E70f3619530E8e543",
+        "choice": 1,
+        "vp": 1030.409061743
+    },
+    {
+        "voter": "0x22C2755bdEb5d2A5096aCd0A4cf369F03c612a8C",
+        "choice": 1,
+        "vp": 23.247907599
+    },
+    {
+        "voter": "0xE2b55D0Af1C1e1C50a997731Be827090380ee3E4",
+        "choice": 1,
+        "vp": 14.899690614
+    },
+    {
+        "voter": "0x74631615520Cc19771cC735eF1662c0506e1320a",
+        "choice": 1,
+        "vp": 36.189779394
+    },
+    {
+        "voter": "0xcDc05F7fe4753CE3F44fDb0389C07C64E7C96e0B",
+        "choice": 1,
+        "vp": 576.465696594
+    },
+    {
+        "voter": "0x7ed9D2a428143719Ee253e315E12c81756A10599",
+        "choice": 1,
+        "vp": 1941.968590531
+    },
+    {
+        "voter": "0xF81c231038304184E09F33938E20c89229B40c0f",
+        "choice": 1,
+        "vp": 1224.896778011
+    },
+    {
+        "voter": "0x976d27d230f1D6Fb0613d8Cb40D368e9ea083DdD",
+        "choice": 1,
+        "vp": 42.615327245
+    },
+    {
+        "voter": "0xe13615Ab5370E755cD967faA43bCC4c79a7520fD",
+        "choice": 1,
+        "vp": 5810.741927333
+    },
+    {
+        "voter": "0x213104fE0131b1cB84357965CF5d322c06860992",
+        "choice": 1,
+        "vp": 258.208171992
+    },
+    {
+        "voter": "0x5EfAb0af57FAF101C5f1E55c1916432D62f1c613",
+        "choice": 1,
+        "vp": 31.340832485
+    },
+    {
+        "voter": "0x1B4A085b78e3f8045Ade2D8394C39cD46F7D735a",
+        "choice": 1,
+        "vp": 3308.2922480820002
+    },
+    {
+        "voter": "0x734F6954a7F4e617Fa86E14218E6208bc54C2af1",
+        "choice": 1,
+        "vp": 1007.95928647
+    },
+    {
+        "voter": "0x4C54fcdDA454fFfA03Fd4B9943251A4c2863a212",
+        "choice": 1,
+        "vp": 773.6493810759999
+    },
+    {
+        "voter": "0xeaF765C091F953b1e2d1553eFDa23E210c00b3C3",
+        "choice": 1,
+        "vp": 347.142441026
+    },
+    {
+        "voter": "0xe931801AA9537Dd92d0A1F9A94bcC96d34Ee3b70",
+        "choice": 1,
+        "vp": 138.383560158
+    },
+    {
+        "voter": "0x0e9B2BB13e4B9abeCe0DDed339bF8770b3b4D7a6",
+        "choice": 1,
+        "vp": 162.22731772
+    },
+    {
+        "voter": "0xC9071b44bADc4cAc86a625066A699E607DCfF393",
+        "choice": 1,
+        "vp": 35.134270814000004
+    },
+    {
+        "voter": "0x225B7259d53C1F3bB66c52D7cDC3e5658C5B6E4B",
+        "choice": 1,
+        "vp": 772.863328035
+    },
+    {
+        "voter": "0x9186fBBC9BE9CDD76F10408790A2541830a45313",
+        "choice": 1,
+        "vp": 68.617240891
+    },
+    {
+        "voter": "0x6Be2e8101bD0305e639A0E2d9070f5034ea2a1D1",
+        "choice": 1,
+        "vp": 479.832204514
+    },
+    {
+        "voter": "0x4cd63b0ba28725154d2d78D25B889606D816eFd4",
+        "choice": 1,
+        "vp": 17.875199771000002
+    },
+    {
+        "voter": "0x9F586798a7a7CB64456E0dD36A48dbc28CACFEcc",
+        "choice": 1,
+        "vp": 24.762772057
+    },
+    {
+        "voter": "0xAFB10D448D907a1d6b1c37150269B7131b44D24d",
+        "choice": 1,
+        "vp": 323.683959191
+    },
+    {
+        "voter": "0xE14D66cFbA334dB090d3116046Ced4e827804380",
+        "choice": 1,
+        "vp": 98.43009669
+    },
+    {
+        "voter": "0xcEc56713bB514dC454B27f00544C642cf7281A58",
+        "choice": 1,
+        "vp": 113.004018912
+    },
+    {
+        "voter": "0xBB3AA9a64b604D3Bdc1c5040fB565FBFf7FcEAE4",
+        "choice": 1,
+        "vp": 113.514996612
+    },
+    {
+        "voter": "0x7d3C6b8f5823C94781108667524a8F48Bc88167e",
+        "choice": 1,
+        "vp": 2560.03522129
+    },
+    {
+        "voter": "0x17f5F3eaCF9d3031ABc5Afd4BAb4261073295Fd1",
+        "choice": 1,
+        "vp": 12545.630527477
+    },
+    {
+        "voter": "0xE2036acc4A5aeF7Df28eE817F093EdB3e1DE3E0b",
+        "choice": 1,
+        "vp": 18.412734625000002
+    },
+    {
+        "voter": "0x30311092566d230442f524b8DdEc3999E4CC2693",
+        "choice": 1,
+        "vp": 19.220771549
+    },
+    {
+        "voter": "0xF86053Db47Eb5a22Ed48d6F0FBbeCdb2Ae626c1A",
+        "choice": 1,
+        "vp": 309.06530982000004
+    },
+    {
+        "voter": "0xCedc2C5DFbD508F25065614CF7C529dED9bFe552",
+        "choice": 1,
+        "vp": 17.218606098
+    },
+    {
+        "voter": "0x909C13AB680bdcA798EeEB7bEa18ec556858A5dd",
+        "choice": 1,
+        "vp": 30185.790028608
+    },
+    {
+        "voter": "0xc873a7c4F48fe18b79b2451664c0E36C80d31CE0",
+        "choice": 1,
+        "vp": 107.430891988
+    },
+    {
+        "voter": "0x977394d0a370cCBE5f1aBE996AC6a84EebaD1B93",
+        "choice": 1,
+        "vp": 56.408802277
+    },
+    {
+        "voter": "0x24F36Bba38fD3100E31253ae53A08fb5b68b6804",
+        "choice": 1,
+        "vp": 57.78325906
+    },
+    {
+        "voter": "0x6770e4064d9B83a862e55d21C3F5Fed532b73B7A",
+        "choice": 1,
+        "vp": 16.301998119
+    },
+    {
+        "voter": "0x117E9f72B05a2971f6b5F2C835364565d0591d77",
+        "choice": 1,
+        "vp": 29.241903194
+    },
+    {
+        "voter": "0x6D76a0Ca7911beb046E13EFE06aE5fd6a88429E4",
+        "choice": 1,
+        "vp": 781.477425334
+    },
+    {
+        "voter": "0xF0469203Dd3328DFcF61FC554a37EFB14D23e789",
+        "choice": 1,
+        "vp": 51.842814279
+    },
+    {
+        "voter": "0x7A37D4013f3CBE3D3a24083261A146f393B39781",
+        "choice": 1,
+        "vp": 14.661459985
+    },
+    {
+        "voter": "0x07b4d3bEb8ef05c93690128f89A41F0726Cb2833",
+        "choice": 1,
+        "vp": 48.973960851
+    },
+    {
+        "voter": "0xCdEBdCfb880cDA64dFc556572186dff815cF2bB2",
+        "choice": 1,
+        "vp": 5.856519652
+    },
+    {
+        "voter": "0x253638a021372F57D854130aC896dA76F92cd7BB",
+        "choice": 1,
+        "vp": 163.89941512
+    },
+    {
+        "voter": "0xeBe4e4DA1981eb1cCED1e6a97D9a5A747fc834F2",
+        "choice": 1,
+        "vp": 143.876268389
+    },
+    {
+        "voter": "0xaE940D6e8785F94dD4A0670A735D696eedd0011C",
+        "choice": 1,
+        "vp": 3169.007452159
+    },
+    {
+        "voter": "0xA0d86f1123e34e1f915012Bb5eC5F0183EA27df2",
+        "choice": 1,
+        "vp": 32.750931595
+    },
+    {
+        "voter": "0x846a3c4cfD9957d1B7fC094B722CD56E238560c8",
+        "choice": 1,
+        "vp": 1884.249629294
+    },
+    {
+        "voter": "0x87aDC891fA9e4fEdC026536668cE85027Bb06413",
+        "choice": 1,
+        "vp": 3.982578018
+    },
+    {
+        "voter": "0xb1ae1c281Eaf016Cb951b1006102bDdca27524BB",
+        "choice": 1,
+        "vp": 12.59518163
+    },
+    {
+        "voter": "0x2AE2E0c47aaE45f6fCB4fCc8782aE1331B30BB08",
+        "choice": 1,
+        "vp": 18.762729548
+    },
+    {
+        "voter": "0x36ee4eECac73373e4d9283B7a5b724F17A8a9331",
+        "choice": 1,
+        "vp": 14.706479486000001
+    },
+    {
+        "voter": "0x29adEce4e9806823A5449A221c1144fa9C9De2A8",
+        "choice": 1,
+        "vp": 113.389889352
+    },
+    {
+        "voter": "0x85bF66a25bF974901Bf128392CE69a9D2C3edDa8",
+        "choice": 1,
+        "vp": 1.871557559
+    },
+    {
+        "voter": "0x62A461B20Cf99355642BE16c9B2b246AdC0ED197",
+        "choice": 1,
+        "vp": 84269.92561278699
+    },
+    {
+        "voter": "0x09E2EB8548D96c4e425BdF3bDf4368Bc94032C3b",
+        "choice": 1,
+        "vp": 228.394466103
+    },
+    {
+        "voter": "0x53c78A5990a1eabb1835B958bB1BBe3d7134426E",
+        "choice": 1,
+        "vp": 1.11445947
+    },
+    {
+        "voter": "0x6b8f66e2F9A55909c893511882Cfdb1DDA86597A",
+        "choice": 1,
+        "vp": 80.993343854
+    },
+    {
+        "voter": "0xde5EF12e84985F5D914C53E5B368471b9976408E",
+        "choice": 1,
+        "vp": 397.73155953
+    },
+    {
+        "voter": "0xeE365b1Dd2549444C24185252f433048517311bf",
+        "choice": 1,
+        "vp": 11.330154135
+    },
+    {
+        "voter": "0x8F57Bd3e63A2678927fe15d7793416942FD9a4dD",
+        "choice": 1,
+        "vp": 45.679610142
+    },
+    {
+        "voter": "0x1DFc0F8AD609B4A00Bedc4007F63D8750a253e9A",
+        "choice": 1,
+        "vp": 121.298500495
+    },
+    {
+        "voter": "0x80Ec3A48F50A68D0D6393382D98024433aBBe177",
+        "choice": 1,
+        "vp": 250.10351368699997
+    },
+    {
+        "voter": "0xab9E8f7DCF82e40CbE183784Dcf3E223f2Bf130f",
+        "choice": 1,
+        "vp": 210.678791528
+    },
+    {
+        "voter": "0x0A848Aff8037fe9Bcd1E6C7C714FaF1d3eB9d5b0",
+        "choice": 1,
+        "vp": 23.141688333
+    },
+    {
+        "voter": "0xd71b67Ca3dE32c3e88B6dB3d22DCAC99Bb78B3Bc",
+        "choice": 1,
+        "vp": 222.088702419
+    },
+    {
+        "voter": "0xA9907eD0bB9e7d5DF262346A70ac43171616F0b6",
+        "choice": 1,
+        "vp": 70.173053927
+    },
+    {
+        "voter": "0x263447305422b2A1b84Dcf5FAf2436e5C10Db072",
+        "choice": 1,
+        "vp": 75.39027395
+    },
+    {
+        "voter": "0xE0A08272809803a185AFf978Fd575fcad1371270",
+        "choice": 1,
+        "vp": 26.865840989
+    },
+    {
+        "voter": "0xD35FE109eF6a7398Eda304A059cEd84Fe1015792",
+        "choice": 1,
+        "vp": 533.213018199
+    },
+    {
+        "voter": "0x304A97c9A85C92C93Ca24e0A85B69f892B67355E",
+        "choice": 1,
+        "vp": 8000.319470455001
+    },
+    {
+        "voter": "0xB215aF76fa7Dcef6277260e99f75B5Ec020ffAE8",
+        "choice": 1,
+        "vp": 7.357939361
+    },
+    {
+        "voter": "0xAF1e599A39925eDd5c4b2658AD8773aD65a88e98",
+        "choice": 1,
+        "vp": 5.312189098
+    },
+    {
+        "voter": "0xEbd147C51BE9d62F5FdB91f9d224A7770A7379f6",
+        "choice": 1,
+        "vp": 315.01750107699996
+    },
+    {
+        "voter": "0x65eA55826f2f9B62192EF7B04039A1532Df3b65b",
+        "choice": 1,
+        "vp": 15.016569072
+    },
+    {
+        "voter": "0x2F12f474e3Eb797e17C3E92f64851CcF9870F0bB",
+        "choice": 1,
+        "vp": 218.502020319
+    },
+    {
+        "voter": "0x7B566907AfcE4Ac50D018fA3f4D1ba62e092Ea27",
+        "choice": 1,
+        "vp": 198.718279963
+    },
+    {
+        "voter": "0x9169028656Fb9eC210638FdCbDdc65115AB8D163",
+        "choice": 1,
+        "vp": 48971.940880515
+    },
+    {
+        "voter": "0x057aBC564BA0E32611387Cc3964d2c465C2018dB",
+        "choice": 1,
+        "vp": 6.116694873
+    },
+    {
+        "voter": "0x156c3109e2da9Dd1f5E96912Ce8029265440726d",
+        "choice": 1,
+        "vp": 810.81645629
+    },
+    {
+        "voter": "0x50D1eb71aA79d92CE7F5eE78F19b82f67a9bDb6f",
+        "choice": 1,
+        "vp": 489.835454771
+    },
+    {
+        "voter": "0x88a4fC789541DfbEf93C23ae1129F296bD4E5d72",
+        "choice": 1,
+        "vp": 1809.064477394
+    },
+    {
+        "voter": "0x36A1C981a42036ee4725BbBe84F1A90E1fba7370",
+        "choice": 1,
+        "vp": 324.788254575
+    },
+    {
+        "voter": "0xC27F30A8A3a13AAbEF4ba45E5387cf95A5e37d8f",
+        "choice": 1,
+        "vp": 6.339020832
+    },
+    {
+        "voter": "0x3934b7653a5B0c2c774e3855129279f77633E8c2",
+        "choice": 1,
+        "vp": 227.017092843
+    },
+    {
+        "voter": "0x8c8251c49ED699ad37f0E3B8BFd14105B4140fE3",
+        "choice": 1,
+        "vp": 393.470445789
+    },
+    {
+        "voter": "0x16c7bD8c8Cd59874FDFe3136632Ce63CEe7A178f",
+        "choice": 1,
+        "vp": 28.306213247
+    },
+    {
+        "voter": "0x9BCd1c8E4Bddb3A44221E48d24471Bb141BdD2C9",
+        "choice": 1,
+        "vp": 157.364073381
+    },
+    {
+        "voter": "0xFf9cECb803BE7BE330e7b098F6040083Faf74407",
+        "choice": 1,
+        "vp": 1190.2525832019999
+    },
+    {
+        "voter": "0x2E6aff2c29e630E0faEebF4a654CF6e57Af136b8",
+        "choice": 1,
+        "vp": 14405.380716093001
+    },
+    {
+        "voter": "0xD950a696d58C270ab75AE77BCF43278C47F2A8b5",
+        "choice": 1,
+        "vp": 14609.135142905
+    },
+    {
+        "voter": "0xA01Ad5f0b5C521266d1dd3f926dA92f2CD9661e2",
+        "choice": 1,
+        "vp": 29.718668507
+    },
+    {
+        "voter": "0x405a9DC591662Fc91be00E08e629cFE6794afa30",
+        "choice": 1,
+        "vp": 16.666245893
+    },
+    {
+        "voter": "0x6C59DCaeF29E5322e0a475Ef7373bA29210947DE",
+        "choice": 1,
+        "vp": 63.564647544
+    },
+    {
+        "voter": "0xe625F7f13fAab6555432e312DD3c3f71876b66c1",
+        "choice": 1,
+        "vp": 153.381574017
+    },
+    {
+        "voter": "0x0aCeEB9b4130Cb3137a48E06FbDE8E4a65A6B573",
+        "choice": 1,
+        "vp": 48.784461373
+    },
+    {
+        "voter": "0x88b2780bf14B96f531167F615BA13AF70075A7A2",
+        "choice": 1,
+        "vp": 56.740261498
+    },
+    {
+        "voter": "0x2a0f2e163335619F2cA9747493C6b9400025A620",
+        "choice": 1,
+        "vp": 401.78738046499996
+    },
+    {
+        "voter": "0xccb7f266BBfbaf325687fe8a9AbecdC727d99b3c",
+        "choice": 1,
+        "vp": 289.324127368
+    },
+    {
+        "voter": "0x57287C8E6fB7949F55Bab70CEA02fcEFcd16003c",
+        "choice": 1,
+        "vp": 114.485021939
+    },
+    {
+        "voter": "0x93Dbf096d6636c0BFfe2DEB6DBD3bbEBf8E68A7A",
+        "choice": 1,
+        "vp": 473.577304903
+    },
+    {
+        "voter": "0x032C6d7bf737b351dFD636eE67F99B8381667cb0",
+        "choice": 1,
+        "vp": 93.943318957
+    },
+    {
+        "voter": "0xC9D8B8624E0646F1fBde5298cad649ac2CdE1f7D",
+        "choice": 1,
+        "vp": 2e-9
+    },
+    {
+        "voter": "0xADD9A41e9146c22e128477C7aB9Ac31823A22B49",
+        "choice": 1,
+        "vp": 237.328672051
+    },
+    {
+        "voter": "0x4939D3aDA7163acD2E1ab151A6B512268050db66",
+        "choice": 1,
+        "vp": 20.640248811000003
+    },
+    {
+        "voter": "0x078D66109CCC77cA92eE517E10eF42E5b4d85b8E",
+        "choice": 1,
+        "vp": 11.800084668
+    },
+    {
+        "voter": "0x46CE8ad524B4A5149dfAa16238355715621cdbc0",
+        "choice": 1,
+        "vp": 2608.28912078
+    },
+    {
+        "voter": "0x63d119A61403AA2c8aE5fb0cFCfE1F2c4DAB5106",
+        "choice": 1,
+        "vp": 275.798930226
+    },
+    {
+        "voter": "0xE00387872306E8Dcc82572A7759A17bF11a1CF7C",
+        "choice": 1,
+        "vp": 52.909076117999994
+    },
+    {
+        "voter": "0x176Ab9B99b21E032Bd9A9C261A6BF5dcC46fddd9",
+        "choice": 1,
+        "vp": 299.574413834
+    },
+    {
+        "voter": "0x796A716E8Ce3b4F4c2F286674185d6e92B48407a",
+        "choice": 1,
+        "vp": 0.093109354
+    },
+    {
+        "voter": "0xeeA264FCcBdcf5E543fefEC035DED8b20d773933",
+        "choice": 1,
+        "vp": 3548.882362776
+    },
+    {
+        "voter": "0x85a0b588Bb59Ee7a8EAcf53Cabed649fbcD2b24f",
+        "choice": 1,
+        "vp": 2.1e-8
+    },
+    {
+        "voter": "0x27CcFB1a17046Cb8588d8Fa1fB4e120bA9CD30ee",
+        "choice": 1,
+        "vp": 1115.159749123
+    },
+    {
+        "voter": "0x9501B22ec48840a847543d8dc29Dae2FdE363bd8",
+        "choice": 1,
+        "vp": 233.928006691
+    },
+    {
+        "voter": "0xb1Dcda285eEcC219E2466607983cE2118861dEe4",
+        "choice": 1,
+        "vp": 23.662204024999998
+    },
+    {
+        "voter": "0x2F62867b4615f266fB1606F57C1E87Cb24404dB0",
+        "choice": 1,
+        "vp": 122.736355197
+    },
+    {
+        "voter": "0x0e991c8eB6eaC8B8c96256ee656456844564d71f",
+        "choice": 1,
+        "vp": 75.769804641
+    },
+    {
+        "voter": "0x42Dac2EC3e4231A0d046E7ba6053519f9Db20b7d",
+        "choice": 1,
+        "vp": 2261.347260946
+    },
+    {
+        "voter": "0x81f30A631A2e6Ac8d2a09b81beDEF1FEc45D65a9",
+        "choice": 1,
+        "vp": 9.722948381
+    },
+    {
+        "voter": "0x4FaAd99b9C2f41730De42e5F9e3D89bcdcF4c325",
+        "choice": 1,
+        "vp": 313.617524677
+    },
+    {
+        "voter": "0xCEFF779E23f222BD2c6ddB9f12846c659Ea740Cf",
+        "choice": 1,
+        "vp": 12828.164448082
+    },
+    {
+        "voter": "0xb2E866D50ac7d9583f5B78F05dB56488FC928662",
+        "choice": 1,
+        "vp": 42.277075287
+    },
+    {
+        "voter": "0x42C4F4d5e4D2f9b072e90626c8Df3e0CDdEeCB8F",
+        "choice": 1,
+        "vp": 1497.185442227
+    },
+    {
+        "voter": "0x73f9Dbd4fB14793bf1ED992cb2BeFdDF1A5a4e82",
+        "choice": 1,
+        "vp": 46.247186841
+    },
+    {
+        "voter": "0x7CF1968F1269b43B3241Aae936210dAF8146eFE3",
+        "choice": 1,
+        "vp": 44.956305286
+    },
+    {
+        "voter": "0x0Df179F28E6b4c0F80a0D93C35a9c66b1B4ff977",
+        "choice": 1,
+        "vp": 83.75987683
+    },
+    {
+        "voter": "0xF16A42e6cB11Eb4F511d67A7f57b1e09B067DC30",
+        "choice": 1,
+        "vp": 295.360316937
+    },
+    {
+        "voter": "0xcb927731f27898b30Ad85964F9C5b784772cb924",
+        "choice": 1,
+        "vp": 20.15700344
+    },
+    {
+        "voter": "0xe83F49Dc7d0b76C200a4CaCA8EB699AE1F500fA7",
+        "choice": 1,
+        "vp": 81.59925929299999
+    },
+    {
+        "voter": "0xb8127e3088224594A2C41Ba045Cf5868157A76E6",
+        "choice": 1,
+        "vp": 95.071950633
+    },
+    {
+        "voter": "0xB387fA9F8464020c45f3A40244e13365d394fB97",
+        "choice": 1,
+        "vp": 3712.604135009
+    },
+    {
+        "voter": "0x3768e6c39A365Bb4be13bf89fFAB4B7471455F3e",
+        "choice": 1,
+        "vp": 7.809739309
+    },
+    {
+        "voter": "0x4d0aEec77C30025577c321A3bEdb692E508751cD",
+        "choice": 1,
+        "vp": 2848.4228575989996
+    },
+    {
+        "voter": "0x7bfC1700402f9255119ad5678f94d827c514aE54",
+        "choice": 1,
+        "vp": 1.149635263
+    },
+    {
+        "voter": "0x2a68F65248DD3471173f45bd702572D2d8cae25D",
+        "choice": 1,
+        "vp": 326.846699552
+    },
+    {
+        "voter": "0x4160417914B950EE182d8Fe2cDFeF357C9b33BD0",
+        "choice": 1,
+        "vp": 24.961346927
+    },
+    {
+        "voter": "0x8590848841c7dBa875D1f31D7942222f1630Cda2",
+        "choice": 1,
+        "vp": 1301.821555318
+    },
+    {
+        "voter": "0x6Ea04fD40743872D5EC26F1832055c7fC65da0bE",
+        "choice": 1,
+        "vp": 11825.891910396
+    },
+    {
+        "voter": "0xbD305747E91Aa1c7eB0786dB51705EAf5281964A",
+        "choice": 1,
+        "vp": 1509.007057555
+    },
+    {
+        "voter": "0xB3DFeA5317dB55D73c12852D65d3Db30544cD2e7",
+        "choice": 1,
+        "vp": 18.838738107
+    },
+    {
+        "voter": "0xF287a42429386ecA4c490f159d2E698501188f05",
+        "choice": 1,
+        "vp": 1.703108828
+    },
+    {
+        "voter": "0x77A97E6619d95654764aecdfF07bbF7B21606805",
+        "choice": 1,
+        "vp": 592.360816626
+    },
+    {
+        "voter": "0xd8B5B506869f018399d422f1581d2befDd8e8A51",
+        "choice": 1,
+        "vp": 25.166517252
+    },
+    {
+        "voter": "0x86aA0f0231A2267BC0ee99Be06D5d5609f08205A",
+        "choice": 1,
+        "vp": 2.245778173
+    },
+    {
+        "voter": "0x2Aa80f9d52B4D8Ef21687A3cC8F628F0bD7455a0",
+        "choice": 1,
+        "vp": 12.211224445
+    },
+    {
+        "voter": "0xe4bf8aa0B78F5001d97b4899aa03d72B6Bf5FC64",
+        "choice": 1,
+        "vp": 57.317575936
+    },
+    {
+        "voter": "0xb36DbC4e6774A009f8C6C785D3eE606ca1937BDf",
+        "choice": 1,
+        "vp": 20.297447579
+    },
+    {
+        "voter": "0xB94C30DfEbeBd6017A5a3bD4Bf43D2152e3E1E2c",
+        "choice": 1,
+        "vp": 14.280878445
+    },
+    {
+        "voter": "0x7E169e3C9a11577E7C0693aF7EA9511e0508D0D7",
+        "choice": 1,
+        "vp": 8.822169135
+    },
+    {
+        "voter": "0xf0a7A0cc0EFc3a88007fFdA2A5D84FcD5C42C1AB",
+        "choice": 1,
+        "vp": 154.890488024
+    },
+    {
+        "voter": "0xa675DA5417e02983998e60378d7e6ec3D6FbE2E1",
+        "choice": 1,
+        "vp": 46.006839938
+    },
+    {
+        "voter": "0x78B9936A29906c611b794dFb66eCFF51eb8882cD",
+        "choice": 1,
+        "vp": 129.97607738
+    },
+    {
+        "voter": "0xBea30B46660b37C7FDd095b23F848967d132dEab",
+        "choice": 1,
+        "vp": 275.860279533
+    },
+    {
+        "voter": "0xf4A5537C7fBF2221661094f5a6Bd74a213Bd501b",
+        "choice": 1,
+        "vp": 48.152700813
+    },
+    {
+        "voter": "0x510419c48cACFAA65581E8000210421ffcab5371",
+        "choice": 1,
+        "vp": 217.033095009
+    },
+    {
+        "voter": "0x564ED653AE13a38d0F474583F698D5751bB0D5BD",
+        "choice": 1,
+        "vp": 20.860054986999998
+    },
+    {
+        "voter": "0xB872F7a4EED7D03597E1f6cEf0fE81C4F00a665d",
+        "choice": 1,
+        "vp": 282.366946972
+    },
+    {
+        "voter": "0x131Fa908827D6A1B39dAb478c612C45A0b776883",
+        "choice": 1,
+        "vp": 153.820265271
+    },
+    {
+        "voter": "0xe66Adc605765c3E754C27b178AfadE95f86a6133",
+        "choice": 1,
+        "vp": 3.441230575
+    },
+    {
+        "voter": "0x05FA0A40436b6817C62B19c4384eC5163680cFE2",
+        "choice": 1,
+        "vp": 6.455720593
+    },
+    {
+        "voter": "0x12d34a88cdCF618E1d09CaC50b23e591aE35cA13",
+        "choice": 1,
+        "vp": 19.472742139999998
+    },
+    {
+        "voter": "0xC2A896F079b31aa5A4d2B0CaE6FF575064fc577E",
+        "choice": 1,
+        "vp": 62.197045587
+    },
+    {
+        "voter": "0x0C5f55C214423a7631f1D0baEEaa0bEbdA06D002",
+        "choice": 1,
+        "vp": 3624.291778684
+    },
+    {
+        "voter": "0xab86570D79228126a317001aA24Ffcb170af07eE",
+        "choice": 1,
+        "vp": 73.395214683
+    },
+    {
+        "voter": "0x9A232918d6FBEe281885773388F655926d025E51",
+        "choice": 1,
+        "vp": 83.487409752
+    },
+    {
+        "voter": "0xC4C468d530CFe68EEe6b467323fd47Fd0d0e9Eeb",
+        "choice": 1,
+        "vp": 38.950179314
+    },
+    {
+        "voter": "0xA0C1afa724E10996ffa8f1c75291D5A3CCA2a020",
+        "choice": 1,
+        "vp": 16.618620428
+    },
+    {
+        "voter": "0x0c52A1925924332D7beA0C882aa08F28DcD5f988",
+        "choice": 1,
+        "vp": 28.170048377
+    },
+    {
+        "voter": "0x201EC25c185BFad5C3738e23C5f09Bd3E323C5e0",
+        "choice": 1,
+        "vp": 42.091468401
+    },
+    {
+        "voter": "0xa6eB1CcD81FEaA24B9D5A7e7B015F220D91fC2dD",
+        "choice": 1,
+        "vp": 183.34624241400002
+    },
+    {
+        "voter": "0xF57bEb97a32A8a77b857aa1AC13A63c5B4eB6dde",
+        "choice": 1,
+        "vp": 53.625936909
+    },
+    {
+        "voter": "0xB2022Ec8A1EE706CF479421605dfda233Cd28B71",
+        "choice": 1,
+        "vp": 325.91440125199995
+    },
+    {
+        "voter": "0xe95494f3310194Ed0c0eC69E971956F646c85e5F",
+        "choice": 1,
+        "vp": 76.099513369
+    },
+    {
+        "voter": "0x93e122Ec5464995547DDa483F9978857Ca9BDCe8",
+        "choice": 1,
+        "vp": 85.12988189299999
+    },
+    {
+        "voter": "0xd421a3148469e72F75C8A1C6dD0f3a3815e9cf76",
+        "choice": 1,
+        "vp": 38.739583453
+    },
+    {
+        "voter": "0xb29EF671a28b1D1e62fe7bEe51E70Ba397243654",
+        "choice": 1,
+        "vp": 8786.159781996
+    },
+    {
+        "voter": "0xEe031Fa65C08279dc41dbFc97969c69C399036fa",
+        "choice": 1,
+        "vp": 13.554583809
+    },
+    {
+        "voter": "0x2681A08D156bE6Db2acbBC20b1374c114dabd7AF",
+        "choice": 1,
+        "vp": 32.424137538
+    },
+    {
+        "voter": "0xafDd17c215bd68B8c6FBc10ACe11831f811c50eE",
+        "choice": 1,
+        "vp": 511.55972487800005
+    },
+    {
+        "voter": "0xb4096b8aE0c76ee9A2Dfdf1E6427bD2ca3608cB5",
+        "choice": 1,
+        "vp": 35.092554650000004
+    },
+    {
+        "voter": "0x12007783D673723212DBe13f4F460070eAB8e413",
+        "choice": 1,
+        "vp": 225.659466204
+    },
+    {
+        "voter": "0xd73F77E5858513698BF1c71376d244ff465c2eC2",
+        "choice": 1,
+        "vp": 64.293448272
+    },
+    {
+        "voter": "0x0564C424B26F089Bab3e6BB69Ef8489A1E86e9E8",
+        "choice": 1,
+        "vp": 14.263611016
+    },
+    {
+        "voter": "0x20cCa7c6A8C12c4B2b5AC9f3aa119d0F8C4A6868",
+        "choice": 1,
+        "vp": 42.920521574
+    },
+    {
+        "voter": "0x3B616Abd9C326758396C840299220833cDF282bC",
+        "choice": 1,
+        "vp": 7.939080067
+    },
+    {
+        "voter": "0xb6089f8F99a6BE7A6EF401F48BF0326b00Ae437F",
+        "choice": 1,
+        "vp": 105.330754013
+    },
+    {
+        "voter": "0xbF0bd39E0A96724a1142Ee5AD105D7A91aAe8c78",
+        "choice": 1,
+        "vp": 12.690000017000001
+    },
+    {
+        "voter": "0x75a10CbD752Aeb08BD5c6aA29073920f6C6fE793",
+        "choice": 1,
+        "vp": 1.685795422
+    },
+    {
+        "voter": "0x5781abB1A7debE670dc41b90cD082aa43cB39bBc",
+        "choice": 1,
+        "vp": 111.969662853
+    },
+    {
+        "voter": "0xDD7CD4f7c9A249158805e9da937fed42Cb745314",
+        "choice": 1,
+        "vp": 14.061725603
+    },
+    {
+        "voter": "0xF92885720B7Fd9309b6e16B9AAA7b151D5fe96EF",
+        "choice": 1,
+        "vp": 5.420176817000001
+    },
+    {
+        "voter": "0xfDC1Cc679eCfc9467Cebf312725406c113DFF22d",
+        "choice": 1,
+        "vp": 9.299331539
+    },
+    {
+        "voter": "0xE61E0Be35bb02Ea2Af2E258137574070BEA40F9b",
+        "choice": 1,
+        "vp": 403.01550454
+    },
+    {
+        "voter": "0x388876c47017513e63163623180510Ad60D094Bd",
+        "choice": 1,
+        "vp": 97.628447906
+    },
+    {
+        "voter": "0xFc1c08e62846196f64B23DAE67B9E1d3edb5cbcc",
+        "choice": 1,
+        "vp": 5.644606392
+    },
+    {
+        "voter": "0xe92Cb4A7A81cE9bbA43eff284e852Fa734A473a4",
+        "choice": 1,
+        "vp": 518.273580338
+    },
+    {
+        "voter": "0xDC68E06fD52dDF4601d100aD7F4bD0a98BA98580",
+        "choice": 1,
+        "vp": 467.15481188300004
+    },
+    {
+        "voter": "0x04467098ce2C88841cFE31f87c6838d60B91C9aB",
+        "choice": 1,
+        "vp": 914.668981081
+    },
+    {
+        "voter": "0x3895Ce45470fe98055e4714017E561b42AA2499a",
+        "choice": 1,
+        "vp": 448.07692044500004
+    },
+    {
+        "voter": "0x4F36c254D4608507E1f5a060b2b7005b4a356F46",
+        "choice": 1,
+        "vp": 792.8835982500001
+    },
+    {
+        "voter": "0x758e83c114E36a28CA1f31C4d2ADB5Ec7c04C578",
+        "choice": 1,
+        "vp": 13343.731136455
+    },
+    {
+        "voter": "0x8B4048Ef5Cc7763d4812E8CB2b8f6E7D2D1272CE",
+        "choice": 1,
+        "vp": 30.909396373
+    },
+    {
+        "voter": "0xC0754C4D4FDd5ecFbdCDB6b574c20510c6439b0d",
+        "choice": 1,
+        "vp": 5.934074614
+    },
+    {
+        "voter": "0xB3bfB32977cFd6200AB9537E3703e501d8381c9B",
+        "choice": 1,
+        "vp": 34721.038525257
+    },
+    {
+        "voter": "0x878159836087bB7b3F3c2D34F983D616CfeCB911",
+        "choice": 1,
+        "vp": 6.109985128
+    },
+    {
+        "voter": "0x4D4b5acE61414494dbcC4d2c3484D2bf92658A01",
+        "choice": 1,
+        "vp": 452.006234302
+    },
+    {
+        "voter": "0x1B0A9fc38bc94B34F510aD93Eb341A0AC021da93",
+        "choice": 1,
+        "vp": 15.081709589
+    },
+    {
+        "voter": "0xFaC40f9d2292Eb7e59517b0888C474744837658a",
+        "choice": 1,
+        "vp": 8.532110762999999
+    },
+    {
+        "voter": "0x1a6f51011bE73bE6EDf699Cee61a659E86d49ad6",
+        "choice": 1,
+        "vp": 10.392659709
+    },
+    {
+        "voter": "0x46780815eB805F981ACfE746a8646605fA2B6BE2",
+        "choice": 1,
+        "vp": 3e-8
+    },
+    {
+        "voter": "0x3Eb243fd69CA9568c17C2Ed005E4Adb89b795722",
+        "choice": 1,
+        "vp": 88.696049297
+    },
+    {
+        "voter": "0xab74fe96AEe37744E1473A3fEBB8FE2D3e449f5a",
+        "choice": 1,
+        "vp": 28.873323298
+    },
+    {
+        "voter": "0xd670c41B9d7cEf57A91F29C23153d329A120C786",
+        "choice": 1,
+        "vp": 9.790564885
+    },
+    {
+        "voter": "0x9B4c858ddaa6b5bF427580f7B21dA5792E4B9cdf",
+        "choice": 1,
+        "vp": 162.492991035
+    },
+    {
+        "voter": "0x04704EcaAb8f063b76a6f2Ff45D2f414F0aCaA68",
+        "choice": 1,
+        "vp": 2907.96757876
+    },
+    {
+        "voter": "0xB2EcD356ecaC9a1c3926BD97A270de463309d8ac",
+        "choice": 1,
+        "vp": 116.981206544
+    },
+    {
+        "voter": "0xC2F5078a63dB1174009b3006A7Dfd4872938DE6E",
+        "choice": 1,
+        "vp": 1.778205315
+    },
+    {
+        "voter": "0xe6aCe151AEC500be2f0Cbecf81eE7d2329e50704",
+        "choice": 1,
+        "vp": 17107.172944018
+    },
+    {
+        "voter": "0x25bb3e15Eac2f359cd62F17bb6A06a407D249C3d",
+        "choice": 1,
+        "vp": 55.561116038
+    },
+    {
+        "voter": "0x048c47394AE64B0D95E1dc61E9c081519268FA02",
+        "choice": 1,
+        "vp": 109.381761412
+    },
+    {
+        "voter": "0x41FEF8F6D02bECF433C71133e7536534A5E7B23D",
+        "choice": 1,
+        "vp": 7.018494178
+    },
+    {
+        "voter": "0xA9B48DC63c008F40fD0802Cab2093Ca6309E573D",
+        "choice": 1,
+        "vp": 1339.6931182629999
+    },
+    {
+        "voter": "0x9F7E696f19e68A0821cD124b6e2C1f8576dFaD4A",
+        "choice": 1,
+        "vp": 80.971581716
+    },
+    {
+        "voter": "0xAD7c7909C1492F48967dbDa78BaF657358F6dd81",
+        "choice": 1,
+        "vp": 185.862028099
+    },
+    {
+        "voter": "0x46EBA0CA72B7Dad4F3389F6D5ff7b0C425F34D76",
+        "choice": 1,
+        "vp": 70.007984831
+    },
+    {
+        "voter": "0xa8D5846044161B747Be95f38671aaEf42b130C1b",
+        "choice": 1,
+        "vp": 122.156794669
+    },
+    {
+        "voter": "0x33B48B98B3DF60d1D6E250E1757bdfC6B249Ea02",
+        "choice": 1,
+        "vp": 39.469697891
+    },
+    {
+        "voter": "0xA868153C23BA15Bf3a47f78D38f89fC7e67b52F2",
+        "choice": 1,
+        "vp": 91.374122205
+    },
+    {
+        "voter": "0x5656cB4721C21E1F5DCbe03Db9026ac0203d6e4f",
+        "choice": 1,
+        "vp": 142.391262271
+    },
+    {
+        "voter": "0x0c8d6Af7e1C860A140d228A1Bbd4E3456c9EfEBe",
+        "choice": 1,
+        "vp": 118.975267804
+    },
+    {
+        "voter": "0x5a529e027ec4312dED2539f9Ab304910DcB93401",
+        "choice": 1,
+        "vp": 1069.018933971
+    },
+    {
+        "voter": "0x87Afe72214CA0e134a56df2E47b97d8e6574f300",
+        "choice": 1,
+        "vp": 56.083347697
+    },
+    {
+        "voter": "0x65D63ae451c16Fe066299f25ec6083ff4d1B74aA",
+        "choice": 1,
+        "vp": 280.359486076
+    },
+    {
+        "voter": "0xA0E98823aa50Aa5EEf8A9dcF5b8A8042b66A90E5",
+        "choice": 1,
+        "vp": 52.794663987
+    },
+    {
+        "voter": "0x6B15F6bAF4C8e9e110c0880798Ad2814c880Ac91",
+        "choice": 1,
+        "vp": 32.428956715
+    },
+    {
+        "voter": "0x4111c97Aa36a69Eb3230DA7A9fdcEc3aD0674Ba6",
+        "choice": 1,
+        "vp": 2618.554293545
+    },
+    {
+        "voter": "0xDcE115DC160DbB9d24BaE0bABA44Df49b1561fcA",
+        "choice": 1,
+        "vp": 76.768334393
+    },
+    {
+        "voter": "0x6E737035A38633Cc08482bFf0b93889290E13AF7",
+        "choice": 1,
+        "vp": 233.935225349
+    },
+    {
+        "voter": "0xD7EB1A8E9024A3eB22ecd849C695470E907c4c8B",
+        "choice": 1,
+        "vp": 22.737470368
+    },
+    {
+        "voter": "0x7B819225C6124646D6573623749b01179FDcf079",
+        "choice": 1,
+        "vp": 151.95525116500002
+    },
+    {
+        "voter": "0xb3DC387fD92Ccc3243E2b70CE6e043Aba2aCaf98",
+        "choice": 1,
+        "vp": 462.08330015399997
+    },
+    {
+        "voter": "0xb96579bcF58f874989d3c51F3e29f941269a21dC",
+        "choice": 1,
+        "vp": 31.60816554
+    },
+    {
+        "voter": "0x1409302f0a4B839F36ba93944Dd98D7CeD1eEc2C",
+        "choice": 1,
+        "vp": 66.878186451
+    },
+    {
+        "voter": "0x85549A3861bd9F6583c6B12A0Ea716C130D4Af41",
+        "choice": 1,
+        "vp": 21394.324244662
+    },
+    {
+        "voter": "0x92FF5ebB3CB32Ce771D9095d8EfDB39765fB9108",
+        "choice": 1,
+        "vp": 4208.563809298
+    },
+    {
+        "voter": "0x558A34E2a576842FB06311b1B1D818648Ab7acE0",
+        "choice": 1,
+        "vp": 3290.684839045
+    },
+    {
+        "voter": "0x0851Dd8174EDc3dc812Ec363FBFCAaeC677E5eB9",
+        "choice": 1,
+        "vp": 41.310777963999996
+    },
+    {
+        "voter": "0xdBe635A1F88bb851C0f91f13d73a1877e08b7f64",
+        "choice": 1,
+        "vp": 404.058223905
+    },
+    {
+        "voter": "0xf139F6c27830897AABC3F8C9B6f3fCEa91a03EE8",
+        "choice": 1,
+        "vp": 46.789401033
+    },
+    {
+        "voter": "0xB9542F9e7AB332346C818483bb8f3292a0653aB7",
+        "choice": 1,
+        "vp": 117.172279237
+    },
+    {
+        "voter": "0x60756236F82f6104540eD095D13e61f7a3f44752",
+        "choice": 1,
+        "vp": 29.766190856999998
+    },
+    {
+        "voter": "0x53288b32C8E38CF1E33a0468B2c12124e569ab6D",
+        "choice": 1,
+        "vp": 116.969464636
+    },
+    {
+        "voter": "0x68492881985afd26b04dcC4963ca5128CCd3DD9D",
+        "choice": 1,
+        "vp": 3856.071287025
+    },
+    {
+        "voter": "0x5cf886a831A5FbbaabF9B8fFAc53DA5cBeCDEbDb",
+        "choice": 1,
+        "vp": 73.850154496
+    },
+    {
+        "voter": "0x80E57320EE6eb682EEde08F9F2d7D94DbdA606cf",
+        "choice": 1,
+        "vp": 2341.259351598
+    },
+    {
+        "voter": "0xaf91bd17a769db6cAC901a7Bd7E946d7D809dD32",
+        "choice": 1,
+        "vp": 49.793217081
+    },
+    {
+        "voter": "0xBc65De326e6f05211322EfaFaa9719EF1960B75e",
+        "choice": 1,
+        "vp": 314.496130205
+    },
+    {
+        "voter": "0xA4314F81cF109C06128C2A23953C71BfF3E086F2",
+        "choice": 1,
+        "vp": 2.339352803
+    },
+    {
+        "voter": "0xc7512863Ad0666ceadc3F964914b1Ab8153B7DA1",
+        "choice": 1,
+        "vp": 1769.685787326
+    },
+    {
+        "voter": "0x77bC47264A515cEe4BA3652ff23cC83D365D1E0a",
+        "choice": 1,
+        "vp": 327.509315491
+    },
+    {
+        "voter": "0x63c2827A62e3715CE9C4fA8ddb3c3E89116F6202",
+        "choice": 1,
+        "vp": 66.432826853
+    },
+    {
+        "voter": "0x2001225e3Ac97C79C5871181e35eBd00F28fAd39",
+        "choice": 1,
+        "vp": 0.832883279
+    },
+    {
+        "voter": "0xffEcF2958BDAEc56FBC1Be06550f76B9F4fBa6C5",
+        "choice": 1,
+        "vp": 77.849578021
+    },
+    {
+        "voter": "0x895bC4801125d085EA727B856C92c95Cdf9AaD34",
+        "choice": 1,
+        "vp": 38.920318913
+    },
+    {
+        "voter": "0x70f338F31956923F3DFb26CEeE774431105Ed207",
+        "choice": 1,
+        "vp": 129.940347091
+    },
+    {
+        "voter": "0x24B70ee5a6c30DFa570EE7CD6266eb77B7509445",
+        "choice": 1,
+        "vp": 212.414582691
+    },
+    {
+        "voter": "0xFAC4F14CE1c17AFf6b4aE2eB217f9f7c0a72f417",
+        "choice": 1,
+        "vp": 237.305345016
+    },
+    {
+        "voter": "0x4A3B6fa539D0e8315BF2caEe3C4103cB83030181",
+        "choice": 1,
+        "vp": 9357.408154535
+    },
+    {
+        "voter": "0xc5177a1b4a5C85E47102842d4B89FB07d9304CD8",
+        "choice": 1,
+        "vp": 1562.263521641
+    },
+    {
+        "voter": "0xEc9611D1C0f730527Ec96678FF629501c288bfe0",
+        "choice": 1,
+        "vp": 5.382585648
+    },
+    {
+        "voter": "0xfC226165D6309800b312C11636161943666476d8",
+        "choice": 1,
+        "vp": 100.147572074
+    },
+    {
+        "voter": "0x81239F0F4DF31890C73FAC1B541d3Ef50B4C87eE",
+        "choice": 1,
+        "vp": 119.49350217300001
+    },
+    {
+        "voter": "0x36e6B95073da7c38FaA7B33Ed069e4FB8ec47Ee9",
+        "choice": 1,
+        "vp": 17.840624174
+    },
+    {
+        "voter": "0xb153c51E9a7142140D5e8ce9F0339Ea6De20a635",
+        "choice": 1,
+        "vp": 350.090180027
+    },
+    {
+        "voter": "0x84C3BeC6967Fa793Dc05F26afC41b6D342de1008",
+        "choice": 1,
+        "vp": 24.261203445
+    },
+    {
+        "voter": "0x2B60B0909830a4142e8B42c87db6e0ee48B73A64",
+        "choice": 1,
+        "vp": 173.578551022
+    },
+    {
+        "voter": "0x1D2012afEdf3b01AFBA2E795D0B667eF725e576B",
+        "choice": 1,
+        "vp": 341.95170741600003
+    },
+    {
+        "voter": "0x9d861744f63709e43F0f7642D44C716dE6DeF6Ed",
+        "choice": 1,
+        "vp": 36.591710511
+    },
+    {
+        "voter": "0xbb40e964C6E9E4480b8519C2633884100F24F840",
+        "choice": 1,
+        "vp": 18.205970842000003
+    },
+    {
+        "voter": "0xD79D6a6cc39532e02Bef518F450029C78CAc08E5",
+        "choice": 1,
+        "vp": 1.2e-8
+    },
+    {
+        "voter": "0x0f485554cA20EA55120B08aCb35d25B950A5d1F5",
+        "choice": 1,
+        "vp": 1403.06822855
+    },
+    {
+        "voter": "0x378535160EC9B919AfA7b6104a94D66fFb4f250e",
+        "choice": 1,
+        "vp": 138.883839887
+    },
+    {
+        "voter": "0x4C3C696191EBd56aE7Cd92C13660C46a944F0eD9",
+        "choice": 1,
+        "vp": 113.172260966
+    },
+    {
+        "voter": "0xEbB347DA831B60D927919825Cba75ff5d8AcDB78",
+        "choice": 1,
+        "vp": 4729.45675398
+    },
+    {
+        "voter": "0x517ffD605c27D6cAbDA43A93C77753CdaB0D5a9f",
+        "choice": 1,
+        "vp": 97.542339956
+    },
+    {
+        "voter": "0xbA007369B12Bc4b6Ed812F8944AFE0f5b8848Cb1",
+        "choice": 1,
+        "vp": 39.506309228
+    },
+    {
+        "voter": "0xE2ab24aFC85ae42De00765BCDd75A07Ea2633098",
+        "choice": 1,
+        "vp": 121.208336219
+    },
+    {
+        "voter": "0xf14Acf8FDEf329a667F67128A69CE9E1995369dC",
+        "choice": 1,
+        "vp": 5.832271782
+    },
+    {
+        "voter": "0x409ee6e996579fCC00EeFb5dF8f8818d51FA70c9",
+        "choice": 1,
+        "vp": 23.568204519
+    },
+    {
+        "voter": "0x174a7Bb5D403163081f651bC126a054688e45391",
+        "choice": 1,
+        "vp": 34.090927081
+    },
+    {
+        "voter": "0xF66aA3E7dAcf326022D6746459D5346059E6BE61",
+        "choice": 1,
+        "vp": 30.373939133
+    },
+    {
+        "voter": "0x85CeFf7954F428CbE30A0A9f1b8b35823CEa8b70",
+        "choice": 1,
+        "vp": 115.750446899
+    },
+    {
+        "voter": "0xE5B866aCe76d43AC3e817F2db9a91BF8DE6B27fb",
+        "choice": 1,
+        "vp": 129.751201891
+    },
+    {
+        "voter": "0x0D175B89987038A6b4BFef2e6841a1700e16897C",
+        "choice": 1,
+        "vp": 21853.716149423
+    },
+    {
+        "voter": "0x6a5020eAAa7Fe9D0539C91b99Fb87a99473b4647",
+        "choice": 1,
+        "vp": 41.272798642
+    },
+    {
+        "voter": "0x1BFcB6b1eE66fe339a9DC452359c4c111cC5fFC0",
+        "choice": 1,
+        "vp": 224.885960717
+    },
+    {
+        "voter": "0x7A78d9f3C8Ae7706779C91dC753F858ABA30d93A",
+        "choice": 1,
+        "vp": 16.736397871
+    },
+    {
+        "voter": "0xd608fB109124da6D3e8eCA45d789eCaf8641EA77",
+        "choice": 1,
+        "vp": 2649.249828158
+    },
+    {
+        "voter": "0x8E5CC36c3661A5042D4f1E7e48d9c512dF2640e8",
+        "choice": 1,
+        "vp": 35.291720423
+    },
+    {
+        "voter": "0x2049624f613958ecD5aa3aca1e4D886D6E0b9c63",
+        "choice": 1,
+        "vp": 351.446621477
+    },
+    {
+        "voter": "0x97041728D56a7cff259F04D50e1394663F40548e",
+        "choice": 1,
+        "vp": 2.339423214
+    },
+    {
+        "voter": "0x799F9C9fcF3b9fA82F1794dF80a139AE3Bb655Fa",
+        "choice": 1,
+        "vp": 14.947857856
+    },
+    {
+        "voter": "0x196A911F9eb1277902F50b730BB1462aacefa1E3",
+        "choice": 1,
+        "vp": 113.82974246500001
+    },
+    {
+        "voter": "0x18F411B0BC91dc9aD57910A77b55c6AdBCe65D94",
+        "choice": 1,
+        "vp": 29.033785426999998
+    },
+    {
+        "voter": "0x38f6c64627713DF4A24714df9C9c7C321733F6e3",
+        "choice": 1,
+        "vp": 761.971144031
+    },
+    {
+        "voter": "0x39fA66A7eF061937116DAB7E00c728Ea70CaDB01",
+        "choice": 1,
+        "vp": 8.470929623
+    },
+    {
+        "voter": "0x419830877C51F84a15a81Cc94Dd8020cead052E9",
+        "choice": 1,
+        "vp": 781.904437499
+    },
+    {
+        "voter": "0xA8e7217904D4F521b5265ef0C46b609002C80Ce4",
+        "choice": 1,
+        "vp": 780.560595649
+    },
+    {
+        "voter": "0x364705913b668b17f7595fBA78B4E8888f5927f2",
+        "choice": 1,
+        "vp": 1394.752891115
+    },
+    {
+        "voter": "0xAF5B07c428f5f1f1798d0c31246f69ADEF088776",
+        "choice": 1,
+        "vp": 124.53764311
+    },
+    {
+        "voter": "0x22d7541AEF344172f5Fef2E62ec6df9d0Af88e54",
+        "choice": 1,
+        "vp": 104.789796874
+    },
+    {
+        "voter": "0x2550dd8a438b1B8E4b9A1859f78673EfE0e7bfbC",
+        "choice": 1,
+        "vp": 0.730075897
+    },
+    {
+        "voter": "0xAD430A82d8f21A5Bb45fFD7C288D726eEa08D07c",
+        "choice": 1,
+        "vp": 5.716045996
+    },
+    {
+        "voter": "0x40fD43BF6b37C242B43C28A3d7cC8898D04FB71e",
+        "choice": 1,
+        "vp": 53.745610164
+    },
+    {
+        "voter": "0x57d1e5f2e9Be620Fc69f8BB119c18122eB2E8372",
+        "choice": 1,
+        "vp": 27.080663001
+    },
+    {
+        "voter": "0xb2b8bB99dd6dEB64a8D074478ea2ccE18c33255A",
+        "choice": 1,
+        "vp": 60.215546723
+    },
+    {
+        "voter": "0xfBfdEeeCF4f0C4E3C4326F7fe949ED40b1Fdb76f",
+        "choice": 1,
+        "vp": 1e-9
+    },
+    {
+        "voter": "0x86Ae657b0b38429E8072523F459e572F777cA276",
+        "choice": 1,
+        "vp": 206.672998593
+    },
+    {
+        "voter": "0x8CE4627367Cb4d0BDbcE1a0951864F08c9351a84",
+        "choice": 1,
+        "vp": 2020.9393719109999
+    },
+    {
+        "voter": "0x5DD596C901987A2b28C38A9C1DfBf86fFFc15d77",
+        "choice": 1,
+        "vp": 23393.522534811
+    },
+    {
+        "voter": "0x78927765A6905AC5A2FD24f17D833dBd47C306f9",
+        "choice": 1,
+        "vp": 85.027155297
+    },
+    {
+        "voter": "0xc8dF7EA1712217A7eE2afb2E98520fAa30aA296C",
+        "choice": 1,
+        "vp": 99.634834075
+    },
+    {
+        "voter": "0x055BCA5C54AaFEc6Dbdb24Dc29c26A7AF1c04DD6",
+        "choice": 1,
+        "vp": 12818.812654796
+    },
+    {
+        "voter": "0x67f6F9F592a7B6388CbceB85f433aD5440bcf274",
+        "choice": 1,
+        "vp": 54.706194374
+    },
+    {
+        "voter": "0x0095b245906A063241C00573aeC9156124aE0b6D",
+        "choice": 1,
+        "vp": 68.161673049
+    },
+    {
+        "voter": "0x99b6F77e178bcAd9878A14B9ea62628b0049613e",
+        "choice": 1,
+        "vp": 1168.78296844
+    },
+    {
+        "voter": "0xE6BD7AF3ADa87C66878cDCeDBFdc91509AC5C5fa",
+        "choice": 1,
+        "vp": 55.118520718
+    },
+    {
+        "voter": "0x1d211A1946Cd93cF289B160F11Cc63079B395390",
+        "choice": 1,
+        "vp": 520.787588836
+    },
+    {
+        "voter": "0x67DaCc258DCCc8CbFB493c652ab5170C3CFf0AD9",
+        "choice": 1,
+        "vp": 6289.098720459
+    },
+    {
+        "voter": "0xe5301A051e298bD6bED8141D2D796e90ee571791",
+        "choice": 1,
+        "vp": 554.275327459
+    },
+    {
+        "voter": "0x03530dA45F908f78d9100bec58Da218744578832",
+        "choice": 1,
+        "vp": 12.153555365
+    },
+    {
+        "voter": "0x349D0Bfe4dBFf578d629eA1C803929451380e6DB",
+        "choice": 1,
+        "vp": 4667.497831351
+    }
+]

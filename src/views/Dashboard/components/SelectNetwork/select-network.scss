@@ -1,0 +1,48 @@
+.select-network-dashboard {
+    width: 100%;
+
+    .select-network-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 4px;
+    }
+
+    .select-network-input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        margin: 0 auto 0 auto;
+        max-width: 531px;
+
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 10px;
+
+        .select-network-input-img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: bottom;
+        }
+
+        p {
+            font-family: Montserrat Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 0 auto 0 auto;
+        }
+
+        .select-network-input-arrow {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
