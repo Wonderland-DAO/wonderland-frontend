@@ -292,7 +292,7 @@ function Farm() {
                                         <div>
                                             {rewards.map(
                                                 ({ balance, token }) =>
-                                                    (balance > 0 || token.name !== "BSGG") && (
+                                                    (balance > 0 || (token.name !== "BSGG" && token.name !== "SPELL")) && (
                                                         <div className="farm-token-wrap">
                                                             {token.img && (
                                                                 <div className="farm-token-img">
@@ -334,7 +334,7 @@ function Farm() {
                                             onHarvest();
                                         }}
                                     >
-                                        <p>Harvest</p>
+                                        <p>Claim Rewards</p>
                                     </div>
                                 </div>
                             </div>

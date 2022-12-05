@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Fade, Popper } from "@material-ui/core";
-import { time, memo, wmemo } from "../../../helpers/tokens";
+import { time, memo, wmemo, swmemo } from "../../../helpers/tokens";
 import "./time-menu.scss";
 
 const baseUrl = "https://app.wonderland.money/";

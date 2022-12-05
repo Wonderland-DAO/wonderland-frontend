@@ -4,6 +4,8 @@ import { ReactComponent as xIcon } from "../../assets/icons/x.svg";
 import { SvgIcon } from "@material-ui/core";
 import { redemptionPeriodStart, redemptionPeriodEnd } from "../../constants/redemption";
 import CircleIcon from "../../assets/icons/circle.svg";
+import RainGif from "../../assets/gifs/rain.gif";
+import BagGif from "../../assets/gifs/bag.gif";
 
 function LiquidityBanner() {
     const [showBanner, setShowBanner] = useState(true);
@@ -17,8 +19,25 @@ function LiquidityBanner() {
     return (
         <div className="liquidity-banner-root">
             <div className="liquidity-banner-text-conteiner">
-                <p className="liquidity-banner-text upper">Wonderland Moving Forward! 🚀</p>
-                <p className="liquidity-banner-text small">“A wise person does at once, what a fool does at last.”</p>
+                <p className="liquidity-banner-text">❄️ Winter Wonderland ❄️</p>
+            </div>
+            <div className="liquidity-banner-close-wrap" onClick={handleClose}>
+                <SvgIcon color="primary" component={xIcon} />
+            </div>
+        </div>
+    );
+
+    return (
+        <div className="liquidity-banner-root">
+            <div className="liquidity-banner-text-conteiner">
+                <p className="liquidity-banner-text upper">A new wild token appeared!</p>
+                <p className="liquidity-banner-text small">Stable coin USDC.e is available for farming!</p>
+                <div className="liquidity-banner-left-gif">
+                    <img alt="" src={RainGif} />
+                </div>
+                <div className="liquidity-banner-right-gif">
+                    <img alt="" src={RainGif} />
+                </div>
             </div>
             <div className="liquidity-banner-close-wrap" onClick={handleClose}>
                 <SvgIcon color="primary" component={xIcon} />

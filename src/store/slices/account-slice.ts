@@ -1,6 +1,6 @@
 import { ethers, BigNumber } from "ethers";
 import { getAddresses } from "../../constants";
-import { redemptionStatus, redemptionPeriodStart } from "../../constants/redemption";
+import { redemptionStatus, redemptionPeriodStart, redemptionPeriodEnd } from "../../constants/redemption";
 import { TimeTokenContract, MemoTokenContract, MimTokenContract, wMemoTokenContract, FarmContract, StableReserveContract, MemoExchangeAbi } from "../../abi";
 import { getTokenPrice, getWmemoMarketPrice, setAll, trim } from "../../helpers";
 
@@ -191,7 +191,7 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
         }
     }
 
-    if ((addresses.REDEMPTION_ADDRESS && redemptionStatus) || (addresses.REDEMPTION_ADDRESS && redemptionPeriodStart < Date.now())) {
+    if ((addresses.REDEMPTION_ADDRESS && redemptionStatus) || (addresses.REDEMPTION_ADDRESS && redemptionPeriodStart < Date.now() && redemptionPeriodEnd > Date.now())) {
         const redemptionContract = new ethers.Contract(addresses.REDEMPTION_ADDRESS, MemoExchangeAbi, provider);
         const amountClaimed = await redemptionContract.amountClaimed(address);
         try {
@@ -478,7 +478,8 @@ export const calculateUserRewardDetails = createAsyncThunk("account/calculateUse
 
     for (let i = 0; i < rewardTokenLength; i++) {
         const address = await farmContract.rewardTokens(i);
-        if (!EXCLUDED_APR_TOKEN.includes(address.toLocaleLowerCase())) {
+        const expired = (await farmContract.rewardData(address)).periodFinish;
+        if (!EXCLUDED_APR_TOKEN.includes(address.toLocaleLowerCase()) && parseInt(expired._hex, 16) > Date.now() / 1000) {
             tokenAprAddresses.push(address);
         }
     }

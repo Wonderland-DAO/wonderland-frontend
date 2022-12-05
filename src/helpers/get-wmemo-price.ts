@@ -13,7 +13,7 @@ export async function getWmemoMarketPrice(): Promise<number> {
     // const marketPrice = reserves[1] / reserves[0];
 
     //! Load token prices from DexScreener
-    const url = "https://api.dexscreener.com/latest/dex/pairs/avalanche/0xf93c610dd478d2e9fa47aa00ee3b726c6ac1c376";
+    const url = "https://api.dexscreener.com/latest/dex/pairs/avalanche/0x024ba2110590dffa4d6b288761c5ee1e78e62cd4";
     const { data } = await axios.get(url);
     const marketPrice = data.pairs[0].priceUsd;
 

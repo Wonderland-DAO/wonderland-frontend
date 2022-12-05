@@ -50,12 +50,38 @@
         cursor: pointer;
         margin-left: 30px;
         margin-top: 5px;
+
+        svg {
+            width: 15px;
+        }
     }
 
     .liquidity-banner-left-circle {
         position: absolute;
         left: 30px;
         bottom: -15px;
+    }
+
+    .liquidity-banner-left-gif {
+        position: absolute;
+        left: 50px;
+        bottom: -4px;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    .liquidity-banner-right-gif {
+        position: absolute;
+        right: 50px;
+        bottom: -4px;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
     }
 
     .liquidity-banner-right-circle {

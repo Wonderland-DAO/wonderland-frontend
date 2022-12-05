@@ -264,6 +264,17 @@
                         font-size: 14px;
                         color: #ffffff;
                     }
+
+                    .farm-staked-balance-wallet {
+                        img {
+                            position: relative;
+                            width: 23px;
+                            height: 23px;
+                            margin-left: 10px;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+                    }
                 }
 
                 .farm-token-img {

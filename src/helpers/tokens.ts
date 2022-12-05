@@ -48,6 +48,7 @@ import YakIcon from "../assets/tokens/YAK.png";
 import TimeIcon from "../assets/tokens/TIME.png";
 import MemoIcon from "../assets/tokens/MEMO.png";
 import BsggIcon from "../assets/tokens/BSGG.png";
+import swmemoIcon from "../assets/tokens/swMEMO.png";
 
 export interface IToken {
     name: string;
@@ -415,6 +416,13 @@ export const wmemo: IToken = {
     decimals: 18,
 };
 
+export const swmemo: IToken = {
+    name: "swMEMO",
+    address: "0xc172c84587bea6d593269bfe08632bf2da2bc0f6",
+    img: swmemoIcon,
+    decimals: 18,
+};
+
 export default [
     avax,
     aave,
@@ -467,4 +475,5 @@ export default [
     time,
     memo,
     wmemo,
+    swmemo,
 ];

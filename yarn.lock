@@ -8889,6 +8889,11 @@ ltgt@~2.2.0:
   resolved "https://registry.yarnpkg.com/ltgt/-/ltgt-2.2.1.tgz#f35ca91c493f7b73da0e07495304f17b31f87ee5"
   integrity sha1-81ypHEk/e3PaDgdJUwTxezH4fuU=
 
+magic-snowflakes@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/magic-snowflakes/-/magic-snowflakes-6.0.1.tgz#2e17fd82e5dbbc3c293481abd49d34544848c212"
+  integrity sha512-D6asLHNwvrkDtHfYzX/XzKAavw8LW3GiQgVa38id2NsmqXVMMs2VAfzP0TJRDF34YgKDfwRhDsnDLeI4Qdyr1Q==
+
 magic-string@^0.25.0, magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
