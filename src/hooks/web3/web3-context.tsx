@@ -42,7 +42,11 @@ export const useWeb3Context = () => {
     }, [web3Context]);
 };
 
-// !! NOTICE Fake Address • Debug purposes
+/**
+ * @test Fake address for testing purposes
+ * return "0x3aedfd634fd07a3b95d1ae4351067b9cee82091a";
+ */
+
 export const useAddress = () => {
     const { address } = useWeb3Context();
     return address;

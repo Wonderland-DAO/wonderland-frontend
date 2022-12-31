@@ -16,54 +16,11 @@ function LiquidityBanner() {
         return null;
     }
 
-    return (
-        <div className="liquidity-banner-root">
-            <div className="liquidity-banner-text-conteiner">
-                <p className="liquidity-banner-text">❄️ Winter Wonderland ❄️</p>
-            </div>
-            <div className="liquidity-banner-close-wrap" onClick={handleClose}>
-                <SvgIcon color="primary" component={xIcon} />
-            </div>
-        </div>
-    );
-
-    return (
-        <div className="liquidity-banner-root">
-            <div className="liquidity-banner-text-conteiner">
-                <p className="liquidity-banner-text upper">A new wild token appeared!</p>
-                <p className="liquidity-banner-text small">Stable coin USDC.e is available for farming!</p>
-                <div className="liquidity-banner-left-gif">
-                    <img alt="" src={RainGif} />
-                </div>
-                <div className="liquidity-banner-right-gif">
-                    <img alt="" src={RainGif} />
-                </div>
-            </div>
-            <div className="liquidity-banner-close-wrap" onClick={handleClose}>
-                <SvgIcon color="primary" component={xIcon} />
-            </div>
-        </div>
-    );
-
-    if (redemptionPeriodStart < Date.now() && redemptionPeriodEnd < Date.now()) {
+    if (redemptionPeriodStart < Date.now() && redemptionPeriodEnd > Date.now()) {
         return (
             <div className="liquidity-banner-root">
                 <div className="liquidity-banner-text-conteiner">
-                    <p className="liquidity-banner-text upper">The Wonderland Q3 2022 Redemption is now OVER!</p>
-                    <p className="liquidity-banner-text">The next Quarterly Redemption is scheduled to begin on the 1st of January 2023.</p>
-                </div>
-                <div className="liquidity-banner-close-wrap" onClick={handleClose}>
-                    <SvgIcon color="primary" component={xIcon} />
-                </div>
-            </div>
-        );
-    }
-
-    if (redemptionPeriodStart < Date.now()) {
-        return (
-            <div className="liquidity-banner-root">
-                <div className="liquidity-banner-text-conteiner">
-                    <p className="liquidity-banner-text upper">The Wonderland Q3 2022 Redemption is now LIVE!</p>
+                    <p className="liquidity-banner-text upper">❄️ The Wonderland Q4 2022 Redemption is now LIVE! ❄️</p>
                 </div>
                 <div className="liquidity-banner-close-wrap" onClick={handleClose}>
                     <SvgIcon color="primary" component={xIcon} />
@@ -71,6 +28,34 @@ function LiquidityBanner() {
             </div>
         );
     } else {
+        return (
+            <div className="liquidity-banner-root">
+                <div className="liquidity-banner-text-conteiner">
+                    <p className="liquidity-banner-text">❄️ Winter Wonderland ❄️</p>
+                </div>
+                <div className="liquidity-banner-close-wrap" onClick={handleClose}>
+                    <SvgIcon color="primary" component={xIcon} />
+                </div>
+            </div>
+        );
+
+        return (
+            <div className="liquidity-banner-root">
+                <div className="liquidity-banner-text-conteiner">
+                    <p className="liquidity-banner-text upper">A new wild token appeared!</p>
+                    <p className="liquidity-banner-text small">Stable coin USDC.e is available for farming!</p>
+                    <div className="liquidity-banner-left-gif">
+                        <img alt="" src={RainGif} />
+                    </div>
+                    <div className="liquidity-banner-right-gif">
+                        <img alt="" src={RainGif} />
+                    </div>
+                </div>
+                <div className="liquidity-banner-close-wrap" onClick={handleClose}>
+                    <SvgIcon color="primary" component={xIcon} />
+                </div>
+            </div>
+        );
         return (
             <div className="liquidity-banner-root">
                 <div className="liquidity-banner-text-conteiner">

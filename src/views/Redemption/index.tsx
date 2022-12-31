@@ -9,8 +9,6 @@ import { usePathForNetwork, useWeb3Context } from "src/hooks";
 import { IReduxState } from "src/store/slices/state.interface";
 import "./redemption.scss";
 import wMemoIcon from "../../assets/tokens/MEMO.png";
-import UsdcIcon from "../../assets/tokens/USDC.e.png";
-import BsggIcon from "../../assets/tokens/BSGG.png";
 import BridgeIcon from "../../assets/icons/bridge.svg";
 import { IPendingTxn, isPendingTxn, txnButtonText } from "src/store/slices/pending-txns-slice";
 import { Networks } from "src/constants";
@@ -20,6 +18,7 @@ import { warning } from "src/store/slices/messages-slice";
 import { messages } from "src/constants/messages";
 import moment from "moment";
 import VotesList from "../../constants/jsons/votes.json";
+import { IRedemptionTokens } from "src/store/slices/app-slice";
 
 function Redemption() {
     const dispatch = useDispatch();
@@ -50,12 +49,8 @@ function Redemption() {
         return state.account.farm && state.account.farm.wmemo;
     });
 
-    const redemptionRateUsdc = useSelector<IReduxState, number>(state => {
-        return state.app && state.app.redemptionRateUsdc;
-    });
-
-    const redemptionRateBsgg = useSelector<IReduxState, number>(state => {
-        return state.app && state.app.redemptionRateBsgg;
+    const redemptionTokens = useSelector<IReduxState, IRedemptionTokens[]>(state => {
+        return state.app.redemptionTokens;
     });
 
     const redemptionDeadline = useSelector<IReduxState, number>(state => {
@@ -67,24 +62,14 @@ function Redemption() {
     const trimmedWmemoBalance = trim(Number(wmemoBalance), 6);
     const trimmedAvailableToClaim = trim(Number(availableToClaim), 6);
 
+    interface convertion {
+        amount: string;
+    }
+
     const [quantity, setQuantity] = useState<string>("");
-    const [usdcConvert, setUsdcConvert] = useState<string>("");
-    const [bsggConvert, setBsggConvert] = useState<string>("");
 
     const handleSetQuantity = (amount: string) => {
         setQuantity(amount);
-        if (!amount) {
-            setUsdcConvert("");
-            setBsggConvert("");
-            return;
-        }
-        const usdc = BigNumber.from(ethers.utils.parseEther(amount))
-            .mul(BigNumber.from(redemptionRateUsdc).mul(Math.pow(10, 12)))
-            .div(ethers.utils.parseEther("1"));
-        const bsgg = BigNumber.from(ethers.utils.parseEther(amount)).mul(BigNumber.from(redemptionRateBsgg)).div(ethers.utils.parseEther("1"));
-
-        setUsdcConvert(ethers.utils.formatEther(usdc));
-        setBsggConvert(ethers.utils.formatEther(bsgg));
     };
 
     const setMax = () => {
@@ -99,8 +84,6 @@ function Redemption() {
         } else {
             await dispatch(changeSwap({ provider, networkID: chainID, value: quantity, address }));
             setQuantity("");
-            setUsdcConvert("");
-            setBsggConvert("");
         }
     };
 
@@ -118,9 +101,6 @@ function Redemption() {
     }, [redemptionDeadline]);
 
     const inList = useMemo(() => !!VotesList.find(({ voter }) => voter.toLocaleLowerCase() === address.toLocaleLowerCase()), [address]);
-
-    const redemptionRateUsdcNormalize = parseInt(ethers.utils.formatUnits(redemptionRateUsdc, "mwei"));
-    const redemptionRateBsggNormalize = parseInt(ethers.utils.formatEther(redemptionRateBsgg));
 
     return (
         <div className="redemption-view">
@@ -190,40 +170,24 @@ function Redemption() {
                                         </div>
                                         <div className="redemption-input-wrap">
                                             <p className="redemption-input-wrap-title">Receive</p>
-                                            <OutlinedInput
-                                                type="number"
-                                                placeholder="Amount"
-                                                className="redemption-input"
-                                                value={usdcConvert}
-                                                labelWidth={0}
-                                                disabled
-                                                startAdornment={
-                                                    <InputAdornment position="start">
-                                                        <div className="redemption-input-token-wrap">
-                                                            <img className="redemption-input-token-wrap-logo" src={UsdcIcon} alt="" />
-                                                            <p>USDC</p>
-                                                        </div>
-                                                    </InputAdornment>
-                                                }
-                                            />
-                                        </div>
-                                        <div className="redemption-input-wrap" style={{ marginTop: 10 }}>
-                                            <OutlinedInput
-                                                type="number"
-                                                placeholder="Amount"
-                                                className="redemption-input"
-                                                value={bsggConvert}
-                                                labelWidth={0}
-                                                disabled
-                                                startAdornment={
-                                                    <InputAdornment position="start">
-                                                        <div className="redemption-input-token-wrap">
-                                                            <img className="redemption-input-token-wrap-logo" src={BsggIcon} alt="" />
-                                                            <p>BSGG</p>
-                                                        </div>
-                                                    </InputAdornment>
-                                                }
-                                            />
+                                            {redemptionTokens.map(({ exchangeRate, token }) => (
+                                                <OutlinedInput
+                                                    type="number"
+                                                    placeholder="Amount"
+                                                    className="redemption-input"
+                                                    value={(parseFloat(quantity) * exchangeRate).toFixed(2)}
+                                                    labelWidth={0}
+                                                    disabled
+                                                    startAdornment={
+                                                        <InputAdornment position="start">
+                                                            <div className="redemption-input-token-wrap">
+                                                                <img className="redemption-input-token-wrap-logo" src={token.img} alt="" />
+                                                                <p>{token.name}</p>
+                                                            </div>
+                                                        </InputAdornment>
+                                                    }
+                                                />
+                                            ))}
                                         </div>
                                         {inList ? (
                                             hasAllowance() ? (
@@ -293,20 +257,15 @@ function Redemption() {
                                                     <div style={{ display: "flex" }}>
                                                         <p style={{ margin: "auto" }}>1 wMEMO = </p>
                                                         <div style={{ textAlign: "end", marginLeft: 5 }}>
-                                                            <p>
-                                                                {new Intl.NumberFormat("en-US", {
-                                                                    maximumFractionDigits: 0,
-                                                                    minimumFractionDigits: 0,
-                                                                }).format(redemptionRateUsdcNormalize)}{" "}
-                                                                USDC
-                                                            </p>
-                                                            <p>
-                                                                {new Intl.NumberFormat("en-US", {
-                                                                    maximumFractionDigits: 0,
-                                                                    minimumFractionDigits: 0,
-                                                                }).format(redemptionRateBsggNormalize)}{" "}
-                                                                BSGG
-                                                            </p>
+                                                            {redemptionTokens.map(({ exchangeRate, token }) => (
+                                                                <p>
+                                                                    {new Intl.NumberFormat("en-US", {
+                                                                        maximumFractionDigits: 0,
+                                                                        minimumFractionDigits: 0,
+                                                                    }).format(exchangeRate)}{" "}
+                                                                    {token.name}
+                                                                </p>
+                                                            ))}
                                                         </div>
                                                     </div>
                                                 )}

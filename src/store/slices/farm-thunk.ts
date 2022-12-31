@@ -94,7 +94,7 @@ export const changeStake = createAsyncThunk("farm/changeStake", async ({ action,
         }
     }
     dispatch(info({ text: messages.your_balance_update_soon }));
-    await sleep(10);
+    await sleep(15);
     await dispatch(getBalances({ address, networkID, provider }));
     await dispatch(calculateUserRewardDetails({ address, networkID, provider }));
     dispatch(info({ text: messages.your_balance_updated }));
@@ -135,7 +135,48 @@ export const getReward = createAsyncThunk("farm/getReward", async ({ provider, n
         }
     }
     dispatch(info({ text: messages.your_balance_update_soon }));
-    await sleep(10);
+    await sleep(15);
+    await dispatch(calculateUserRewardDetails({ address, networkID, provider }));
+    dispatch(info({ text: messages.your_balance_updated }));
+    return;
+});
+
+interface IExitFarm {
+    provider: StaticJsonRpcProvider | JsonRpcProvider;
+    networkID: Networks;
+    address: string;
+}
+
+export const exitFarm = createAsyncThunk("farm/exitFarm", async ({ provider, networkID, address }: IExitFarm, { dispatch }) => {
+    if (!provider) {
+        dispatch(warning({ text: messages.please_connect_wallet }));
+        return;
+    }
+
+    const addresses = getAddresses(networkID);
+    const signer = provider.getSigner();
+    const farmContract = new ethers.Contract(addresses.FARM_ADDRESS, FarmContract, signer);
+
+    let exitTx;
+
+    try {
+        const gasPrice = await getGasPrice(provider);
+
+        exitTx = await farmContract.exit({ gasPrice });
+
+        dispatch(fetchPendingTxns({ txnHash: exitTx.hash, text: "Farm Exit", type: "farm_exit" }));
+        await exitTx.wait();
+        dispatch(success({ text: messages.tx_successfully_send }));
+    } catch (err: any) {
+        return metamaskErrorWrap(err, dispatch);
+    } finally {
+        if (exitTx) {
+            dispatch(clearPendingTxn(exitTx.hash));
+        }
+    }
+    dispatch(info({ text: messages.your_balance_update_soon }));
+    await sleep(15);
+    await dispatch(getBalances({ address, networkID, provider }));
     await dispatch(calculateUserRewardDetails({ address, networkID, provider }));
     dispatch(info({ text: messages.your_balance_updated }));
     return;

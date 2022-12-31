@@ -94,6 +94,10 @@
                         margin-bottom: 5px;
                     }
 
+                    div {
+                        margin: 5px 0 5px 0;
+                    }
+
                     .redemption-input {
                         width: 100%;
 
@@ -130,6 +134,7 @@
                             display: flex;
                             flex-direction: row;
                             align-items: center;
+                            width: 120px;
 
                             p {
                                 margin-left: 10px;

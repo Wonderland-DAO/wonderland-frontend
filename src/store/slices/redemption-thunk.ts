@@ -1,7 +1,7 @@
 import { JsonRpcProvider, StaticJsonRpcProvider } from "@ethersproject/providers";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { BigNumber, ethers } from "ethers";
-import { wMemoTokenContract } from "src/abi";
+import { wMemoTokenContract, RedemptionAbi } from "../../abi";
 import { getAddresses, Networks } from "src/constants";
 import { messages } from "src/constants/messages";
 import { sleep } from "src/helpers";
@@ -10,7 +10,7 @@ import { metamaskErrorWrap } from "src/helpers/metamask-error-wrap";
 import { fetchAccountSuccess, getBalances } from "./account-slice";
 import { info, success, warning } from "./messages-slice";
 import { clearPendingTxn, fetchPendingTxns } from "./pending-txns-slice";
-import { MemoExchangeAbi } from "src/abi";
+
 import axios from "axios";
 
 export interface IChangeApproval {
@@ -78,14 +78,14 @@ export const changeSwap = createAsyncThunk("redemption/changeSwap", async ({ val
     const addresses = getAddresses(networkID);
     const signer = provider.getSigner();
     const amountInWei = ethers.utils.parseEther(value);
-    const redemptionContract = new ethers.Contract(addresses.REDEMPTION_ADDRESS, MemoExchangeAbi, signer);
+    const redemptionContract = new ethers.Contract(addresses.REDEMPTION_ADDRESS, RedemptionAbi, signer);
     const { amount, proof } = (await axios.get(`https://api.fanchy.xyz/wonderland/redemption?address=${address}`)).data.data;
 
     let swapTx;
 
     try {
         const gasPrice = await getGasPrice(provider);
-        swapTx = await redemptionContract.exchangeForAssets(amountInWei, address, amount, proof, { gasPrice });
+        swapTx = await redemptionContract.redeem(amountInWei, amount, proof, { gasPrice });
 
         const pendingTxnType = "redemption";
         dispatch(fetchPendingTxns({ txnHash: swapTx.hash, text: "Redemption", type: pendingTxnType }));
@@ -104,8 +104,8 @@ export const changeSwap = createAsyncThunk("redemption/changeSwap", async ({ val
     await dispatch(getBalances({ address, networkID, provider }));
     dispatch(info({ text: messages.your_balance_updated }));
 
-    const amountClaimed = await redemptionContract.amountClaimed(address);
-    const redemptionClaim = BigNumber.from(amount).sub(amountClaimed).toString();
+    const claimedCurrentRedemption = await redemptionContract.claimedCurrentRedemption(address);
+    const redemptionClaim = BigNumber.from(amount).sub(claimedCurrentRedemption).toString();
 
     return dispatch(
         fetchAccountSuccess({

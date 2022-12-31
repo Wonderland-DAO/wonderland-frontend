@@ -1,7 +1,7 @@
 import { ethers, BigNumber } from "ethers";
 import { getAddresses } from "../../constants";
 import { redemptionStatus, redemptionPeriodStart, redemptionPeriodEnd } from "../../constants/redemption";
-import { TimeTokenContract, MemoTokenContract, MimTokenContract, wMemoTokenContract, FarmContract, StableReserveContract, MemoExchangeAbi } from "../../abi";
+import { TimeTokenContract, MemoTokenContract, MimTokenContract, wMemoTokenContract, FarmContract, StableReserveContract, RedemptionAbi } from "../../abi";
 import { getTokenPrice, getWmemoMarketPrice, setAll, trim } from "../../helpers";
 
 import { createSlice, createSelector, createAsyncThunk } from "@reduxjs/toolkit";
@@ -192,11 +192,11 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
     }
 
     if ((addresses.REDEMPTION_ADDRESS && redemptionStatus) || (addresses.REDEMPTION_ADDRESS && redemptionPeriodStart < Date.now() && redemptionPeriodEnd > Date.now())) {
-        const redemptionContract = new ethers.Contract(addresses.REDEMPTION_ADDRESS, MemoExchangeAbi, provider);
-        const amountClaimed = await redemptionContract.amountClaimed(address);
+        const redemptionContract = new ethers.Contract(addresses.REDEMPTION_ADDRESS, RedemptionAbi, provider);
+        const claimedCurrentRedemption = await redemptionContract.claimedCurrentRedemption(address);
         try {
             const { amount } = (await axios.get(`https://api.fanchy.xyz/wonderland/redemption?address=${address}`)).data.data;
-            redemptionClaim = BigNumber.from(amount).sub(amountClaimed).toString();
+            redemptionClaim = BigNumber.from(amount).sub(claimedCurrentRedemption).toString();
         } catch (err) {}
     }
 
@@ -470,16 +470,18 @@ export const calculateUserRewardDetails = createAsyncThunk("account/calculateUse
     const rewardTokenLength = await farmContract.rewardTokenLength();
 
     for (let i = 0; i < rewardTokenLength; i++) {
-        const address = await farmContract.rewardTokens(i);
-        if (!EXCLUDED_TOKEN.includes(address.toLocaleLowerCase())) {
-            tokenAddresses.push(address);
+        const token = await farmContract.rewardTokens(i);
+        const expired = (await farmContract.rewardData(token)).periodFinish;
+        const pendingRewards = (await farmContract.earned(address, token))._hex;
+        if (pendingRewards > 0 || parseInt(expired._hex, 16) > Date.now() / 1000) {
+            tokenAddresses.push(token);
         }
     }
 
     for (let i = 0; i < rewardTokenLength; i++) {
         const address = await farmContract.rewardTokens(i);
         const expired = (await farmContract.rewardData(address)).periodFinish;
-        if (!EXCLUDED_APR_TOKEN.includes(address.toLocaleLowerCase()) && parseInt(expired._hex, 16) > Date.now() / 1000) {
+        if (parseInt(expired._hex, 16) > Date.now() / 1000) {
             tokenAprAddresses.push(address);
         }
     }

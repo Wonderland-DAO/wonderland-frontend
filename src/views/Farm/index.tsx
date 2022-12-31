@@ -12,7 +12,7 @@ import { IPendingTxn, isPendingTxn, txnButtonText } from "../../store/slices/pen
 import Wrap from "../../components/Wrap";
 import MemoIcon from "../../assets/tokens/MEMO.png";
 import Accordion from "../../components/Accordion";
-import { changeApproval, changeStake, getReward } from "../../store/slices/farm-thunk";
+import { changeApproval, changeStake, getReward, exitFarm } from "../../store/slices/farm-thunk";
 import { ITokenReward, IUserRewardsDetail } from "../../store/slices/account-slice";
 import { warning } from "../../store/slices/messages-slice";
 import { messages } from "../../constants/messages";
@@ -110,6 +110,12 @@ function Farm() {
         await dispatch(getReward({ address, provider, networkID: chainID }));
     };
 
+    const onExit = async () => {
+        if (await checkWrongNetwork()) return;
+
+        await dispatch(exitFarm({ address, provider, networkID: chainID }));
+    };
+
     const wmemoTotalFarmStaked = useSelector<IReduxState, string>(state => {
         return state.account.wmemoTotalFarmStaked;
     });
@@ -147,7 +153,13 @@ function Farm() {
                                 <Grid item xs={12} sm={6}>
                                     <div className="farm-card-tvl">
                                         <p className="farm-card-metrics-title">Total APR</p>
-                                        <p className="farm-card-metrics-value">{farmApr ? <>{new Intl.NumberFormat("en-US").format(farmApr)}%</> : <Skeleton width="150px" />}</p>
+                                        <p className="farm-card-metrics-value">
+                                            {farmApr ? (
+                                                <>{new Intl.NumberFormat("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(farmApr)}%</>
+                                            ) : (
+                                                <Skeleton width="150px" />
+                                            )}
+                                        </p>
                                     </div>
                                 </Grid>
 
@@ -283,59 +295,66 @@ function Farm() {
                                                         </div>
                                                     )}
                                                     <p className="farm-token-title">{token.name}</p>
-                                                    <p className="farm-token-value">{new Intl.NumberFormat("en-US").format(yieldWeek)}%</p>
+                                                    <p className="farm-token-value">
+                                                        {new Intl.NumberFormat("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(yieldWeek)}%
+                                                    </p>
                                                 </div>
                                             ))}
                                         </div>
                                     </Accordion>
                                     <Accordion title="Your farm rewards">
                                         <div>
-                                            {rewards.map(
-                                                ({ balance, token }) =>
-                                                    (balance > 0 || (token.name !== "BSGG" && token.name !== "SPELL")) && (
-                                                        <div className="farm-token-wrap">
-                                                            {token.img && (
-                                                                <div className="farm-token-img">
-                                                                    <img alt="" src={token.img} />
-                                                                </div>
-                                                            )}
-                                                            <p className="farm-token-title">
-                                                                {token.name}
-                                                                {isEthereumAPIAvailable && (
-                                                                    <Tooltip
-                                                                        classes={{ tooltip: classes.tooltip }}
-                                                                        placement="right"
-                                                                        title={"Add " + token.name + " to Web3 Wallet!"}
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src={WalletIcon}
-                                                                            onClick={addTokenToWallet(token.name, token.address, token.img, token.decimals)}
-                                                                        />
-                                                                    </Tooltip>
-                                                                )}
-                                                            </p>
-                                                            <p className="farm-token-value">
-                                                                {new Intl.NumberFormat("en-US", {
-                                                                    maximumFractionDigits: 6,
-                                                                    minimumFractionDigits: 0,
-                                                                }).format(balance)}
-                                                            </p>
+                                            {rewards.map(({ balance, token }) => (
+                                                <div className="farm-token-wrap">
+                                                    {token.img && (
+                                                        <div className="farm-token-img">
+                                                            <img alt="" src={token.img} />
                                                         </div>
-                                                    ),
-                                            )}
+                                                    )}
+                                                    <p className="farm-token-title">
+                                                        {token.name}
+                                                        {isEthereumAPIAvailable && (
+                                                            <Tooltip classes={{ tooltip: classes.tooltip }} placement="right" title={"Add " + token.name + " to Web3 Wallet!"}>
+                                                                <img alt="" src={WalletIcon} onClick={addTokenToWallet(token.name, token.address, token.img, token.decimals)} />
+                                                            </Tooltip>
+                                                        )}
+                                                    </p>
+                                                    <p className="farm-token-value">
+                                                        {new Intl.NumberFormat("en-US", {
+                                                            maximumFractionDigits: 6,
+                                                            minimumFractionDigits: 0,
+                                                        }).format(balance)}
+                                                    </p>
+                                                </div>
+                                            ))}
                                         </div>
                                     </Accordion>
-
-                                    <div
-                                        className="farm-harvest-btn"
-                                        onClick={() => {
-                                            if (isPendingTxn(pendingTransactions, "farm_harvest")) return;
-                                            onHarvest();
-                                        }}
-                                    >
-                                        <p>Claim Rewards</p>
-                                    </div>
+                                    <Grid container>
+                                        <Grid item xs={12} sm={12}>
+                                            <div className="farm-harvest-wrap">
+                                                <div
+                                                    className="farm-harvest-btn"
+                                                    onClick={() => {
+                                                        if (isPendingTxn(pendingTransactions, "farm_harvest")) return;
+                                                        onHarvest();
+                                                    }}
+                                                >
+                                                    <p>Claim Rewards</p>
+                                                </div>
+                                                <Tooltip classes={{ tooltip: classes.tooltip }} placement="top" title={"Withdraw your wMEMO & Claim Rewards"}>
+                                                    <div
+                                                        className="farm-exit-btn"
+                                                        onClick={() => {
+                                                            if (isPendingTxn(pendingTransactions, "exit_farm")) return;
+                                                            onExit();
+                                                        }}
+                                                    >
+                                                        <p>Exit</p>
+                                                    </div>
+                                                </Tooltip>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
                                 </div>
                             </div>
                         )}
