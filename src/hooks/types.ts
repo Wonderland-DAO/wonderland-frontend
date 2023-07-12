@@ -14,19 +14,6 @@ export interface IData {
     tokens?: IData[];
 }
 
-export interface DataSource {
-    total: number;
-    wallet?: IData[];
-    networks?: IData[];
-    protocols?: IData[];
-    vaults?: IData[];
-    leveragedPosition?: IData[];
-    liquidityPool?: IData[];
-    claimable?: IData[];
-    debt?: IData[];
-    farm?: IData[];
-}
-
 export interface RawData {
     wallet: IData[];
     vaults: IData[];

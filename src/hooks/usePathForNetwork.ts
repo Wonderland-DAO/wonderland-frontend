@@ -36,13 +36,6 @@ export function usePathForNetwork({ pathName, networkID, history }: { pathName: 
                     history.push("/dashboard");
                     break;
                 }
-            case "fund":
-                if (VIEWS_FOR_NETWORK[networkID] && VIEWS_FOR_NETWORK[networkID].fund) {
-                    break;
-                } else {
-                    history.push("/dashboard");
-                    break;
-                }
             case "redemption":
                 if (VIEWS_FOR_NETWORK[networkID] && VIEWS_FOR_NETWORK[networkID].redemption) {
                     break;

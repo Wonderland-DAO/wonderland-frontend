@@ -9,6 +9,7 @@ import { cubesImage } from "src/constants/img";
 import Messages from "../Messages";
 import LiquidityBanner from "../LiquidityBanner";
 import InfoBanner from "../InfoBanner";
+import BuyOnMainnet from "../BuyOnMainnet";
 import AirdropBanner from "../AirdropBanner";
 import { useWeb3Context } from "../../hooks";
 import { Networks } from "../../constants/blockchain";
@@ -84,7 +85,8 @@ function ViewBase({ children }: IViewBaseProps) {
                 )}
                 {/* {chainID === Networks.AVAX && <LiquidityBanner />} */}
                 {/* {chainID === Networks.AVAX && <AirdropBanner />} */}
-                {chainID === Networks.AVAX && <InfoBanner />}
+                {chainID === Networks.AVAX && <LiquidityBanner />}
+                {chainID === Networks.ETH && <BuyOnMainnet />}
                 {children}
             </div>
         </div>

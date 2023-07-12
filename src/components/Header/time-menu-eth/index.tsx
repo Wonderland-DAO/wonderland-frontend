@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link, Fade, Popper } from "@material-ui/core";
-import { time, memo, wmemo, swmemo } from "../../../helpers/tokens";
+import { wmemomainnet } from "../../../helpers/tokens";
 import "./time-menu.scss";
 
 const baseUrl = "https://app.wonderland.money/";
 
-const addTokenToWallet = (tokenSymbol: string, tokenAddress: string, tokenImage: string, tokenDecimals: number) => async () => {
+const addTokenToWalletMainnet = (tokenSymbol: string, tokenAddress: string, tokenImage: string, tokenDecimals: number) => async () => {
     if (window.ethereum) {
         try {
             await window.ethereum.request({
@@ -26,7 +26,7 @@ const addTokenToWallet = (tokenSymbol: string, tokenAddress: string, tokenImage:
     }
 };
 
-function TimeMenu() {
+function TimeMenuMainnet() {
     const [anchorEl, setAnchorEl] = useState(null);
     const isEthereumAPIAvailable = window.ethereum;
 
@@ -46,8 +46,8 @@ function TimeMenu() {
                 {({ TransitionProps }) => (
                     <Fade {...TransitionProps} timeout={200}>
                         <div className="tooltip">
-                            <Link className="tooltip-item" href={"https://kyberswap.com/swap/avalanche/usdt.e-to-wmemo"} target="_blank">
-                                <p>Buy on KyberSwap</p>
+                            <Link className="tooltip-item" href={"https://app.uniswap.org/#/swap?outputCurrency=0x3b79a28264fc52c7b4cea90558aa0b162f7faf57"} target="_blank">
+                                <p>Buy on Uniswap</p>
                             </Link>
 
                             {isEthereumAPIAvailable && (
@@ -55,14 +55,11 @@ function TimeMenu() {
                                     <div className="divider" />
                                     <p className="add-tokens-title">ADD TOKEN</p>
                                     <div className="divider" />
-                                    <div className="tooltip-item" onClick={addTokenToWallet(wmemo.name, wmemo.address, wmemo.img, wmemo.decimals)}>
+                                    <div
+                                        className="tooltip-item"
+                                        onClick={addTokenToWalletMainnet(wmemomainnet.name, wmemomainnet.address, wmemomainnet.img, wmemomainnet.decimals)}
+                                    >
                                         <p>wMEMO</p>
-                                    </div>
-                                    <div className="tooltip-item" onClick={addTokenToWallet(memo.name, memo.address, memo.img, memo.decimals)}>
-                                        <p>MEMO</p>
-                                    </div>
-                                    <div className="tooltip-item" onClick={addTokenToWallet(time.name, time.address, time.img, time.decimals)}>
-                                        <p>TIME</p>
                                     </div>
                                 </div>
                             )}
@@ -74,5 +71,5 @@ function TimeMenu() {
     );
 }
 
-export default TimeMenu;
-export { addTokenToWallet };
+export default TimeMenuMainnet;
+export { addTokenToWalletMainnet };

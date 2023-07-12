@@ -4,16 +4,14 @@ import { StakingContract, RedemptionAbi, MemoTokenContract, StableReserveContrac
 import { setAll } from "../../helpers";
 import { createSlice, createSelector, createAsyncThunk } from "@reduxjs/toolkit";
 import { JsonRpcProvider, StaticJsonRpcProvider } from "@ethersproject/providers";
-import { getMarketPrice, getTokenPrice } from "../../helpers";
 import { RootState } from "../store";
 import { Networks } from "../../constants/blockchain";
 import { error } from "../../store/slices/messages-slice";
 import { messages } from "../../constants/messages";
-import { getFundTotal } from "../../helpers/get-fund-total";
 import { IData } from "src/hooks/types";
 import { IToken } from "../../helpers/tokens";
 import axios from "axios";
-import redemptionTokens from "src/helpers/redemption-tokens";
+import tokens from "src/helpers/tokens";
 
 interface ILoadAppDetails {
     networkID: number;
@@ -30,18 +28,19 @@ export const loadAppDetails = createAsyncThunk("app/loadAppDetails", async ({ ne
         checkWrongNetwork();
     }
 
-    const { wMemoPrice } = await getMarketPrice();
     const currentBlock = await provider.getBlockNumber();
     const currentBlockTime = (await provider.getBlock(currentBlock)).timestamp;
 
-    const { zapper } = await getFundTotal();
     const stats = await (await axios.get(WONDERLAND_API)).data;
+    // Ethereum Pair
+    const wmemoAltPrice = await (await axios.get("https://api.fanchy.xyz/v1/wonderland/price")).data.priceUsd;
+    const wMemoPrice = wmemoAltPrice;
     const treasury = stats.treasury.illiquid;
     const burned = stats.token.burnedSupply.total;
     const circulation = stats.token.circulatingSupply;
-    // const totalSupply = stats.token.totalSupply;
     const rfvWmemo = treasury / circulation;
     const marketCap = circulation * wMemoPrice;
+    const externalTokens = stats.tokens;
 
     if (networkID !== Networks.AVAX) {
         return {
@@ -49,7 +48,6 @@ export const loadAppDetails = createAsyncThunk("app/loadAppDetails", async ({ ne
             treasuryBalance: treasury,
             currentBlock,
             currentBlockTime,
-            zapper,
             marketCap,
             rfvWmemo,
             circSupply: circulation,
@@ -95,15 +93,14 @@ export const loadAppDetails = createAsyncThunk("app/loadAppDetails", async ({ ne
         stakingAPY,
         circSupply: circulation,
         burnSupply: burned,
-        // stakingTVL,
         stakingRebase,
         currentBlockTime,
         nextRebase,
         wMemoMarketPrice: wMemoPrice,
         rfvWmemo,
-        zapper,
         redemptionTokens: tokens,
         redemptionDeadline,
+        externalTokens,
     };
 });
 
@@ -117,7 +114,7 @@ export interface IRedemptionTokens {
 }
 
 async function exchangeRate(tokenAddress: string, amount: string, provider: StaticJsonRpcProvider | JsonRpcProvider): Promise<IRedemptionTokens> {
-    let token = redemptionTokens.find(_token => _token.address.toLocaleLowerCase() === tokenAddress.toLocaleLowerCase());
+    let token = tokens.find(_token => _token.address.toLocaleLowerCase() === tokenAddress.toLocaleLowerCase());
 
     if (!token) {
         const tokenContract = new ethers.Contract(tokenAddress, StableReserveContract, provider);
@@ -168,6 +165,7 @@ export interface IAppSlice {
     zapper: IZapperData;
     redemptionTokens: IRedemptionTokens[];
     redemptionDeadline: number;
+    externalTokens: JSON;
 }
 
 const appSlice = createSlice({

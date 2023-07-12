@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "declaration": false,
+        "types": ["node"],
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "esModuleInterop": true,

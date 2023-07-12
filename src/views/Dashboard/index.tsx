@@ -35,10 +35,20 @@ function Dashboard() {
         return state.account.farm && state.account.farm.wmemo;
     });
 
+    const uwmemoBalance = useSelector<IReduxState, string>(state => {
+        return state.account.uwu && state.account.uwu.uwmemo;
+    });
+
+    const wmemoDebtBalance = useSelector<IReduxState, string>(state => {
+        return state.account.uwu && state.account.uwu.wmemodebt;
+    });
+
     const trimmedTimeBalance = trim(Number(timeBalance), 2);
     const trimmedMemoBalance = trim(Number(memoBalance), 2);
     const trimmedWmemoBalance = trim(Number(wmemoBalance), 6);
     const trimmedStakedWmemoBalance = trim(Number(wmemoStakedBalance), 6);
+    const trimmedUwmemoBalance = trim(Number(uwmemoBalance), 6);
+    const trimmedWmemoDebtBalance = trim(Number(wmemoDebtBalance), 6);
 
     const defaultToChain = useMemo(() => Number(getChainList(chainID)[0].chainId), [chainID]);
 
@@ -76,8 +86,9 @@ function Dashboard() {
 
                         <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
-                                <p className="card-title">Backing per $wMEMO</p>
+                                <p className="card-title">Full Backing Price</p>
                                 <p className="card-value">
+                                    ~
                                     {isAppLoading ? (
                                         <Skeleton width="250px" />
                                     ) : (
@@ -130,6 +141,7 @@ function Dashboard() {
                             <div className="dashboard-card">
                                 <p className="card-title">Treasury Balance</p>
                                 <p className="card-value">
+                                    ~
                                     {isAppLoading ? (
                                         <Skeleton width="250px" />
                                     ) : (
@@ -201,7 +213,9 @@ function Dashboard() {
                                 <Grid item lg={12} md={12} sm={12} xs={12}>
                                     <div className="dashboard-card dashboard-farm">
                                         <p className="card-title">Farm Balance</p>
-                                        <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : trimmedStakedWmemoBalance + " wMEMO"}</p>
+                                        <p className="card-value">
+                                            {isAppLoading ? <Skeleton width="250px" /> : trimmedStakedWmemoBalance} <span className="wmemo"> wMEMO</span>
+                                        </p>
                                     </div>
                                 </Grid>
                             </>
@@ -209,9 +223,27 @@ function Dashboard() {
                         {address && providerChainID === Networks.ETH && (
                             <>
                                 <Grid item lg={12} md={12} sm={12} xs={12}>
+                                    <div className="dashboard-card">
+                                        <p className="card-title">In Wallet</p>
+                                        <p className="card-value">
+                                            {isAppLoading ? <Skeleton width="250px" /> : trimmedWmemoBalance} <span className="wmemo"> wMEMO</span>
+                                        </p>
+                                    </div>
+                                </Grid>
+                                <Grid item lg={6} md={6} sm={6} xs={12}>
+                                    <div className="dashboard-card">
+                                        <p className="card-title">UwU Lend Deposits</p>
+                                        <p className="card-value">
+                                            {isAppLoading ? <Skeleton width="250px" /> : trimmedUwmemoBalance} <span className="wmemo"> uWMEMO</span>
+                                        </p>
+                                    </div>
+                                </Grid>
+                                <Grid item lg={6} md={6} sm={6} xs={12}>
                                     <div className="dashboard-card dashboard-farm">
-                                        <p className="card-title">wMEMO</p>
-                                        <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : trimmedWmemoBalance + " wMEMO"}</p>
+                                        <p className="card-title">UwU Lend Borrows</p>
+                                        <p className="card-value">
+                                            {isAppLoading ? <Skeleton width="250px" /> : trimmedWmemoDebtBalance} <span className="wmemo"> wMEMO</span>
+                                        </p>
                                     </div>
                                 </Grid>
                             </>

@@ -25,10 +25,10 @@ function SelectNetwork({ network, from, handleSelect }: ISelectNetworkProps) {
     return (
         <div className="select-network">
             <p className="select-network-title">{from ? "From chain" : "To chain"}</p>
-            <div className="select-network-input" onClick={handleOpenDialog}>
+            <div className="select-network-input" /*onClick={handleOpenDialog}*/>
                 <img className="select-network-input-img" alt="" src={img} />
                 <p>{chainName}</p>
-                <img className="select-network-input-arrow" alt="" src={ArrowDown} />
+                {/* <img className="select-network-input-arrow" alt="" src={ArrowDown} /> */}
             </div>
             <SelectNetworksDialog open={openDialog} handleClose={handleCloseDialog} handleSelect={handleOnSelect} />
         </div>

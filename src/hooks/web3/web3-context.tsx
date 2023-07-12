@@ -11,6 +11,7 @@ import { swithNetwork } from "../../helpers/switch-network";
 
 type onChainProvider = {
     connect: () => Promise<Web3Provider>;
+    autoConnect: () => Promise<Web3Provider>;
     switchNetwork: (chain: Networks) => void;
     disconnect: () => void;
     checkWrongNetwork: () => Promise<boolean>;
@@ -72,9 +73,9 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
                     options: {
                         rpc: {
                             [Networks.AVAX]: getMainnetURI(Networks.AVAX),
-                            [Networks.FANTOM]: getMainnetURI(Networks.FANTOM),
+                            //[Networks.FANTOM]: getMainnetURI(Networks.FANTOM),
                             [Networks.ETH]: getMainnetURI(Networks.ETH),
-                            [Networks.AETH]: getMainnetURI(Networks.AETH),
+                            //[Networks.AETH]: getMainnetURI(Networks.AETH),
                         },
                     },
                 },
@@ -105,6 +106,34 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
         },
         [provider],
     );
+
+    const autoConnect = useCallback(async () => {
+        if ((await window.ethereum._metamask?.isUnlocked()) === true) {
+            const rawProvider = await web3Modal.connect();
+
+            _initListeners(rawProvider);
+
+            const connectedProvider = new Web3Provider(rawProvider, "any");
+
+            const chainId = await connectedProvider.getNetwork().then(network => Number(network.chainId));
+            const connectedAddress = await connectedProvider.getSigner().getAddress();
+
+            setAddress(connectedAddress);
+
+            setProviderChainID(chainId);
+
+            if (AVAILABLE_CHAINS.includes(chainId)) {
+                setProvider(connectedProvider);
+                setChainID(chainId);
+            }
+
+            setConnected(true);
+
+            return connectedProvider;
+        } else {
+            return web3Modal.clearCachedProvider();
+        }
+    }, [provider, web3Modal, connected]);
 
     const connect = useCallback(async () => {
         const rawProvider = await web3Modal.connect();
@@ -181,8 +210,9 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
             checkWrongNetwork,
             checkWrongNetworkBalance,
             switchNetwork,
+            autoConnect,
         }),
-        [connect, disconnect, hasCachedProvider, provider, connected, address, chainID, web3Modal, providerChainID],
+        [autoConnect, connect, disconnect, hasCachedProvider, provider, connected, address, chainID, web3Modal, providerChainID],
     );
     //@ts-ignore
     return <Web3Context.Provider value={{ onChainProvider }}>{children}</Web3Context.Provider>;

@@ -31,8 +31,8 @@ export const mim = new StableBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
 });
 
@@ -44,14 +44,14 @@ export const mimPro = new StableV2Bond({
     bondContractABI: ProBondContract,
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
-        [Networks.FANTOM]: {
-            bondAddress: "0x629a650E173B730E0F7C1206BF9f74808F475d1b",
-            reserveAddress: "0x82f0b8b456c1a451378467398982d4834b6829c1",
-        },
-        [Networks.AETH]: {
-            bondAddress: "0x50f40350cbB170B6e5D2cC0859ac84ca17044d0a",
-            reserveAddress: "0xfea7a6a0b346362bf88a9e4a88416b77a57d6c2a",
-        },
+        // [Networks.FANTOM]: {
+        //     bondAddress: "0x629a650E173B730E0F7C1206BF9f74808F475d1b",
+        //     reserveAddress: "0x82f0b8b456c1a451378467398982d4834b6829c1",
+        // },
+        // [Networks.AETH]: {
+        //     bondAddress: "0x50f40350cbB170B6e5D2cC0859ac84ca17044d0a",
+        //     reserveAddress: "0xfea7a6a0b346362bf88a9e4a88416b77a57d6c2a",
+        // },
         [Networks.ETH]: {
             bondAddress: "0x17451Eb19D34e6c8404C3188F2fcc46c493146C9",
             reserveAddress: "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
@@ -61,8 +61,8 @@ export const mimPro = new StableV2Bond({
     isAvailable: {
         [Networks.AVAX]: false,
         [Networks.ETH]: true,
-        [Networks.FANTOM]: true,
-        [Networks.AETH]: true,
+        // [Networks.FANTOM]: true,
+        // [Networks.AETH]: true,
     },
     disableZap: true,
     deprecated: true,
@@ -87,8 +87,8 @@ export const wavax = new CustomBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
 });
 
@@ -110,8 +110,8 @@ export const weth = new CustomBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
     disableZap: true,
     deprecated: true,
@@ -138,8 +138,8 @@ export const mimTime = new LPBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
 });
 
@@ -164,8 +164,8 @@ export const avaxTime = new CustomLPBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
 });
 
@@ -189,8 +189,8 @@ export const wmemoMim = new NotTimeLpBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
     deprecated: true,
     tokensInStrategy: "40248760911630751941101",
@@ -216,8 +216,8 @@ export const wmemoUsdc = new NotTimeLpBond({
     isAvailable: {
         [Networks.AVAX]: true,
         [Networks.ETH]: false,
-        [Networks.FANTOM]: false,
-        [Networks.AETH]: false,
+        // [Networks.FANTOM]: false,
+        // [Networks.AETH]: false,
     },
     deprecated: true,
     tokensInStrategy: "40248760911630751941101",

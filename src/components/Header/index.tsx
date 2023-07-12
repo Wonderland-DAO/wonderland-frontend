@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import MenuIcon from "../../assets/icons/hamburger.svg";
 import TimeMenu from "./time-menu";
+import TimeMenuMainnet from "./time-menu-eth";
 import ConnectButton from "./connect-button";
 import WrapButton from "./wrap-button";
 import "./header.scss";
@@ -59,6 +60,7 @@ function Header({ handleDrawerToggle, drawe }: IHeader) {
                     </div>
                     <div className="dapp-topbar-btns-wrap">
                         {!isWrapShow && chainID === Networks.AVAX && <TimeMenu />}
+                        {chainID === Networks.ETH && <TimeMenuMainnet />}
                         {chainID === Networks.AVAX && <WrapButton />}
                         {!isVerySmallScreen && <NetworkMenu />}
                         <ConnectButton />

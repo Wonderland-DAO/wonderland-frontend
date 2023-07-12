@@ -1,19 +1,25 @@
 import { ethers, BigNumber } from "ethers";
 import { getAddresses } from "../../constants";
 import { redemptionStatus, redemptionPeriodStart, redemptionPeriodEnd } from "../../constants/redemption";
-import { TimeTokenContract, MemoTokenContract, MimTokenContract, wMemoTokenContract, FarmContract, StableReserveContract, RedemptionAbi } from "../../abi";
+import {
+    TimeTokenContract,
+    MemoTokenContract,
+    MimTokenContract,
+    wMemoTokenContract,
+    FarmContract,
+    StableReserveContract,
+    RedemptionAbi,
+    uWMemo_Abi,
+    wMemoDebt_Abi,
+} from "../../abi";
 import { getTokenPrice, getWmemoMarketPrice, setAll, trim } from "../../helpers";
-
 import { createSlice, createSelector, createAsyncThunk } from "@reduxjs/toolkit";
 import { JsonRpcProvider, StaticJsonRpcProvider } from "@ethersproject/providers";
 import { Bond } from "../../helpers/bond/bond";
 import { Networks } from "../../constants/blockchain";
-import React from "react";
 import { RootState } from "../store";
 import { IToken } from "../../helpers/tokens";
-import farmTokens, { EXCLUDED_TOKEN, EXCLUDED_APR_TOKEN } from "../../helpers/farm-tokens";
-import { rewardPerToken } from "../../helpers/rewardPerToken";
-import { earned } from "../../helpers/earned";
+import tokens from "../../helpers/tokens";
 import axios from "axios";
 
 interface IGetBalances {
@@ -31,6 +37,10 @@ interface IAccountBalances {
     farm: {
         wmemo: string;
     };
+    uwu: {
+        uwmemo: string;
+        wmemodebt: string;
+    };
 }
 
 export const getBalances = createAsyncThunk("account/getBalances", async ({ address, networkID, provider }: IGetBalances): Promise<IAccountBalances> => {
@@ -40,6 +50,8 @@ export const getBalances = createAsyncThunk("account/getBalances", async ({ addr
     let timeBalance = 0;
     let wmemoBalance = 0;
     let wMemoStaked = 0;
+    let uWMemoBalance = 0;
+    let wMemoDebtBalance = 0;
 
     if (addresses.MEMO_ADDRESS) {
         const memoContract = new ethers.Contract(addresses.MEMO_ADDRESS, MemoTokenContract, provider);
@@ -61,6 +73,16 @@ export const getBalances = createAsyncThunk("account/getBalances", async ({ addr
         wMemoStaked = await farmContract.balanceOf(address);
     }
 
+    if (addresses.UWMEMO_ADDRESS) {
+        const uwmemoContract = new ethers.Contract(addresses.UWMEMO_ADDRESS, uWMemo_Abi, provider);
+        uWMemoBalance = await uwmemoContract.balanceOf(address);
+    }
+
+    if (addresses.WMEMO_DEBT_ADDRESS) {
+        const wmemoDebtContract = new ethers.Contract(addresses.WMEMO_DEBT_ADDRESS, wMemoDebt_Abi, provider);
+        wMemoDebtBalance = await wmemoDebtContract.balanceOf(address);
+    }
+
     return {
         balances: {
             memo: ethers.utils.formatUnits(memoBalance, "gwei"),
@@ -69,6 +91,10 @@ export const getBalances = createAsyncThunk("account/getBalances", async ({ addr
         },
         farm: {
             wmemo: ethers.utils.formatEther(wMemoStaked),
+        },
+        uwu: {
+            uwmemo: ethers.utils.formatEther(uWMemoBalance),
+            wmemodebt: ethers.utils.formatEther(wMemoDebtBalance),
         },
     };
 });
@@ -128,6 +154,10 @@ interface IUserAccountDetails {
     farm: {
         wmemo: string;
     };
+    uwu: {
+        uwmemo: string;
+        wmemodebt: string;
+    };
     redemption: {
         wmemo: number;
     };
@@ -153,6 +183,9 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
     let wMemoRedemptionAllowance = 0;
 
     let redemptionClaim: number | string = 0;
+
+    let uWMemoBalance = 0;
+    let wMemoDebtBalance = 0;
 
     const addresses = getAddresses(networkID);
 
@@ -191,6 +224,16 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
         }
     }
 
+    if (addresses.UWMEMO_ADDRESS) {
+        const uwMemoContract = new ethers.Contract(addresses.UWMEMO_ADDRESS, uWMemo_Abi, provider);
+        uWMemoBalance = await uwMemoContract.balanceOf(address);
+    }
+
+    if (addresses.WMEMO_DEBT_ADDRESS) {
+        const wmemoDebtContract = new ethers.Contract(addresses.WMEMO_DEBT_ADDRESS, uWMemo_Abi, provider);
+        wMemoDebtBalance = await wmemoDebtContract.balanceOf(address);
+    }
+
     if ((addresses.REDEMPTION_ADDRESS && redemptionStatus) || (addresses.REDEMPTION_ADDRESS && redemptionPeriodStart < Date.now() && redemptionPeriodEnd > Date.now())) {
         const redemptionContract = new ethers.Contract(addresses.REDEMPTION_ADDRESS, RedemptionAbi, provider);
         const claimedCurrentRedemption = await redemptionContract.claimedCurrentRedemption(address);
@@ -219,6 +262,10 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
         },
         farm: {
             wmemo: ethers.utils.formatEther(wMemoStaked),
+        },
+        uwu: {
+            uwmemo: ethers.utils.formatEther(uWMemoBalance),
+            wmemodebt: ethers.utils.formatEther(wMemoDebtBalance),
         },
         redemption: {
             wmemo: Number(wMemoRedemptionAllowance),
@@ -392,6 +439,7 @@ interface ICalcUserRewardsDetail {
 
 export interface IUserRewardsDetail {
     balance: number;
+    value: number;
     token: IToken;
 }
 
@@ -402,7 +450,7 @@ export interface ITokenReward {
 }
 
 async function userReward(tokenAddress: string, amount: string, provider: StaticJsonRpcProvider | JsonRpcProvider): Promise<IUserRewardsDetail> {
-    let token = farmTokens.find(_token => _token.address.toLocaleLowerCase() === tokenAddress.toLocaleLowerCase());
+    let token = tokens.find(_token => _token.address.toLocaleLowerCase() === tokenAddress.toLocaleLowerCase());
 
     if (!token) {
         const tokenContract = new ethers.Contract(tokenAddress, StableReserveContract, provider);
@@ -418,12 +466,13 @@ async function userReward(tokenAddress: string, amount: string, provider: Static
 
     return {
         balance: Number(amount) / Math.pow(10, token.decimals),
+        value: (Number(amount) / Math.pow(10, token.decimals)) * getTokenPrice(token.name),
         token: JSON.parse(JSON.stringify(token)),
     };
 }
 
 async function tokenReward(tokenAddress: string, provider: StaticJsonRpcProvider | JsonRpcProvider, farmContract: ethers.Contract, wmemoValue: BigNumber) {
-    let token = farmTokens.find(_token => _token.address.toLocaleLowerCase() === tokenAddress.toLocaleLowerCase());
+    let token = tokens.find(_token => _token.address.toLocaleLowerCase() === tokenAddress.toLocaleLowerCase());
 
     if (!token) {
         const tokenContract = new ethers.Contract(tokenAddress, StableReserveContract, provider);
@@ -437,14 +486,12 @@ async function tokenReward(tokenAddress: string, provider: StaticJsonRpcProvider
         };
     }
 
-    // const rpt = await rewardPerToken(tokenAddress, farmContract);
-    // const test = await earned(tokenAddress, wmemoValue, rpt, farmContract);
     const totalSupply = await farmContract.totalSupply();
     const { rewardRate } = await farmContract.rewardData(tokenAddress);
 
     const twm = totalSupply.add(wmemoValue);
     const earned = wmemoValue.mul(rewardRate).mul("86400").div(twm);
-    const earnedUsd = Number(ethers.utils.formatEther(earned)) * getTokenPrice(token.name);
+    const earnedUsd = Number(ethers.utils.formatEther(earned)) * (getTokenPrice(token.name) * (18 - token.decimals === 0 ? 1 : Math.pow(10, 18 - token.decimals)));
 
     const yieldPerDay = earnedUsd / 10;
     const yieldWeek = yieldPerDay * 365;
@@ -466,6 +513,7 @@ export const calculateUserRewardDetails = createAsyncThunk("account/calculateUse
 
     const tokenAddresses: string[] = [];
     const tokenAprAddresses: string[] = [];
+    let totalUserRewards = 0;
 
     const rewardTokenLength = await farmContract.rewardTokenLength();
 
@@ -496,6 +544,7 @@ export const calculateUserRewardDetails = createAsyncThunk("account/calculateUse
                 rewards: [],
                 tokenRewards,
                 farmApr: apr,
+                totalUserRewards,
                 wmemoTotalFarmStaked: ethers.utils.formatEther(wmemoStaked),
             });
         });
@@ -504,10 +553,18 @@ export const calculateUserRewardDetails = createAsyncThunk("account/calculateUse
     const rawRewards = await Promise.all(tokenAddresses.map(async token => [token, await farmContract.earned(address, token)]));
     const rewards = await Promise.all(rawRewards.map((reward: string[]) => userReward(reward[0], reward[1], provider)));
 
+    for (let i = 0; i < rewards.length; i++) {
+        const reward = rewards[i];
+        const price = getTokenPrice(reward.token.name);
+
+        totalUserRewards += reward.balance * price;
+    }
+
     return {
         rewards,
         tokenRewards,
         farmApr: apr,
+        totalUserRewards,
         wmemoTotalFarmStaked: ethers.utils.formatEther(wmemoStaked),
     };
 });
@@ -535,9 +592,14 @@ export interface IAccountSlice {
     farm: {
         wmemo: string;
     };
+    uwu: {
+        uwmemo: string;
+        wmemodebt: string;
+    };
     rewards: IUserRewardsDetail[];
     tokenRewards: ITokenReward[];
     farmApr: number;
+    totalUserRewards: number;
     wmemoTotalFarmStaked: string;
     redemption: {
         wmemo: number;
@@ -556,9 +618,11 @@ const initialState: IAccountSlice = {
     tokens: {},
     bridge: { wmemo: 0 },
     farm: { wmemo: "" },
+    uwu: { uwmemo: "", wmemodebt: "" },
     rewards: [],
     tokenRewards: [],
     farmApr: 0,
+    totalUserRewards: 0,
     redemption: { wmemo: 0 },
     redemptionClaim: { avalable: "" },
     wmemoTotalFarmStaked: "",

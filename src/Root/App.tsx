@@ -9,16 +9,18 @@ import { IReduxState } from "../store/slices/state.interface";
 import Loading from "../components/Loader";
 import useBonds from "../hooks/bonds";
 import ViewBase from "../components/ViewBase";
-import { Stake, ChooseBond, Bond, Dashboard, NotFound, Calculator, Bridge, Fund, Blog, Redemption, Farm } from "../views";
+import { Stake, ChooseBond, Bond, Dashboard, NotFound, Calculator, Bridge, Blog, Redemption, Farm } from "../views";
 import "./style.scss";
 import useTokens from "../hooks/tokens";
 import { Networks } from "../constants/blockchain";
 import { calcWrapPrice } from "../store/slices/wrap-slice";
+import { inject } from "@vercel/analytics";
 
 function App() {
+    inject();
     const dispatch = useDispatch();
 
-    const { connect, provider, hasCachedProvider, chainID, connected, checkWrongNetwork } = useWeb3Context();
+    const { autoConnect, provider, hasCachedProvider, chainID, connected, checkWrongNetwork } = useWeb3Context();
     const address = useAddress();
 
     const [walletChecked, setWalletChecked] = useState(false);
@@ -90,7 +92,7 @@ function App() {
 
     useEffect(() => {
         if (hasCachedProvider()) {
-            connect().then(() => {
+            autoConnect().then(() => {
                 setWalletChecked(true);
             });
         } else {
@@ -154,13 +156,9 @@ function App() {
                     <Farm />
                 </Route>
 
-                <Route path="/bridge">
+                {/* <Route path="/bridge">
                     <Bridge />
-                </Route>
-
-                <Route exact path="/fund">
-                    <Fund />
-                </Route>
+                </Route> */}
 
                 <Route path="/blog">
                     <Blog />

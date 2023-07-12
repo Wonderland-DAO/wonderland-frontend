@@ -332,9 +332,16 @@ export const usdc: IToken = {
     decimals: 6,
 };
 
-const usdt: IToken = {
+export const usdte: IToken = {
     name: "USDT.e",
     address: "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
+    img: UsdtEIcon,
+    decimals: 6,
+};
+
+export const usdt: IToken = {
+    name: "USDt",
+    address: "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
     img: UsdtEIcon,
     decimals: 6,
 };
@@ -423,6 +430,13 @@ export const swmemo: IToken = {
     decimals: 18,
 };
 
+export const wmemomainnet: IToken = {
+    name: "wMEMO",
+    address: "0x3b79a28264fC52c7b4CEA90558AA0B162f7Faf57",
+    img: MemoIcon,
+    decimals: 18,
+};
+
 export default [
     avax,
     aave,
@@ -464,6 +478,7 @@ export default [
     tsd,
     usdc,
     usdt,
+    usdte,
     vso,
     wavax,
     wbtc,
@@ -476,4 +491,5 @@ export default [
     memo,
     wmemo,
     swmemo,
+    wmemomainnet,
 ];

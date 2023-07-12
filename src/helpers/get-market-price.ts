@@ -18,11 +18,16 @@ export async function getMarketPrice() {
 
     // const wMemoPrice = reserves[1] / reserves[0];
 
-    //! Load token prices from DexScreener
-    const url = "https://api.dexscreener.com/latest/dex/pairs/avalanche/0x024ba2110590dffa4d6b288761c5ee1e78e62cd4";
+    //! Load token prices from API
+    // const url = "https://api.fanchy.xyz/v1/wonderland/tokens";
+    // const { data } = await axios.get(url);
+
+    //! Load token prices from API Ethereum Pair
+    const url = "https://api.fanchy.xyz/v1/wonderland/price";
     const { data } = await axios.get(url);
 
-    const wMemoPrice = data.pairs[0].priceUsd;
+    // const wMemoPrice = data.wMEMO;
+    const wMemoPrice = data.priceUsd;
 
     const wMemoContract = new ethers.Contract(addresses.WMEMO_ADDRESS, wMemoTokenContract, provider);
     const timeValue = await wMemoContract.wMEMOToMEMO(ethers.utils.parseEther("1"));

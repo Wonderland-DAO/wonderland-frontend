@@ -27,7 +27,7 @@ function Farm() {
     const history = useHistory();
     usePathForNetwork({ pathName: "farm", networkID: chainID, history });
 
-    const [view, setView] = useState(0);
+    const [view, setView] = useState(1);
     const [wrapOpen, setWrapOpen] = useState(false);
     const [quantity, setQuantity] = useState<string>("");
 
@@ -43,8 +43,14 @@ function Farm() {
         return state.account.farm && state.account.farm.wmemo;
     });
 
+    const wmemoToWithdraw = parseFloat(wmemoStakedBalance);
+
     const rewards = useSelector<IReduxState, IUserRewardsDetail[]>(state => {
         return state.account.rewards;
+    });
+
+    const totalUserRewards = useSelector<IReduxState, number>(state => {
+        return state.account.totalUserRewards;
     });
 
     const tokenAprRewards = useSelector<IReduxState, ITokenReward[]>(state => {
@@ -135,7 +141,7 @@ function Farm() {
                     <Grid className="farm-card-grid" container direction="column" spacing={2}>
                         <Grid item>
                             <div className="farm-card-header">
-                                <p className="farm-card-header-title">Revenue Sharing</p>
+                                <p className="farm-card-header-title">Farm</p>
 
                                 {isWrapShow && (
                                     <div onClick={handleWrapOpen} className="farm-card-wrap-btn">
@@ -149,21 +155,22 @@ function Farm() {
 
                     <Grid item>
                         <div className="farm-card-metrics">
-                            <Grid container spacing={2}>
-                                <Grid item xs={12} sm={6}>
+                            <Grid container spacing={0}>
+                                <Grid item xs={12} sm={12}>
                                     <div className="farm-card-tvl">
-                                        <p className="farm-card-metrics-title">Total APR</p>
+                                        {/* <p className="farm-card-metrics-title">Total APR</p>
                                         <p className="farm-card-metrics-value">
                                             {farmApr ? (
                                                 <>{new Intl.NumberFormat("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(farmApr)}%</>
                                             ) : (
                                                 <Skeleton width="150px" />
                                             )}
-                                        </p>
+                                        </p> */}
+                                        <p className="farm-card-metrics-title">The Farm is paused</p>
                                     </div>
                                 </Grid>
 
-                                <Grid item xs={12} sm={6}>
+                                {/* <Grid item xs={12} sm={6}>
                                     <div className="farm-card-tvl">
                                         <p className="farm-card-metrics-title">Staked wMEMO</p>
                                         <p className="farm-card-metrics-value">
@@ -179,7 +186,7 @@ function Farm() {
                                             )}
                                         </p>
                                     </div>
-                                </Grid>
+                                </Grid> */}
                             </Grid>
                         </div>
                     </Grid>
@@ -193,16 +200,16 @@ function Farm() {
                                 <p className="farm-card-wallet-desc-text">Connect your wallet to stake wMEMO tokens!</p>
                             </div>
                         )}
-                        {address && (
+                        {address && (wmemoToWithdraw > 0 || rewards.length > 0) && (
                             <div>
                                 <div className="farm-card-action-area">
                                     <div className="farm-card-action-stage-btns-wrap">
-                                        <div onClick={changeView(0)} className={classnames("farm-card-action-stage-btn", { active: !view })}>
+                                        {/* <div onClick={changeView(0)} className={classnames("farm-card-action-stage-btn", { active: !view })}>
                                             <p>Stake</p>
                                         </div>
                                         <div onClick={changeView(1)} className={classnames("farm-card-action-stage-btn", { active: view })}>
                                             <p>Unstake</p>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <div className="farm-card-action-row">
@@ -285,7 +292,7 @@ function Farm() {
                                             }).format(Number(wmemoStakedBalance))}
                                         </p>
                                     </div>
-                                    <Accordion title="Projected pool APR">
+                                    {/* <Accordion title="Projected pool APR">
                                         <div>
                                             {tokenAprRewards.map(({ yieldWeek, token }) => (
                                                 <div className="farm-token-wrap">
@@ -301,60 +308,99 @@ function Farm() {
                                                 </div>
                                             ))}
                                         </div>
-                                    </Accordion>
-                                    <Accordion title="Your farm rewards">
-                                        <div>
-                                            {rewards.map(({ balance, token }) => (
-                                                <div className="farm-token-wrap">
-                                                    {token.img && (
-                                                        <div className="farm-token-img">
-                                                            <img alt="" src={token.img} />
+                                    </Accordion> */}
+                                    {rewards.length > 0 && (
+                                        <>
+                                            <Accordion title="Your farm rewards">
+                                                <div>
+                                                    {rewards.map(({ balance, value, token }) => (
+                                                        <div className="farm-token-wrap">
+                                                            {token.img && (
+                                                                <div className="farm-token-img">
+                                                                    <img alt="" src={token.img} />
+                                                                </div>
+                                                            )}
+                                                            <p className="farm-token-title">
+                                                                {token.name}
+                                                                {isEthereumAPIAvailable && (
+                                                                    <Tooltip
+                                                                        classes={{ tooltip: classes.tooltip }}
+                                                                        placement="right"
+                                                                        title={"Add " + token.name + " to Web3 Wallet!"}
+                                                                    >
+                                                                        <img
+                                                                            alt=""
+                                                                            src={WalletIcon}
+                                                                            onClick={addTokenToWallet(token.name, token.address, token.img, token.decimals)}
+                                                                        />
+                                                                    </Tooltip>
+                                                                )}
+                                                            </p>
+                                                            <p className="farm-token-value">
+                                                                {new Intl.NumberFormat("en-US", {
+                                                                    maximumFractionDigits: token.decimals / 3,
+                                                                    minimumFractionDigits: 0,
+                                                                }).format(balance)}
+                                                                {" ("}
+                                                                {value > 1
+                                                                    ? new Intl.NumberFormat("en-US", {
+                                                                          style: "currency",
+                                                                          currency: "USD",
+                                                                          maximumFractionDigits: 0,
+                                                                          minimumFractionDigits: 0,
+                                                                      }).format(value)
+                                                                    : new Intl.NumberFormat("en-US", {
+                                                                          style: "currency",
+                                                                          currency: "USD",
+                                                                          maximumFractionDigits: 2,
+                                                                          minimumFractionDigits: 0,
+                                                                      }).format(value)}
+                                                                {")"}
+                                                            </p>
                                                         </div>
-                                                    )}
-                                                    <p className="farm-token-title">
-                                                        {token.name}
-                                                        {isEthereumAPIAvailable && (
-                                                            <Tooltip classes={{ tooltip: classes.tooltip }} placement="right" title={"Add " + token.name + " to Web3 Wallet!"}>
-                                                                <img alt="" src={WalletIcon} onClick={addTokenToWallet(token.name, token.address, token.img, token.decimals)} />
-                                                            </Tooltip>
-                                                        )}
-                                                    </p>
-                                                    <p className="farm-token-value">
-                                                        {new Intl.NumberFormat("en-US", {
-                                                            maximumFractionDigits: 6,
-                                                            minimumFractionDigits: 0,
-                                                        }).format(balance)}
-                                                    </p>
+                                                    ))}
                                                 </div>
-                                            ))}
-                                        </div>
-                                    </Accordion>
-                                    <Grid container>
-                                        <Grid item xs={12} sm={12}>
-                                            <div className="farm-harvest-wrap">
-                                                <div
-                                                    className="farm-harvest-btn"
-                                                    onClick={() => {
-                                                        if (isPendingTxn(pendingTransactions, "farm_harvest")) return;
-                                                        onHarvest();
-                                                    }}
-                                                >
-                                                    <p>Claim Rewards</p>
-                                                </div>
-                                                <Tooltip classes={{ tooltip: classes.tooltip }} placement="top" title={"Withdraw your wMEMO & Claim Rewards"}>
-                                                    <div
-                                                        className="farm-exit-btn"
-                                                        onClick={() => {
-                                                            if (isPendingTxn(pendingTransactions, "exit_farm")) return;
-                                                            onExit();
-                                                        }}
-                                                    >
-                                                        <p>Exit</p>
-                                                    </div>
-                                                </Tooltip>
+                                            </Accordion>
+                                            <div className="farm-reward-balance-wrap">
+                                                <p className="farm-reward-balance-title">Total Rewards</p>
+                                                <p className="farm-reward-balance-value">
+                                                    {new Intl.NumberFormat("en-US", {
+                                                        style: "currency",
+                                                        currency: "USD",
+                                                        maximumFractionDigits: 2,
+                                                        minimumFractionDigits: 0,
+                                                    }).format(Number(totalUserRewards))}
+                                                </p>
                                             </div>
-                                        </Grid>
-                                    </Grid>
+
+                                            <Grid container>
+                                                <Grid item xs={12} sm={12}>
+                                                    <div className="farm-harvest-wrap">
+                                                        <div
+                                                            className="farm-harvest-btn"
+                                                            onClick={() => {
+                                                                if (isPendingTxn(pendingTransactions, "farm_harvest")) return;
+                                                                onHarvest();
+                                                            }}
+                                                        >
+                                                            <p>Claim Rewards</p>
+                                                        </div>
+                                                        <Tooltip classes={{ tooltip: classes.tooltip }} placement="top" title={"Withdraw your wMEMO & Claim Rewards"}>
+                                                            <div
+                                                                className="farm-exit-btn"
+                                                                onClick={() => {
+                                                                    if (isPendingTxn(pendingTransactions, "exit_farm")) return;
+                                                                    onExit();
+                                                                }}
+                                                            >
+                                                                <p>Exit</p>
+                                                            </div>
+                                                        </Tooltip>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
+                                        </>
+                                    )}
                                 </div>
                             </div>
                         )}

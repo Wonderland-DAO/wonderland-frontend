@@ -26,3 +26,6 @@ export { abi as AirdropContract } from "./AirdropContract.json";
 export { abi as RedemptionAbi } from "./RedemptionAbi.json";
 export { abi as ConvexStakingWrapperAbra } from "./ConvexStakingWrapperAbra.json";
 export { abi as CurVyper_contract } from "./CurVyper_contract.json";
+
+export { abi as uWMemo_Abi } from "./uwu/uWMemoContract.json";
+export { abi as wMemoDebt_Abi } from "./uwu/wMemoDebtContract.json";

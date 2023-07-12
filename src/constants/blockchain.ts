@@ -7,15 +7,15 @@ export const TOKEN_DECIMALS = 9;
 
 export enum Networks {
     AVAX = 43114,
-    FANTOM = 250,
+    //FANTOM = 250,
     ETH = 1,
-    AETH = 42161,
+    //AETH = 42161,
 }
 
 export const DEFAULD_NETWORK = Networks.AVAX;
 
-export const AVAILABLE_CHAINS = [Networks.AVAX, Networks.FANTOM, Networks.ETH, Networks.AETH];
-export const WMEMO_BRIDG_CHAINS = [Networks.AVAX, Networks.FANTOM, Networks.ETH, Networks.AETH];
+export const AVAILABLE_CHAINS = [Networks.AVAX, Networks.ETH];
+export const WMEMO_BRIDG_CHAINS = [Networks.AVAX, Networks.ETH];
 export const BALANCE_CHAINS = [Networks.AVAX, Networks.ETH];
 
 export const NetworksInfo = {
@@ -32,19 +32,19 @@ export const NetworksInfo = {
         },
         img: AvaxIcon,
     },
-    [Networks.FANTOM]: {
-        chainId: "0xfa",
-        chainName: "Fantom",
-        shortName: "FTM",
-        rpcUrls: ["https://rpc.ftm.tools/", "https://rpcapi.fantom.network/", "https://rpc.fantom.network/"],
-        blockExplorerUrls: ["https://ftmscan.com/"],
-        nativeCurrency: {
-            name: "Fantom",
-            symbol: "FTM",
-            decimals: 18,
-        },
-        img: FtmIcon,
-    },
+    // [Networks.FANTOM]: {
+    //     chainId: "0xfa",
+    //     chainName: "Fantom",
+    //     shortName: "FTM",
+    //     rpcUrls: ["https://rpc.ftm.tools/", "https://rpcapi.fantom.network/", "https://rpc.fantom.network/"],
+    //     blockExplorerUrls: ["https://ftmscan.com/"],
+    //     nativeCurrency: {
+    //         name: "Fantom",
+    //         symbol: "FTM",
+    //         decimals: 18,
+    //     },
+    //     img: FtmIcon,
+    // },
     [Networks.ETH]: {
         chainId: "0x1",
         chainName: "Ethereum",
@@ -58,17 +58,17 @@ export const NetworksInfo = {
         },
         img: EthIcon,
     },
-    [Networks.AETH]: {
-        chainId: "0xa4b1",
-        chainName: "Arbitrum",
-        shortName: "AETH",
-        rpcUrls: ["https://arb1.arbitrum.io/rpc"],
-        blockExplorerUrls: ["https://arbiscan.io"],
-        nativeCurrency: {
-            name: "Ether",
-            symbol: "AETH",
-            decimals: 18,
-        },
-        img: AethIcon,
-    },
+    // [Networks.AETH]: {
+    //     chainId: "0xa4b1",
+    //     chainName: "Arbitrum",
+    //     shortName: "AETH",
+    //     rpcUrls: ["https://arb1.arbitrum.io/rpc"],
+    //     blockExplorerUrls: ["https://arbiscan.io"],
+    //     nativeCurrency: {
+    //         name: "Ether",
+    //         symbol: "AETH",
+    //         decimals: 18,
+    //     },
+    //     img: AethIcon,
+    // },
 };

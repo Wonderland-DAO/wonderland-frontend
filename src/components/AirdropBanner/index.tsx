@@ -78,7 +78,7 @@ function AirdropBanner() {
 
             const estimateGas = await contract.estimateGas.claim(index, account, amount, merkleProof);
             const gasLimit = 1000 + +estimateGas.toString();
-            console.log("gasLimit:", gasLimit);
+            // console.log("gasLimit:", gasLimit);
 
             await contract.claim(index, account, amount, merkleProof);
         } catch (e) {

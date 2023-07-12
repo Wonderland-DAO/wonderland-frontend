@@ -276,6 +276,44 @@
                         }
                     }
                 }
+                .farm-reward-balance-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 20px 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+                    .farm-reward-balance-title {
+                        font-family: Montserrat Medium;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #ffffff;
+                    }
+
+                    .farm-reward-balance-value {
+                        margin-left: auto;
+
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+
+                    .farm-reward-balance-wallet {
+                        img {
+                            position: relative;
+                            width: 23px;
+                            height: 23px;
+                            margin-left: 10px;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+                    }
+                }
 
                 .farm-token-img {
                     width: 30px;

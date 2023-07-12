@@ -7,7 +7,6 @@ interface IViewsForNetwork {
     mints: boolean;
     calculator: boolean;
     farm: boolean;
-    fund: boolean;
     redemption: boolean;
 }
 
@@ -18,7 +17,6 @@ export const VIEWS_FOR_NETWORK: { [key: number]: IViewsForNetwork } = {
         mints: false,
         calculator: false,
         farm: false,
-        fund: false,
         redemption: false,
     },
     [Networks.AVAX]: {
@@ -27,25 +25,22 @@ export const VIEWS_FOR_NETWORK: { [key: number]: IViewsForNetwork } = {
         mints: false,
         calculator: false,
         farm: true,
-        fund: false,
         redemption: redemptionStatus || (redemptionPeriodStart < Date.now() && redemptionPeriodEnd > Date.now()) ? true : false,
     },
-    [Networks.FANTOM]: {
-        dashboard: true,
-        stake: false,
-        mints: false,
-        calculator: false,
-        farm: false,
-        fund: false,
-        redemption: false,
-    },
-    [Networks.AETH]: {
-        dashboard: true,
-        stake: false,
-        mints: false,
-        calculator: false,
-        farm: false,
-        fund: false,
-        redemption: false,
-    },
+    // [Networks.FANTOM]: {
+    //     dashboard: true,
+    //     stake: false,
+    //     mints: false,
+    //     calculator: false,
+    //     farm: false,
+    //     redemption: false,
+    // },
+    // [Networks.AETH]: {
+    //     dashboard: true,
+    //     stake: false,
+    //     mints: false,
+    //     calculator: false,
+    //     farm: false,
+    //     redemption: false,
+    // },
 };

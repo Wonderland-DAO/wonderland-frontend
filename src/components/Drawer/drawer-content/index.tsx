@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Social from "./social";
 import StakeIcon from "../../../assets/icons/stake.svg";
 import BondIcon from "../../../assets/icons/bond.svg";
-import WonderlandIcon from "../../../assets/icons/wonderland-nav-header-christmas.svg";
+import WonderlandIcon from "../../../assets/icons/wonderland-nav-header.svg";
 import DashboardIcon from "../../../assets/icons/dashboard.svg";
 import { trim, shorten } from "../../../helpers";
 import { useAddress, useWeb3Context } from "../../../hooks";
@@ -17,7 +17,6 @@ import classnames from "classnames";
 import BridgeIcon from "../../../assets/icons/bridge-alt.svg";
 import { Networks, VIEWS_FOR_NETWORK } from "../../../constants";
 import BlogIcon from "../../../assets/icons/medium.svg";
-import FundIcon from "../../../assets/icons/fund.png";
 import RedemptionIcon from "../../../assets/icons/redemption.svg";
 import FarmIcon from "../../../assets/icons/farm.svg";
 
@@ -45,9 +44,6 @@ function NavContent() {
             return true;
         }
         if (currentPath.indexOf("bridge") >= 0 && page === "bridge") {
-            return true;
-        }
-        if (currentPath.indexOf("fund") >= 0 && page === "fund") {
             return true;
         }
         if (currentPath.indexOf("blog") >= 0 && page === "blog") {
@@ -185,7 +181,7 @@ function NavContent() {
                         </Link>
                     )}
 
-                    <Link
+                    {/* <Link
                         component={NavLink}
                         to="/bridge"
                         isActive={(match: any, location: any) => {
@@ -197,23 +193,7 @@ function NavContent() {
                             <img alt="" src={BridgeIcon} />
                             <p>Bridge</p>
                         </div>
-                    </Link>
-
-                    {VIEWS_FOR_NETWORK[chainID].fund && (
-                        <Link
-                            component={NavLink}
-                            to="/fund"
-                            isActive={(match: any, location: any) => {
-                                return checkPage(location, "fund");
-                            }}
-                            className={classnames("button-dapp-menu", { active: isActive })}
-                        >
-                            <div className="dapp-menu-item">
-                                <img alt="" src={FundIcon} />
-                                <p>Fund</p>
-                            </div>
-                        </Link>
-                    )}
+                    </Link> */}
 
                     <Link
                         component={NavLink}

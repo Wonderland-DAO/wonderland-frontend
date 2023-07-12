@@ -12,10 +12,15 @@ export async function getWmemoMarketPrice(): Promise<number> {
 
     // const marketPrice = reserves[1] / reserves[0];
 
-    //! Load token prices from DexScreener
-    const url = "https://api.dexscreener.com/latest/dex/pairs/avalanche/0x024ba2110590dffa4d6b288761c5ee1e78e62cd4";
+    //! Load token prices from API
+    //const url = "https://api.fanchy.xyz/v1/wonderland/tokens";
+    //const { data } = await axios.get(url);
+    //const marketPrice = data.wMEMO;
+
+    //! Load token prices from API Ethereum Pair
+    const url = "https://api.fanchy.xyz/v1/wonderland/price";
     const { data } = await axios.get(url);
-    const marketPrice = data.pairs[0].priceUsd;
+    const marketPrice = data.priceUsd;
 
     return marketPrice;
 }

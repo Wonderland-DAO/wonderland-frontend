@@ -177,7 +177,7 @@ function Bridge() {
                                         </div>
                                         <div className="data-row">
                                             <p className="data-row-name">Minimum Crosschain Fee</p>
-                                            <p className="data-row-value">0.00056 wMEMO</p>
+                                            <p className="data-row-value">0.000075 wMEMO</p>
                                         </div>
                                         <div className="data-row">
                                             <p className="data-row-name">Maximum Crosschain Fee</p>
@@ -185,7 +185,7 @@ function Bridge() {
                                         </div>
                                         <div className="data-row">
                                             <p className="data-row-name">Minimum Crosschain Amount</p>
-                                            <p className="data-row-value">0.00063 wMEMO</p>
+                                            <p className="data-row-value">0.00015 wMEMO</p>
                                         </div>
                                         <div className="data-row">
                                             <p className="data-row-name">Maximum Crosschain Amount</p>
@@ -201,7 +201,7 @@ function Bridge() {
                                         </div>
                                         <div className="data-row">
                                             <p className="data-row-name">Powered By</p>
-                                            <p className="data-row-value">Anyswap</p>
+                                            <p className="data-row-value">Multichain</p>
                                         </div>
                                     </div>
                                 </div>
