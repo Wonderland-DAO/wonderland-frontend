@@ -25,14 +25,14 @@ function LiquidityBanner() {
                 <p className="liquidity-banner-text header">Migration to Volta is LIVE!</p>
                 <p className="liquidity-banner-text">
                     Visit our new website{" "}
-                    <a target="_blank" href="https://app.uniswap.org/#/swap?outputCurrency=0x3b79a28264fc52c7b4cea90558aa0b162f7faf57">
+                    <a target="_blank" href="https://app.volta.club/">
                         here
                     </a>{" "}
                     to migrate your wMEMO tokens.
                 </p>
                 <p className="liquidity-banner-text small">
                     Learn more in our article{" "}
-                    <a target="_blank" href="https://app.uniswap.org/#/swap?outputCurrency=0x3b79a28264fc52c7b4cea90558aa0b162f7faf57">
+                    <a target="_blank" href="https://medium.com/wonderland-news/wonderland-token-migration-to-volta-de851e6a641f">
                         here
                     </a>
                     .
