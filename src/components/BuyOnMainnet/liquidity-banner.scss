@@ -1,6 +1,7 @@
 .liquidity-banner-root {
-    background: linear-gradient(180deg, rgba(61, 105, 101, 0.15) 0%, rgba(143, 222, 224, 0.15) 100%);
+    background: linear-gradient(90deg, #BB7239 0%, #FCEEAE 23.00%, #E09E5B 52.00%, #FCE9A4 75%, #F1D693 83.00%, #E1BD7C 92.00%, #D08A4A 100%);
     backdrop-filter: blur(150px);
+    background-repeat: no-repeat;
     border-radius: 20px;
     padding: 11px 23px;
     width: 89%;
@@ -15,22 +16,29 @@
     .liquidity-banner-text-conteiner {
         text-align: center;
         margin: 0px auto;
-        padding-left: 30px;
 
         .liquidity-banner-text {
             font-family: Montserrat;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
-            color: #ffffff;
+            color: #000000;
 
             a {
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
-                color: #ffffff;
+                color: #312200;
             }
+        }
+
+        .liquidity-banner-text.header {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            color: #000000;
         }
 
         .liquidity-banner-text.small {
@@ -38,7 +46,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            color: #ffffff;
+            color: #000000;
         }
 
         .liquidity-banner-text.upper {
@@ -64,23 +72,33 @@
 
     .liquidity-banner-left-gif {
         position: absolute;
-        left: 50px;
-        bottom: -4px;
+        left: 20px;
 
         img {
-            width: 20px;
+            width: 64px;
             height: auto;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1035px) {
+            display: none;
         }
     }
 
     .liquidity-banner-right-gif {
         position: absolute;
-        right: 50px;
-        bottom: -4px;
+        right: 20px;
 
         img {
-            width: 20px;
+            width: 64px;
             height: auto;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1035px) {
+            display: none;
         }
     }
 
