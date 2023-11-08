@@ -85,8 +85,8 @@ function ViewBase({ children }: IViewBaseProps) {
                 )}
                 {/* {chainID === Networks.AVAX && <LiquidityBanner />} */}
                 {/* {chainID === Networks.AVAX && <AirdropBanner />} */}
-                {chainID === Networks.AVAX && <LiquidityBanner />}
-                {chainID === Networks.ETH && <BuyOnMainnet />}
+                {/* {chainID === Networks.AVAX && <LiquidityBanner />}
+                {chainID === Networks.ETH && <BuyOnMainnet />} */}
                 {children}
             </div>
         </div>
